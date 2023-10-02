@@ -3,10 +3,26 @@
 		<div class="timeline">
 			<div class="timeline-entry" *ngFor="let entry of parcours">
 				<div class="work-category">
-					<fa-icon [icon]=entry.icon></fa-icon>
+					<fa-icon [icon]=getIcon(entry.type)></fa-icon>
 				</div>
+
 				<div class="work-place">
 					<h3>{{entry.entreprise}}</h3>
+					<div *ngIf="entry.place" class="location">
+						{{entry.place}} <fa-icon [icon]="faMapMarkerAlt"></fa-icon>
+					</div>
+				</div>
+
+				<div class="work-meta">
+					<div class="title">{{entry.title}}</div>
+					<div class="time">{{entry.time}}</div>
+				</div>
+
+				<div class="desc">
+					<div [innerHtml]=entry.desc></div>
+					<ul>
+						<li *ngFor="let item of entry.list">{{item}}</li>
+					</ul>
 				</div>
 			</div>
 		</div>

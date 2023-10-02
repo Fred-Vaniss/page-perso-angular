@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { Parcours } from '../parcours';
 import { PARCOURS } from '../parcours-list';
 
-
-import { faBook, faBuilding, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
+import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+import { faQuestion, faBook, faBuilding, faGraduationCap, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-parcours',
@@ -13,7 +13,23 @@ import { faBook, faBuilding, faGraduationCap } from '@fortawesome/free-solid-svg
 export class ParcoursComponent {
 
   parcours = PARCOURS;
-  faBuilding = faBuilding;
+  faMapMarkerAlt = faMapMarkerAlt;
   
+  getIcon(type: String): IconDefinition{
 
+    switch (type) {
+      case "entreprise":
+        return faBuilding;
+    
+      case "formation":
+        return faBook;
+
+      case "graduation":
+        return faGraduationCap;
+
+      default:
+        return faQuestion;
+    }
+
+  }
 }
