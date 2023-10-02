@@ -1,0 +1,14 @@
+<section id="experience">
+	<div class="wrapper">
+		<div class="timeline">
+			<div class="timeline-entry" *ngFor="let entry of parcours">
+				<div class="work-category">
+					<fa-icon [icon]=entry.icon></fa-icon>
+				</div>
+				<div class="work-place">
+					<h3>{{entry.entreprise}}</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
