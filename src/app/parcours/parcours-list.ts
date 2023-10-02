@@ -1,6 +1,12 @@
-import {Parcours} from './parcours';
-
-import { faBook, faBuilding, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
+interface Parcours {
+	type: string;
+	entreprise: string;
+	place?: string;
+	list: string[];
+	time: string;
+	title: string;
+	desc: string;
+}
 
 export const PARCOURS: Parcours[] = [
 	{
