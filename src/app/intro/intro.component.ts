@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+import { LangService } from '../lang.service';
+import { LOCINTRO } from '../localization';
 
 @Component({
   selector: 'app-intro',
@@ -6,6 +9,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./intro.component.scss']
 })
 
-export class IntroComponent {
+export class IntroComponent implements OnInit {
+
+  loc = LOCINTRO
+  lang: string = "";
+
+  constructor(public langService: LangService){}
+
+  ngOnInit(): void {
+    // this.langService.getLang().subscribe(lang => this.lang = lang);
+    this.langService.languageChange.subscribe(lang => this.lang = lang)
+    this.langService.getLang().subscribe(lang => this.lang = lang)
+  }
 
 }
