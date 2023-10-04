@@ -23,8 +23,8 @@ export class LangService {
     console.log(`Switched to ${this.language}`)
   }
 
-  getLang(): Observable<string> {
-    return of(this.language);
+  getLang(): string {
+    return this.language;
   }
 
 }

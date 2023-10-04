@@ -22,7 +22,7 @@ export class NavbarComponent implements OnInit {
   }
 
   getLang(): void{
-    this.langService.getLang().subscribe(lang => this.lang = lang);
+    this.lang = this.langService.getLang();
   }
 
   switchLang(): void{

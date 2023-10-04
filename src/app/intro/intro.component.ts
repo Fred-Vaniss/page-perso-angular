@@ -19,7 +19,7 @@ export class IntroComponent implements OnInit {
   ngOnInit(): void {
     // this.langService.getLang().subscribe(lang => this.lang = lang);
     this.langService.languageChange.subscribe(lang => this.lang = lang)
-    this.langService.getLang().subscribe(lang => this.lang = lang)
+    this.lang = this.langService.getLang()
   }
 
 }

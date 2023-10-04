@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { IntroComponent } from './intro/intro.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ParcoursComponent } from './parcours/parcours.component';
+import { SkillsComponent } from './skills/skills.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IntroComponent,
     NavbarComponent,
-    ParcoursComponent
+    ParcoursComponent,
+    SkillsComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
