@@ -64,3 +64,8 @@ export const LOCSKILLS: Translation = {
 	fr: "Mes compétences",
 	en: "My skills"
 }
+
+export const LOCPORTFO: Translation = {
+	fr: "Mon portfolio",
+	en: "My portforlio"
+}

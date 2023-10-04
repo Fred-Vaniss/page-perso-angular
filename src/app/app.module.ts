@@ -9,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SkillsComponent } from './skills/skills.component';
 import { AboutComponent } from './about/about.component';
 import { TimelineComponent } from './timeline/timeline.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { TimelineComponent } from './timeline/timeline.component';
     NavbarComponent,
     SkillsComponent,
     AboutComponent,
-    TimelineComponent
+    TimelineComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
