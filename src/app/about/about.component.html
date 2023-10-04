@@ -1,3 +1,4 @@
-<div class="wrapper" [innerHtml]=loc[lang]>
-	
+<div class="wrapper">
+	<h2 [innerHTML]="loc.title[lang]"></h2>
+	<div class="about-text" data-aos="fade-up" [innerHTML]="loc.text[lang]"></div>
 </div>
