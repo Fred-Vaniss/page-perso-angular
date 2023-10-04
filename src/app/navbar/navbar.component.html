@@ -1,20 +1,18 @@
-<!-- <p>Navbar works!</p> -->
-
-<!-- <div className={`menu-dim ${menuOpen ? "dimmer" : ""}`} onClick={() => closeMenu()}></div> -->
-
-	<!-- <button onClick={() => openMenu()} className="burger-button">Menu</button> -->
-	<div class="menu">
+<div class="menu-dim" [class.dimmer]="isMenuOpen"></div>
+<div class="nav-bar" [class.sticky]="isSticky">
+	<button class="burger-button" (click)="toggleMenu()">Menu</button>
+	<div class="menu" [class.menu-open]="isMenuOpen">
 		<div class="menu-box">
 			<a href="" class="download-cv" target="_blank" rel="noopener noreferrer">CV PDF</a>
 		</div>
 		<div class="menu-box">
 			<nav>
 				<ul>
-					<li><a href="#about" 		>{{loc.about[lang]}}</a></li>
-					<li><a href="#skills" 		>{{loc.skills[lang]}}</a></li>
-					<li><a href="#experience" 	>{{loc.career[lang]}}</a></li>
-					<li><a href="#portfolio" 	>Portfolio</a></li>
-					<li><a href="#contact" 		>Contact</a></li>
+					<li><a href="#about" 		(click)="closeMenu()">{{loc.about[lang]}}</a></li>
+					<li><a href="#skills" 		(click)="closeMenu()">{{loc.skills[lang]}}</a></li>
+					<li><a href="#experience" 	(click)="closeMenu()">{{loc.career[lang]}}</a></li>
+					<li><a href="#portfolio" 	(click)="closeMenu()">Portfolio</a></li>
+					<li><a href="#contact" 		(click)="closeMenu()">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -24,3 +22,4 @@
 			</div>
 		</div>
 	</div>
+</div>

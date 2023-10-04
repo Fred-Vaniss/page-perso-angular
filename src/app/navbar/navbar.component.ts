@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 import { LangService } from '../lang.service';
 import { LOCNAVBAR } from '../localization';
@@ -14,11 +14,32 @@ export class NavbarComponent implements OnInit {
   loc = LOCNAVBAR;
   lang: string = "";
 
+  isSticky: boolean = false;
+  isMenuOpen: boolean = false;
+
   constructor(public langService: LangService){}
+
+  @HostListener('window:scroll', ['$event'])
 
   ngOnInit(): void{
     this.getLang();
-    console.log(this.lang);
+    this.onScroll();
+  }
+
+  onScroll(){
+    if (window.pageYOffset > window.innerHeight-60){
+			this.isSticky = true;
+		} else {
+			this.isSticky = false;
+		}
+  }
+
+  toggleMenu(): void {
+    this.isMenuOpen = !this.isMenuOpen
+  }
+
+  closeMenu(): void {
+    this.isMenuOpen = false;
   }
 
   getLang(): void{
