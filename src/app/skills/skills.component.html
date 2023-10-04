@@ -1,5 +1,5 @@
 <div class="wrapper">
-	<h2>Mes compétences</h2>
+	<h2>{{loc[lang]}}</h2>
 	<div class="skills-flex">
 		<div class="skill-entry" *ngFor="let skill of skills; index as i" data-aos="zoom-in" [attr.data-aos-delay]="i * 100" data-aos-anchor="#skills">
 			<img src={{getImg(skill.icon)}} alt="{{skill.title}}" class="skill-icon"/>

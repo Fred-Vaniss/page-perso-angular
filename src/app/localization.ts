@@ -8,6 +8,32 @@ export const LOCINTRO: Translation = {
 	en: "Web Developer"
 }
 
+interface Locnavbar{
+	lang: Translation;
+	about: Translation;
+	skills: Translation;
+	career: Translation;
+}
+
+export const LOCNAVBAR: Locnavbar = {
+	lang: {
+		fr: 'English',
+		en: 'Français'
+	},
+	about: {
+		fr: "À propos",
+		en: "About",
+	},
+	skills: {
+		fr: 'Compétences',
+		en: 'Skills'
+	},
+	career: {
+		fr: 'Parcours',
+		en: 'Career'
+	}
+}
+
 interface LocAbout{
 	title: Translation;
 	text: Translation;
@@ -34,28 +60,7 @@ export const LOCABOUT: LocAbout = {
 	}
 }
 
-interface Locnavbar{
-	lang: Translation;
-	about: Translation;
-	skills: Translation;
-	career: Translation;
-}
-
-export const LOCNAVBAR: Locnavbar = {
-	lang: {
-		fr: 'English',
-		en: 'Français'
-	},
-	about: {
-		fr: "À propos",
-		en: "About",
-	},
-	skills: {
-		fr: 'Compétences',
-		en: 'Skills'
-	},
-	career: {
-		fr: 'Parcours',
-		en: 'Career'
-	}
+export const LOCSKILLS: Translation = {
+	fr: "Mes compétences",
+	en: "My skills"
 }
