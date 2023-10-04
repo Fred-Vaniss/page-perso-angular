@@ -4,7 +4,7 @@ import { LangService } from '../lang.service';
 import { LOCINTRO } from '../localization';
 
 @Component({
-  selector: 'app-intro',
+  selector: '[app-intro]',
   templateUrl: './intro.component.html',
   styleUrls: ['./intro.component.scss']
 })

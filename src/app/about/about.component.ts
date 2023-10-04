@@ -4,7 +4,7 @@ import { LOCABOUT } from '../localization';
 import { LangService } from '../lang.service';
 
 @Component({
-  selector: 'app-about',
+  selector: '[app-about]',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss']
 })
