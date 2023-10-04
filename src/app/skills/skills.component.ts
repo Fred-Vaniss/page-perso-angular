@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SKILLS } from './skills-list';
 
 @Component({
   selector: '[app-skills]',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent {
+  skills = SKILLS;
 
+  getImg(img: string): string{
+    return `/assets/img/skills/${img}.svg`
+  }
 }

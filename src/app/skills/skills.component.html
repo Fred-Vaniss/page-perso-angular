@@ -1,6 +1,19 @@
 <div class="wrapper">
 	<h2>Mes compétences</h2>
 	<div class="skills-flex">
-		
+		<div class="skill-entry" *ngFor="let skill of skills">
+			<img src={{getImg(skill.icon)}} alt="{{skill.title}}" class="skill-icon"/>
+			<div class="skill-tooltip-bloc">
+				<span class="skill-tooltip">{{skill.title}}</span>
+			</div>
+			<div class="sub-skills" *ngIf="skill.subSkills">
+				<div class="skill-sub-entry" *ngFor="let subSkill of skill.subSkills">
+					<img src={{getImg(subSkill.icon)}} alt="{{subSkill.title}}" class="skill-icon-sub"/>
+					<div class="skill-sub-tooltip-bloc">
+						<span class="skill-tooltip">{{subSkill.title}}</span>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
