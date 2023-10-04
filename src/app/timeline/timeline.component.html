@@ -13,13 +13,13 @@
 			</div>
 
 			<div class="work-meta">
-				<div class="title">{{entry.title}}</div>
+				<div class="title">{{entry.title[lang]}}</div>
 				<div class="time">{{entry.time}}</div>
 			</div>
 
 			<div class="desc">
-				<div [innerHtml]=entry.desc></div>
-				<ul>
+				<markdown [data]="entry.desc[lang]"></markdown>
+				<ul *ngIf="entry.list">
 					<li *ngFor="let item of entry.list">{{item}}</li>
 				</ul>
 			</div>

@@ -1,18 +1,27 @@
-import { Component } from '@angular/core';
-import { PARCOURS } from './timeline-list';
-
+import { Component, OnInit } from '@angular/core';
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+
+import { PARCOURS } from './timeline-list';
 import { faQuestion, faBook, faBuilding, faGraduationCap, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import { LangService } from '../lang.service';
 
 @Component({
   selector: '[app-timeline]',
   templateUrl: './timeline.component.html',
   styleUrls: ['./timeline.component.scss']
 })
-export class TimelineComponent {
+export class TimelineComponent implements OnInit{
 
   parcours = PARCOURS;
   faMapMarkerAlt = faMapMarkerAlt;
+  lang: string = ""
+
+  constructor(public langService: LangService){}
+
+  ngOnInit(): void{
+    this.lang = this.langService.getLang();
+    this.langService.languageChange.subscribe(lang => this.lang = lang)
+  }
   
   getIcon(type: String): IconDefinition{
 

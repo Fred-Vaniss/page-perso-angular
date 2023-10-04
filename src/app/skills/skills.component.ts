@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { LangService } from '../lang.service';
 import { SKILLS } from './skills-list';
 import { LOCSKILLS } from '../localization';
@@ -8,7 +8,7 @@ import { LOCSKILLS } from '../localization';
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.scss']
 })
-export class SkillsComponent {
+export class SkillsComponent implements OnInit{
   skills = SKILLS;
   loc = LOCSKILLS;
   lang: string = "";
