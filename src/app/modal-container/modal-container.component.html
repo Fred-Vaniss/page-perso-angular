@@ -3,8 +3,14 @@
 		<div class="modal-close-container">
 			<button (click)="closeModal()" class="modal-close"><fa-icon [icon]="faTimes"></fa-icon></button>
 		</div>
-		<markdown *ngIf="currentArticle">{{currentArticle.article[lang]}}</markdown>
-		<!-- <app-modal-gallery *ngIf="currentArticle.galleries"></app-modal-gallery> -->
+
+		<div class="article" *ngFor="let article of currentArticle.article[lang]">
+
+			<markdown *ngIf="checkType(article) === 'string'" [disableSanitizer]="true">{{article}}</markdown>
+			<app-modal-gallery *ngIf="checkType(article) === 'object'" [gallery]="getGallery(article)"></app-modal-gallery>
+
+		</div>
+
 		<div *ngIf="currentArticle" class="modal-bottom">
 			<button (click)="closeModal()" class="form-submit modal-close-bottom">{{ locBtns.close[lang] }}</button>
 			<a *ngIf="currentArticle.url.preview" href="{{currentArticle.url.preview}}" class="form-submit modal-preview-bottom" target="_blank" rel="noopener noreferrer" title="{{ locBtns.preview[lang] }}">{{ locBtns.preview[lang] }}</a>

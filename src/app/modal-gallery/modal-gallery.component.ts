@@ -3,7 +3,7 @@ import { LangService } from '../lang.service';
 import { Gallery } from '../portfolio-list';
 
 @Component({
-  selector: '[app-modal-gallery]',
+  selector: 'app-modal-gallery',
   templateUrl: './modal-gallery.component.html',
   styleUrls: ['./modal-gallery.component.scss']
 })

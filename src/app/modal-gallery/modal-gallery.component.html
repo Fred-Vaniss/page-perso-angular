@@ -1,5 +1,5 @@
 <div *ngIf="gallery" class="modal-gallery">
-	<div class="modal-image-container" *ngFor="let image of gallery.images">
+	<div class="modal-image-container" *ngFor="let image of gallery">
 		<a href="{{getHref(image.img, image.format)}}" title="{{image.alt[lang]}}" [attr.data-lightbox]="'gallery-'+galId" data-title={{image.alt[lang]}}>
 			<img src={{getThumb(image.img)}} alt="{{image.alt[lang]}}"/>
 		</a>

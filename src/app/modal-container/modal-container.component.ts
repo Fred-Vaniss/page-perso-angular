@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
-import { Subject, takeUntil } from 'rxjs';
 import { LangService } from '../lang.service';
 import { LOCBUTTONS } from '../localization';
 import { ModalService } from '../modal.service';
-import { PortfolioEntry } from '../portfolio-list';
+import { Article, Gallery, GalleryCall, PortfolioEntry } from '../portfolio-list';
 
 @Component({
   selector: 'app-modal-container',
@@ -50,6 +49,16 @@ export class ModalContainerComponent implements OnInit {
     if (className === "portfolio-modal transition shown") {
       this.closeModal();
     }
+  }
+
+  checkType(item: any): string{
+    return typeof item;
+  }
+
+  getGallery(item: Article): Gallery {
+
+    return this.currentArticle.galleries[(item as GalleryCall).galIndex];
+
   }
 
 }
