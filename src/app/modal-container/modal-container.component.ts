@@ -43,4 +43,13 @@ export class ModalContainerComponent implements OnInit {
     }, 400);
   }
 
+  bgCloseModal(e: Event): void{
+    const target = e.target as HTMLDivElement
+    const className = target.className
+
+    if (className === "portfolio-modal transition shown") {
+      this.closeModal();
+    }
+  }
+
 }
