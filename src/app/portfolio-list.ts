@@ -5,12 +5,24 @@ interface Links {
 	preview?: string;
 }
 
+export interface GalImage{
+	img: string;
+	format: string;
+	alt: Translation;
+}
+
+export interface Gallery{
+	anchor: string;
+	images: GalImage[];
+}
+
 export interface PortfolioEntry {
 	title: Translation;
 	techno: string;
 	id: string;
 	url: Links;
 	article: Translation;
+	galleries?: Gallery[];
 }
 
 export const PORTFOLIOLIST: PortfolioEntry[] =  [
@@ -22,6 +34,37 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 		techno: "LUA, Illustrator",
 		id: "zomboid",
 		url: {},
+		galleries: [
+			{
+				anchor: "gal1",
+				images: [
+					{ 
+						img: "zomboid/zomboid-1", 
+						format: "jpg", 
+						alt: {
+							fr: "Création des silhouettes du Illustrator.",
+							en: "Creation of silhouettes on Illustrator." 
+						}
+					},
+					{ 
+						img: "zomboid/zomboid-2", 
+						format: "jpg", 
+						alt: {
+							fr: "Aperçu du panneau en jeu.",
+							en: "Overview of the in-game panel." 
+						}
+					},
+					{ 
+						img: "zomboid/zomboid-3", 
+						format: "gif", 
+						alt: {
+							fr: "Apparition et intéraction avec le panneau.",
+							en: "Apparition and interaction with the panel." 
+						}
+					},
+				]
+			},
+		],
 		article:{
 			fr: `
 				### Addons pour Project Zomboid
@@ -30,37 +73,59 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 				* 2022
 				* Technologies utilisés: LUA
 				
-				Project Zomboid est un jeu de survie dans un monde affecté par une apocalypse zombie. On crée un personnage et le but est simplement de survivre et de subvenir à ses besoins dans un monde ouvert gigantesque.</p>
+				Project Zomboid est un jeu de survie dans un monde affecté par une apocalypse zombie. On crée un personnage et le but est simplement de survivre et de subvenir à ses besoins dans un monde ouvert gigantesque.
 
 				
-				Le jeu est extrêmement modulable et permets d'ajouter de nouvelles fonctionalités au jeu et même de modifier le monde. <br/> Il à un Steam Workshop où tout le monde peuvent publier leurs créations pour que les autres puissent modifier leurs propres expérience de jeu.</p>
+				Le jeu est extrêmement modulable et permets d'ajouter de nouvelles fonctionalités au jeu et même de modifier le monde. <br/> Il à un Steam Workshop où tout le monde peuvent publier leurs créations pour que les autres puissent modifier leurs propres expérience de jeu.
 
 				---
 
 				### Mini Health Panel
 				#### Interface utilisateur
 				
-				Développer un addon pour Project Zomboid s'est révélé être un gros challenge. Contrairement à Garry's Mod, il n'y a aucune documentation pour développer un addon. Il a donc fallu devoir lire "déchiffrer" moi même les fichiers LUA déjà établi par les développeurs ainsi que les autres addons par la communauté afin de comprendre comment fonctionnent les fonctions du jeu.</p>
+				Développer un addon pour Project Zomboid s'est révélé être un gros challenge. Contrairement à Garry's Mod, il n'y a aucune documentation pour développer un addon. Il a donc fallu devoir lire "déchiffrer" moi même les fichiers LUA déjà établi par les développeurs ainsi que les autres addons par la communauté afin de comprendre comment fonctionnent les fonctions du jeu.
 				
-				Ça m'a pris du temps pour comprendre mais j'ai réussi à développer un addon qui a fait son petit succès sur le Workshop du jeu.</p>
+				Ça m'a pris du temps pour comprendre mais j'ai réussi à développer un addon qui a fait son petit succès sur le Workshop du jeu.
 
-				<Gallery src={[
-					{format: "jpg", img:"zomboid/zomboid-1", alt:"Création des silhouettes du Illustrator"},
-					{format: "jpg", img:"zomboid/zomboid-2", alt:"Aperçu du panneau en jeu"},
-					{format: "gif", img:"zomboid/zomboid-3", alt:"Apparition et intéraction avec le panneau"}
-				]}/>
+				<div id="gal1"></div>
 				
-				J'ai créé un panneau de santé minimaliste. La silhouette est invisible par défaut et apparait à l'écran dès qu'il y a une blessure à traiter.</p>
+				J'ai créé un panneau de santé minimaliste. La silhouette est invisible par défaut et apparait à l'écran dès qu'il y a une blessure à traiter.
 				
-				Cet addon à pour but de pouvoir se passer de l'interface de santé de base qui prends beaucoup d'espace à l'écran et qu'il s'affiche seulement dans le besoin au lieu de le garder en permanence à l'écran ou de devoir cliquer sur l'icone de santé dès qu'il faut traiter son personnage.</p>
+				Cet addon à pour but de pouvoir se passer de l'interface de santé de base qui prends beaucoup d'espace à l'écran et qu'il s'affiche seulement dans le besoin au lieu de le garder en permanence à l'écran ou de devoir cliquer sur l'icone de santé dès qu'il faut traiter son personnage.
 				
-				Beaucoup de personnes ont appréciés mon travail est à atteint le premier mod du worshop des plus populaires de la semaine et des trois derniers mois.</p>
+				Beaucoup de personnes ont appréciés mon travail est à atteint le premier mod du worshop des plus populaires de la semaine et des trois derniers mois.
 
 			`,
 			en: `
-			
+				### Addons for Project Zomboid
+				#### Personal projects
+
+				* 2022
+				* Used technologies: LUA
+
+				Project Zomboid is a survival game in a world under a zombie apocalypse. We create a character and the goal is simply to survive and fulfill our needs on a huge world.
+				
+				The game is extremely modulable and allows to add new features to the game and even modify the world. <br/> It has a Steam Workshop where everyone can publish their creations so others can modify their own game experience.
+
+				---
+				
+				### Mini Health Panel
+				#### User interface
+				
+				Developing an addon for Project Zomboid was a big challenge. Unlike Garry's Mod, there si no documentation for addon development. So I had to read and "decipher" myself the LUA files already established by the developers and other addons by the community in order to figure out how the game's functions works.
+				
+				It took some time to understand but I managed to develop an addon which made its small success on the workshop of the game.
+				
+				<div id="gal1"></div>
+
+				I created a minimalistic health panel. The silhouette is invisible by default and appear on the screen whenever there is a wound to treat.
+				
+				This addon's purpose is to be able to do without the health interface of the base's game which take a lot of screen space and displays only when needed instead of always keeping it on sreen or having to click on the health icon as soon you need to treat your character.
+				
+				Many people appreciated my work and was the most popular of the week and the last three months.
 			`
-		}
+			}
+		
 	},
 	// Skipped one entry, need to add later
 	{
@@ -121,7 +186,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 				
 				The progress bars have a small time bar that moves from left to right depending on the remaining time, that's what determines whether you're ahead or behind the progress percentage, it's a concept that the game Diablo III inspired me.
 				
-				And to go further, I also added the possibility to rearrange the different entries and edit them and to delete them.</p>
+				And to go further, I also added the possibility to rearrange the different entries and edit them and to delete them.
 			`
 		},
 	}

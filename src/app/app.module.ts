@@ -12,6 +12,7 @@ import { TimelineComponent } from './timeline/timeline.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ModalRoutingModule } from './modal-routing.module';
 import { ModalContainerComponent } from './modal-container/modal-container.component';
+import { ModalGalleryComponent } from './modal-gallery/modal-gallery.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { ModalContainerComponent } from './modal-container/modal-container.compo
     AboutComponent,
     TimelineComponent,
     PortfolioComponent,
-    ModalContainerComponent
+    ModalContainerComponent,
+    ModalGalleryComponent
   ],
   imports: [
     BrowserModule,
