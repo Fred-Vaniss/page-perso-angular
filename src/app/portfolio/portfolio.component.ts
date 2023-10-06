@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { LangService } from '../lang.service';
-import { LOCPORTFO } from '../localization';
-import { PORTFOLIOLIST } from './portfolio-list';
+import { LOCBUTTONS, LOCPORTFO } from '../localization';
+import { PORTFOLIOLIST } from '../portfolio-list';
 
 import { faStickyNote, faGlobe,  } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { ModalService } from '../modal.service';
 
 @Component({
   selector: '[app-portfolio]',
@@ -14,7 +15,8 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 export class PortfolioComponent {
 
-  loc = LOCPORTFO;
+  locTitle = LOCPORTFO;
+  locBtns = LOCBUTTONS;
   lang: string = "";
 
   faStickyNote = faStickyNote;
@@ -23,7 +25,10 @@ export class PortfolioComponent {
 
   portfolioList = PORTFOLIOLIST;
 
-  constructor(public langService: LangService){}
+  constructor(
+    public langService: LangService,
+    public modalService: ModalService
+  ){}
 
   ngOnInit(): void {
     this.langService.languageChange.subscribe(lang => this.lang = lang)
@@ -32,6 +37,10 @@ export class PortfolioComponent {
 
   getImg(img: string): string {
     return(`assets/img/portfolio/${img}.jpg`)
+  }
+
+  openArticle(id: string): void {
+    this.modalService.openArticle(id);
   }
 
 }

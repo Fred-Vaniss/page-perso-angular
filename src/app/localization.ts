@@ -69,3 +69,29 @@ export const LOCPORTFO: Translation = {
 	fr: "Mon portfolio",
 	en: "My portforlio"
 }
+
+interface LocButtons{
+	open: Translation;
+	close: Translation;
+	preview: Translation;
+	git: Translation;
+}
+
+export const LOCBUTTONS: LocButtons = {
+	open: {
+		fr: "Plus d'infos",
+		en: "More details"
+	},
+	close: {
+		fr: "Fermer",
+		en: "Close"
+	},
+	preview: {
+		fr: "Page du projet",
+		en: "Project page"
+	},
+	git: {
+		fr: "Dépot GitHub",
+		en: "Github repository"
+	}
+}

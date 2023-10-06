@@ -10,6 +10,9 @@ import { SkillsComponent } from './skills/skills.component';
 import { AboutComponent } from './about/about.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ModalRoutingModule } from './modal-routing.module';
+import { ModalContainerComponent } from './modal-container/modal-container.component';
+
 
 @NgModule({
   declarations: [
@@ -19,12 +22,14 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     SkillsComponent,
     AboutComponent,
     TimelineComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    ModalContainerComponent
   ],
   imports: [
     BrowserModule,
     FontAwesomeModule,
-    MarkdownModule.forRoot()
+    MarkdownModule.forRoot(),
+    ModalRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

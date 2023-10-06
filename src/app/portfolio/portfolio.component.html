@@ -1,8 +1,9 @@
 <div class="wrapper" id="portfolio-animate-trigger">
-	<h2>{{loc[lang]}}</h2>
+	<h2>{{locTitle[lang]}}</h2>
 	<div class="portfolio-list">
 		<div *ngFor="let entry of portfolioList; index as i"
 			class="portfolio-entry"
+			data-aos="flip-left"
 			data-aos-anchor="#portfolio-animate-trigger"
 			[attr.data-aos-delay]="i * 100"
 		>
@@ -11,13 +12,13 @@
 					<h4>{{entry.title[lang]}}</h4>
 					<p>{{entry.techno}}</p>
 					<div class="portfolio-links">
-						<button *ngIf="entry.url.note" class="portfolio-link"><span><fa-icon [icon]="faStickyNote"></fa-icon></span></button>
-						<a *ngIf="entry.url.git" class="portfolio-link" href="{{entry.url.git}}" target="_blank" rel="noopener noreferrer" title="Github"><span><fa-icon [icon]="faGithub"></fa-icon></span></a>
-						<a *ngIf="entry.url.preview" class="portfolio-link" href="{{entry.url.preview}}" target="_blank" rel="noopener noreferrer" title="Page du projet"><span><fa-icon [icon]="faGlobe"></fa-icon></span></a>
+						<button (click)="openArticle(entry.id)" class="portfolio-link" title="{{locBtns.open[lang]}}"><span><fa-icon [icon]="faStickyNote"></fa-icon></span></button>
+						<a *ngIf="entry.url.git" class="portfolio-link" href="{{entry.url.git}}" target="_blank" rel="noopener noreferrer" title="{{locBtns.git[lang]}}"><span><fa-icon [icon]="faGithub"></fa-icon></span></a>
+						<a *ngIf="entry.url.preview" class="portfolio-link" href="{{entry.url.preview}}" target="_blank" rel="noopener noreferrer" title="{{locBtns.preview[lang]}}"><span><fa-icon [icon]="faGlobe"></fa-icon></span></a>
 					</div>
 				</div>
 			</div>
-			<img src="{{getImg(entry.img)}}" alt="{{entry.title}}">
+			<img src="{{getImg(entry.id)}}" alt="{{entry.title}}">
 		</div>
 	</div>
 </div>
