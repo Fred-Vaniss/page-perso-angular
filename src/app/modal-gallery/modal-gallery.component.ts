@@ -10,7 +10,8 @@ import { Gallery } from '../portfolio-list';
 
 export class ModalGalleryComponent implements OnInit {
 
-  @Input() gallery?: Gallery = null
+  @Input({ required: true }) gallery: Gallery;
+  @Input({ required: true }) artId: string;
 
   lang: string = "";
   galId: number = Math.floor(Math.random()*99999);
@@ -23,11 +24,11 @@ export class ModalGalleryComponent implements OnInit {
   }
 
   getThumb(img: string): string {
-    return `assets/img/portfolio/gallery/${img}-thumb.jpg`
+    return `assets/img/portfolio/gallery/${this.artId}/${img}-thumb.jpg`
   }
 
   getHref(img: string, format: string): string {
-    return `assets/img/portfolio/gallery/${img}.${format}`
+    return `assets/img/portfolio/gallery/${this.artId}/${img}.${format}`
   }
 
 }

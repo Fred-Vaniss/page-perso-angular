@@ -31,10 +31,12 @@
             ],
             "styles": [
               "src/styles.scss",
-              "aos/dist/aos.css"
+              "aos/dist/aos.css",
+              "lightbox2/dist/css/lightbox.min.css"
             ],
             "scripts": [
-              "node_modules/marked/marked.min.js"
+              "node_modules/marked/marked.min.js",
+              "lightbox2/dist/js/lightbox-plus-jquery.min.js"
             ],
             "allowedCommonJsDependencies": [
               "aos"

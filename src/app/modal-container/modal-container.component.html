@@ -4,12 +4,17 @@
 			<button (click)="closeModal()" class="modal-close"><fa-icon [icon]="faTimes"></fa-icon></button>
 		</div>
 
-		<div class="article" *ngFor="let article of currentArticle.article[lang]">
+		<ng-container *ngIf="currentArticle">
 
-			<markdown *ngIf="checkType(article) === 'string'" [disableSanitizer]="true">{{article}}</markdown>
-			<app-modal-gallery *ngIf="checkType(article) === 'object'" [gallery]="getGallery(article)"></app-modal-gallery>
+			<ng-container *ngFor="let article of currentArticle.article[lang]">
 
-		</div>
+				<markdown *ngIf="checkType(article) === 'string'" [disableSanitizer]="true">{{article}}</markdown>
+				<app-modal-gallery *ngIf="checkType(article) === 'object'" [gallery]="getGallery(article)" [artId]="currentArticle.id"></app-modal-gallery>
+
+			</ng-container>
+
+		</ng-container> 
+
 
 		<div *ngIf="currentArticle" class="modal-bottom">
 			<button (click)="closeModal()" class="form-submit modal-close-bottom">{{ locBtns.close[lang] }}</button>

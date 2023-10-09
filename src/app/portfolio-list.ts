@@ -46,7 +46,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 		galleries: [
 			[
 				{ 
-					img: "zomboid/zomboid-1", 
+					img: "zomboid-1", 
 					format: "jpg", 
 					alt: {
 						fr: "Création des silhouettes du Illustrator.",
@@ -54,7 +54,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					}
 				},
 				{ 
-					img: "zomboid/zomboid-2", 
+					img: "zomboid-2", 
 					format: "jpg", 
 					alt: {
 						fr: "Aperçu du panneau en jeu.",
@@ -62,7 +62,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					}
 				},
 				{ 
-					img: "zomboid/zomboid-3", 
+					img: "zomboid-3", 
 					format: "gif", 
 					alt: {
 						fr: "Apparition et intéraction avec le panneau.",
@@ -155,7 +155,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 		galleries: [
 			[
 				{
-					img: "hema/hema-1",
+					img: "hema-1",
 					format: "jpg",
 					alt: {
 						fr: "Conception de l'interface",
@@ -163,7 +163,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					},
 				},
 				{
-					img: "hema/hema-2",
+					img: "hema-2",
 					format: "gif",
 					alt: {
 						fr: "Animation de l'electrocardiogramme",
@@ -171,7 +171,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					},
 				},
 				{
-					img: "hema/hema-3",
+					img: "hema-3",
 					format: "gif",
 					alt: {
 						fr: "Animation du chargeur",
@@ -181,7 +181,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 			],
 			[
 				{
-					img: "synt/synthud-1",
+					img: "synthud-1",
 					format: "gif",
 					alt: {
 						fr: "Animation barre de santé et d'armure",
@@ -189,7 +189,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					},
 				},
 				{
-					img: "synt/synthud-2",
+					img: "synthud-2",
 					format: "gif",
 					alt: {
 						fr: "Animation du compteur de munitions",
@@ -197,7 +197,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					},
 				},
 				{
-					img: "synt/synthud-3",
+					img: "synthud-3",
 					format: "jpg",
 					alt: {
 						fr: "La communauté Steam a adoré mon addon",
@@ -348,7 +348,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 		galleries: [
 			[
 				{
-					img: "bt-tracker/tracker-1",
+					img: "tracker-1",
 					format: "jpg",
 					alt: {
 						fr: "Exemple d'utilisation",
@@ -356,7 +356,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					}
 				},
 				{
-					img: "bt-tracker/tracker-2",
+					img: "tracker-2",
 					format: "jpg",
 					alt: {
 						fr: "Exemple de différents états",
@@ -364,7 +364,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					}
 				},
 				{
-					img: "bt-tracker/tracker-2",
+					img: "tracker-3",
 					format: "jpg",
 					alt: {
 						fr: "Exemple de différentes erreurs",
@@ -386,7 +386,6 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 				`,
 				{galIndex: 0},
 				`
-					
 					Je joue beaucoup aux jeux vidéos et il existe un concept qu'on appelle "Battlepass", ou Pass de Combat. C'est un objectif limité dans le temps (généralement trois mois) où on peut gagner des récompenses supplémentaires.
 					
 					Je me suis dit du coup pourquoi ne pas me faire une appli pour avoir un suivi et qui me permettrait de déterminer si je suis dans le temps ou si je suis en retard. C'était aussi le projet idéal pour me remettre dans le bain de React.
@@ -407,12 +406,9 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					* Used technologies: React, SASS
 					* Project finished in five days
 					
-					<Gallery src={[
-						{format: "jpg", img: "bt-tracker/tracker-1", alt:"Usage example"},
-						{format: "jpg", img: "bt-tracker/tracker-2", alt:"Differents states example"},
-						{format: "jpg", img: "bt-tracker/tracker-3", alt:"Differents errors example"},
-					]}/>
-					
+				`,
+				{galIndex: 0},
+				`
 					I play a lot of video games and there's a concept called "Battlepass". This is a time-limited goal (usually three months) where you can earn additional rewards.
 					
 					So I thought why not make myself an app to have a tracking that helps me determine if I'm on time or if I'm late. It was also the perfect project to get me back into React.
@@ -425,5 +421,730 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 				`
 			]
 		},
+	},
+	{
+		title: {
+			fr: "Template Grav",
+			en: "Grav Template"
+		},
+		techno: "PHP, Twig",
+		id: "grav",
+		url: {
+			git: "https://github.com/Fred-Vaniss/creative-gh-grav",
+			preview: "https://fred-vaniss.be/grav-site/"
+		},
+		galleries: [
+			[
+				{
+					img: "grav-1",
+					format: "jpg",
+					alt: {
+						fr: "Aperçu du site depuis la Back-Office.",
+						en: "Website preview from the Back-Office."
+					}
+				},
+				{
+					img: "grav-2",
+					format: "jpg",
+					alt: {
+						fr: "Edition du module de services.",
+						en: "Services module editing."
+					}
+				},
+				{
+					img: "grav-3",
+					format: "jpg",
+					alt: {
+						fr: "Edition du module de portfolio.",
+						en: "Portfolio module editing."
+					}
+				}
+			]
+		],
+		article: {
+			fr: [
+				`
+					### Test de construction d'un template pour Grav
+					#### Projet de test pour Why Agency
+					
+					* Février 2021
+					* Technologies utilisés: PHP, Twig
+					* Projet terminé en une journée.
+					
+				`,
+					{galIndex: 0},
+				`					
+					Avec Why Agency, on a eu un client qui a eu la particularité de nous demander un site web basé sur un CMS léger et écologique. Nous qui travaillons sur WordPress, on sait qu'il nous faudrait trouver un autre CMS.
+					
+					On a approché l'option de Grav, c'est un CMS open source basé sur Symfony, qui est Flat-File et il utilise le Markdown pour les articles et le contenu
+					
+					Grav étant un CMS beaucoup moins connu que WordPress, on a du coup beaucoup moins d'options pour des thèmes déjà construits. 
+					J'ai donc proposé à l'équipe de tenter l'approche de construire soi-même un thème Grav à partir d'un bête thème HTML statique.
+					
+					Je me suis donc lancé sur ce test à partir [d'un thème gratuit Bootstrap "Creative"](https://startbootstrap.com/theme/creative). 
+					Je n'avais absolument aucune expérience sur la construction d'un thème, ni sur le langage Twig. C'était un total découvert pour moi et il m'a fallu beaucoup me renseigner sur la documentation officiele de Grav et observer comment les autres thèmes ont étés construits.
+					
+					Avant de me lancer sur la conversion du HTML en thème Twig, j'ai d'abord analysé la structure HTML afin de déterminer comment le découper, quels éléments qui vont être répétés pour afficher différents contenus sous une même structure et comment les données vont êtres sauvegardés.
+					
+					Ça m'a pris une journée entière pour construire ce thème. Au fur et à mesure je découvre de nouvelles choses, j'ai même pris le temps de personnaliser les panneaux du Back-Office selon le module.
+					
+					Ce test fut couronné de succès, j'ai appris pas mal de choses sur ce test et on va pouvoir se créer d'autres thèmes que ce qui est déjà proposé.
+
+				`
+			],
+			en: [
+				`
+					### Grav template building test
+					#### Test project for Why Agency
+					
+					* February 2021
+					* Used technologies: PHP, Twig
+					* Project finished in one day.
+					
+				`,
+					{galIndex: 0},
+				`					
+					With Why Agency, we had a client who had the particularity of asking a website based on a lightweight and environmentally friendly CMS. We work on WordPress and we knew that we have to find another CMS.
+					
+					We approached the Grav option, it's an open source CMS based on Symfony, which is Flat-File and uses Markdown for articles and content.
+					
+					Grav being CMS less known than WordPress, we have fewer options for themes already built. So I suggested to the team to try the approach of building a Grav theme ourselves from a static HTML theme.
+					
+					So I started this test using [a free Bootstrap theme "Creative"](https://startbootstrap.com/theme/creative). I had absolutely no experience on building a theme nor the Twig language. It was a total discovery for me and it took me a lot of research on the official Grav documentation and observing how the other themes were constructed.
+					
+					Before beginning to convert the HTML into Twig theme, I first analyzed the HTML layout to determine how to cut it, what elements will be repeated to display different contents under the same structure, and how the data will be saved.
+					
+					It took me a while day to build this theme. As I discover new tricks, I even took the time to customize the Back-Office panels according to the module.
+					
+					This test was successful, I learned a lot about this test and we will be able to create other themes than what is already proposed.
+
+				`
+			]
+		}
+	},
+	{
+		title: {
+			fr: "Fiche personnage",
+			en: "Character sheet"
+		},
+		techno: "ReactJS, SASS",
+		id: "dnd",
+		url: {
+			preview: "https://fred-vaniss.be/dnd-sheet/"
+		},
+		galleries: [
+			[
+				{
+					img: "dnd-1",
+					format: "jpg",
+					alt: {
+						fr: "Fiche de personnage",
+						en: "Character sheet"
+					}
+				},
+				{
+					img: "dnd-2",
+					format: "jpg",
+					alt: {
+						fr: "Classe d'armure",
+						en: "Armor class"
+					}
+				},
+				{
+					img: "dnd-3",
+					format: "jpg",
+					alt: {
+						fr: "Jets de sauvegardes",
+						en: "Save throws"
+					}
+				},
+			]
+		],
+		article: {
+			fr: [
+				`
+					### Fiche de personnage Donjons & Dragons</h3>
+					#### Projet personnel</h4>
+					
+					* Mars 2020
+					* Technologies utilisés: ReactJS, SASS
+					* Projet interrompu
+					
+				`,
+					{galIndex: 0},
+				`
+					Je participait avec un groupe d'amis à un jeu de rôle sur table Donjon & Dragons. Dans ce jeu, chacun à une fiche de son personnage sous format papier où est indiqué tous les informations sur son personnage.
+					
+					Je me suis donc lancé l'idée de faire cette fiche de personnage sous format page web. Non seulement elle sera au format numérique mais en plus il fera les calculs automatiquement avec les différents statistiques associés.
+					
+					Pour simplifier le partage de nos fiches de personnage, toutes les modifications apportés sont enregistrés dans l'URL en tant que paramètre.
+				`
+			],
+			en: [
+				`
+					### Dungeon & Dragons character sheet</h3>
+					#### Personal project</h4>
+					
+					* March 2020
+					* Used technologies: ReactJS, SASS 
+					* Interrupted project
+					
+				`,
+					{galIndex: 0},
+				`
+					I partipated with a group of friends in a Dungeons & Dragons tabletop role-playing game. In this game, each person has its own character sheet in paper where all the information about their characters is indicated.
+					
+					So I came up with the idea of making this character sheet in web format. Not only will it be in digital format, but it will also do the calculations automatically with the different associated statistics.
+					
+					To simplify the sharing of our character sheets, all changes made are saved in the URL as parameters.
+				`
+			]
+		}
+	},
+	{
+		title: {
+			fr: "Isotrim",
+			en: "Isotrim"
+		},
+		techno: "Wordpress, JavaScript",
+		id: "isotrim",
+		url: {
+			preview: "https://www.isotrim.be/fr/",
+		},
+		galleries: [
+			[
+				{
+					img: "iso-1",
+					format: "jpg",
+					alt: {
+						fr: "Section ligne du temps modifiée.",
+						en: "Modified timeline section"
+					}
+				},
+				{
+					img: "iso-2",
+					format: "jpg",
+					alt: {
+						fr: "Panneau latérale que j'ai créé",
+						en: "Sidebar I've made"
+					}
+				},
+				{
+					img: "iso-3",
+					format: "jpg",
+					alt: {
+						fr: "Section d'accueil que j'ai adapté en responsive",
+						en: "Reworked home section that I've adapted to responsive"
+					}
+				}
+			]
+		],
+		article: {
+			fr: [
+				`
+					### Isotrim
+					#### Réalisé chez ADEVO Solutions
+					
+					* Janvier 2020
+					* Technologies utilisés: Wordpress, PHP, JavaScript
+					* Projet auquel j'ai participé au développement
+					
+				`,
+					{galIndex: 0},
+				`
+					Contrairement à Heliostart, ceci est un projet auquel j'ai apporté mon soutien, j'ai principalement apporté des modifications et de nouvelles fonctionnalités au site.
+					
+					En effet, j'ai créé un nouveau module pour le site qui est le panneau latéral, je l'ai créée de toute pièce, on peut y insérer les modules qu'on veut. Ainsi il sert de petit formulaire pour que le client puisse se faire appeler par l'entreprise dans la tranche horaire qu'il veut.
+					
+					Une autre modification que j'ai apportée est celle de la ligne de temps dans la page *à propos*. De base il avait juste les boutons sur la gauche, j'ai modifié son fonctionnement pour qu'il défile tout seul jusqu'à ce qu'on interagisse avec et ajouté deux boutons sur les côtés pour passer au slide suivant et précédent.
+					
+					Et la dernière modification que j'ai apportée au site est l'intégration d'un aperçu d'image *lightbox* dans le site pour les pages *nos services* et *nos réalisations*
+				`
+			],
+			en: [
+				`
+					### Isotrim</h3>
+					#### Made at ADEVO Solutions</h4>
+					
+					* January 2020
+					* Used technologies: Wordpress, PHP, JavaScript
+					* Project that I've participated
+					
+				`,
+					{galIndex: 0},
+				`
+					Unlike Heliostart, this was a project that I have supported, I mainly made changes and new features to the website.
+					
+					Indeed, I created a new module for the website, which is the side panel, I created it from scratch, we can insert the modules we want. Thus it serves as a small form so that the customer can be called by the company in the time slot he wants.
+					
+					Another change I made is the timeline in the page *about*. Before it had just the buttons on the left, I modified it to make it scroll by itself until you interact with it and added two buttons on the sides to go to the next and previous slide.
+					
+					And the last modification I made to the website is the integration of a *lightbox* image preview in the website for the pages *our services* and *our realizations*.
+				`
+			]
+		}
+	},
+	{
+		title: {
+			fr: "Heliostart",
+			en: "Heliostart"
+		},
+		techno: "Wordpress, JavaScript",
+		id: "helio",
+		url: {
+			preview: "https://www.heliostart.com"
+		},
+		galleries: [
+			[
+				{
+					img: "helio-1",
+					format: "jpg",
+					alt: {
+						fr: "Page d'accueil.",
+						en: "Homepage"
+					}
+				},
+				{
+					img: "helio-2",
+					format: "jpg",
+					alt: {
+						fr: "Section boutique",
+						en: "Shop section."
+					}
+				},
+				{
+					img: "helio-3",
+					format: "jpg",
+					alt: {
+						fr: "Section de présentation du produit",
+						en: "Product presentation section."
+					}
+				},
+			]
+		],
+		article: {
+			fr: [
+				`
+					### Heliostart
+					#### Réalisé chez ADEVO Solutions
+					
+					* Novembre 2019
+					* Technologies utilisés: Wordpress, PHP, JavaScript
+					* Durée du projet: 2 mois
+				`,
+					{galIndex: 0},
+				`
+					Mon premier projet de stage chez ADEVO Solutions consiste à concevoir et à construire un site internet pour promouvoir et vendre un produit et des services Heliostart. 
+					C'est un boîtier permettant d'automatiser le fonctionnement d'un banc solaire à l'aide d'une application Android, il propose également des services de création de sites web.
+
+					Le projet s'est basé d'un thème Wordpress. Le site étant sur-mesure, il a fallu beaucoup modifier dans le CSS et pas mal d'éléments ont étés construite en HTML brut.
+					
+					J'ai du aussi mettre en application mes talents de graphiste et de Webdesigner, j'avais à disposition une maquette de ce que devrais ressembler le site, mais il m'a fallu créer pas mal d'éléments graphiques pour le site, tel que le logo, le fond de la page d'accueil, les pictogrammes, et ainsi de suite.
+					
+					La partie qui m'a demandé le plus de travail est sans doute la page commander, pour cette partie j'ai du créer un shortcode PHP pour que les prix soient à jour par rapport aux données entrées dans les articles WooCommerce, puis il m'a fallu faire du JavaScript pour faire le calcul et l'affichage du récapitulatif en fonction des articles sélectionnés. 
+					Et pour que les articles s'ajoutent correctement dans le panier, je me suis aussi servi de JavaScript pour que le lien de commande se mette à jour pour mettre les articles sélectionnés au panier.
+				`
+			],
+			en: [
+				`
+					### Heliostart
+					#### Made at ADEVO Solutions
+				
+					* November 2019
+					* Used technologies: Wordpress, PHP, JavaScript
+					* Project duration: 2 months
+				`,
+					{galIndex: 0},
+				`
+					My first internship project at ADEVO Solutions is to design and build a website to promote and sell a Heliostart product and services. It is a box that allows to automating the operation of a sunbed using an Android application, it also offers website creation services.
+
+					The project was based on a WordPress theme. The site being customized, it was necessary to modify the CSS a lot and a lot of elements were built in raw HTML
+
+					I also had to apply my graphic and web designer skills. I had a mock-up of what the website should look like, but I had to create a lot of graphic elements for the website, such as the logo, the background of the homepage, the pictograms and so on.
+
+					The part that required the most of the work is certainly the order page, for this part I had to create a PHP shortcode so that the prices are up to date with the data entered in WooCommerce articles, then I had to use JavaScript to do the calculation and display the summary according to the selected articles.
+					And in order to add the items correctly to the cart, I also used JavaScript to update the order links to put in the select items in the cart.
+				`
+			]
+		}
+	},
+	{
+		title: {
+			fr: "Ce site web (React)",
+			en: "This website (React)"
+		},
+		techno: "ReactJS, SASS",
+		id: "fred-react",
+		url:{
+			git: "https://github.com/Fred-Vaniss/page_perso"
+		},
+		article: {
+			fr: [
+				`
+					### Mon site personnel (React)
+
+					* 2019-2022
+					* Technologies utilisés: ReactJS, Sass
+					* Projet réalisé en un mois
+				
+					Je me suis lancé dans ce projet de création de mon propre site web afin de m'exposer en ligne et pour pouvoir montrer mes projets réalisés. Cela m'a permis de mettre un plus en pratique le ReactJS et de découvrir les procédés d'hébergement de site internet.
+					
+					Je suis donc passé de la création de la maquette vers le développement jusqu'à l'hébergement en ligne de mon site.
+					
+					Ce qui m'a motivé à le développer en React c'est sa rapidité et la possibilité d'utiliser des components réutilisable pour afficher plusieurs éléments avec la même disposition, ce qui est extrêmement utile pour afficher plusieurs éléments de mon parcous et de mon portfolio.
+					
+					Cela m'a également permis de découvrir le processus d'hébergement en ligne. J'ai pris un VPS et un nom de domaine chez OVH, j'ai donc dû manuellement installer les prérequis via le terminal Ubuntu de mon VPS et d'envoyer mon site par FTP.
+				`
+			],
+			en: [
+				`
+					### My personal website (React)
+
+					* 2019-2021
+					* Used technologies: ReactJS, Sass
+					* Project finished in one month
+				
+					I launched this project of creating my own website in order to exhibit myself online and to showcase my project. This allowed me to put more ReactJS into practice and to discover the process of hosting websites.
+					
+					So I went from creating the mock-up to the development and the online hosting of my website.
+					
+					What motivated me to develop it in React is its speed and the ability to use reusable components to display multiple items with the same layout, which is extremely useful for displaying my career and portfolio items.
+					
+					It also allowed me to discover the online hosting process. I took a VPS and a domain name from OVH, so I had to manually install the prerequisite through the Ubuntu terminal of my VPS and send my website through FTP.
+				`
+			]
+		}
+	},
+	{
+		title: {
+			fr: "AllezCiné",
+			en: "AllezCiné"
+		},
+		techno: "HTML, CSS, Javascript",
+		id: "cine",
+		url: {
+			git: "https://github.com/Fred-Vaniss/site-allezcine",
+			preview: "https://fred-vaniss.github.io/site-allezcine/"
+		},
+		galleries: [
+			[
+				{
+					img: "cine-1",
+					format: "jpg",
+					alt: {
+						fr: "Header du site",
+						en: "Website header"
+					}
+				},
+				{
+					img: "cine-2",
+					format: "jpg",
+					alt: {
+						fr: "Films en vedette",
+						en: "Featured films"
+					}
+				},
+				{
+					img: "cine-3",
+					format: "jpg",
+					alt: {
+						fr: "Détails d'un film",
+						en: "Film detail"
+					}
+				},
+			]
+		],
+		article: {
+			fr: [
+				`
+					### AllezCiné
+					#### Exercice de groupe chez BeCode
+				
+					* 2019
+					* Technologies utilisés: HTML, JavaScript
+					* Exercice terminé en 3 semaines
+				`,
+					{galIndex: 0},
+				`
+					Cet exercice de groupe a eu comme principal but de mettre en pratique la répartition des tâches dans un travail de groupe, l'utilisation de GIT à plusieurs, ainsi que la mise en pratique les requêtes AJAX.
+
+					Le but de cet exercice était de reproduire la maquette d'un site et qu'il soit fonctionnel. Pour cela on a utilisé l'API de [The Movie Database](https://www.themoviedb.org/) pour fournir une liste des films à jour ainsi que les détails
+					
+					Les différents membres de mon groupe ont eu la tâche se s'occuper de différentes parties du site tandis que je me suis occupé des requêtes de l'API et d'afficher la liste des films et les informations.
+					
+					La seule grosse difficulté qu'on a eue était une erreur de coordination au début du projet mais après cela, tout s'est bien passé sans encombre.
+				`
+			],
+			en: [
+				`
+					### AllezCiné
+					#### Group exercice at BeCode
+				
+					* 2019
+					* Used technologies: HTML, JavaScript
+					* Exercice finished in 3 weeks
+				`,
+					{galIndex: 0},
+				`
+					The main purpose of this group exercice was to put into practice the allocation of tasks in a group work, the use of GIT with several people and the practical application of AJAX requests
+
+					The goal of this exercice was to reproduce a mock-up of a website and make it functional. For this, we used [The Movie Database](https://www.themoviedb.org/) API to provide an up-to-date list and details of the movies.
+					
+					The different memeber of my group had the task of taking care of different parts of the website while I took care of the API queries and displaying the list of movies and information.
+					
+					The only big problem we had was a miscoordination at the start of the project, but after that, everything went smoothly.
+				`
+			]
+		}
+	},
+	{
+		title: {
+			fr: "Jeu du pendu",
+			en: "Hangman's game"
+		},
+		techno: "JavaScript",
+		id: "hangman",
+		url: {
+			git: "https://github.com/Fred-Vaniss/creative-gh-grav",
+			preview: "https://fred-vaniss.be/grav-site/"
+		},
+		galleries: [
+			[
+				{
+					img: "hangman-1",
+					format: "jpg",
+					alt: {
+						fr: "L'exercice demandé.",
+						en: "The asked exercice."
+					}
+				},
+				{
+					img: "hangman-2",
+					format: "jpg",
+					alt: {
+						fr: "Première phase de développement.",
+						en: "First phase of development."
+					}
+				},
+				{
+					img: "hangman-3",
+					format: "gif",
+					alt: {
+						fr: "Résultat final (GIF)",
+						en: "Final result (GIF)"
+					}
+				}
+			]
+		],
+		article: {
+			fr: [
+				`
+					### Jeu du pendu
+					#### Projet individuel chez BeCode
+				
+					* 2019
+					* Technologies utilisés: HTML, SASS, JavaScript
+					* Projet terminé en un mois
+				`,
+					{galIndex: 0},
+				`
+					C'était à la base juste un petit exercice à base de "prompt" pour demander à la personne de choisir une lettre et d'afficher dans la console les lettres devinées et le nombre d'essais restants.
+
+					Sauf que je suis allé beaucoup plus loin que ce qui était demandé dans l'exercice, j'ai utilisé la page HTML pour interagir avec le jeu alors qu'on n'avais pas encore évoqué le DOM en cours. Au fur et à mesure que je progresse, j'ai même ajouté des mots aléatoires, des mots complexes avec des tirets, apostrophes et des accents. Pour finir, j'ai mis une liste gigantesque dans un fichier JSON.
+					
+					Puis j'ai été encore plus loins en affichant le fameux bonhomme allumette au fur et à mesure qu'on épuise le nombre d'essais ainsi qu'un clavier virtuel qui change de couleur si la lettre figure dans le mot ou pas.
+					
+					Plus de détails dans le README de mon dépôt Github.
+				`
+			],
+			en: [
+				`
+					### Hangman's game
+					#### Individual project at BeCode
+				
+					* 2019
+					* Used technologies: HTML, SASS, JavaScript
+					* Project finished in a month
+				`,
+					{galIndex: 0},
+				`
+					It was at first just a little exercise with a "prompt" that asks the person to choose a letter and display in the console the guessed letters and the number of trials remaining.
+
+					Except that I went much further than what was asked for in the exercise, I used the HTML page to interact with the game while we had not mentioned the DOM in the course yet. 
+					As I progressed, I even added random words, complex words with dashes, apostrophes and accents. Finally, I but a gigantic list in a JSON file.
+					
+					Then I went even further by displaying the famous stickman as we use the of trials and a virtual keyboard that changes color whether the letter is in the word or not.
+					
+					More details in the README of my Github repository. (in French)
+				`
+			]
+		}
+	},
+	{
+		title: {
+			fr: "Mel'égumes",
+			en: "Mel'égumes"
+		},
+		techno: "HTML, SASS, JavaScript",
+		id: "mel",
+		url: {
+			git: "https://github.com/Fred-Vaniss/site-mel-egumes",
+			preview: "https://fred-vaniss.github.io/site-mel-egumes/"
+		},
+		galleries: [
+			[
+				{
+					img: "mel-1",
+					format: "jpg",
+					alt: {
+						fr: "Page d'accueil",
+						en: "Homepage"
+					}
+				},
+				{
+					img: "mel-1",
+					format: "jpg",
+					alt: {
+						fr: "Un site responsive",
+						en: "A responsive website"
+					}
+				},
+				{
+					img: "mel-1",
+					format: "jpg",
+					alt: {
+						fr: '"Raconte moi des salades"',
+						en: '"Tell me some salads (french expression)"'
+					}
+				}
+			]
+		],
+		article: {
+			fr: [
+				`
+					Mél'égumes
+					Projet de groupe chez Technocité
+				
+					2019
+					Technologies utilisés: HTML, SASS, JavaScript
+					Projet terminé en trois mois
+				`,
+					{galIndex: 0},
+				`
+					Ce site a été développé dans le cadre d'une formation en UX Webdesign chez Technocité en partenariat avec Design Innovation.
+
+					Le projet consiste à concevoir et de développer un site internet pour notre cliente Mélanie pour promouvoir son entreprise de permaculture Mél'égumes.
+					
+					La cliente n'ayant ni contenu, ni charte graphique, on a dû tout créer de nous-mêmes par équipes de trois personnes.
+					
+					Mes collègues se sont occupés de la mise en page, du contenu graphique et textuels tandis que je me suis occupé de coder le site.
+				`
+			],
+			en: [
+				`
+					Mél'égumes
+					Group project at Technocité
+				
+					2019
+					Used technologies: HTML, SASS, JavaScript
+					Project finished in three months
+				`,
+				{galIndex: 0},
+				`
+					This website was developed as part of a UX Webdesign training course at Technocité in partnership with Design Innovation.
+
+					The project consists of designing and developing a website for or client Mélanie to promote her permaculture business Mél'égumes.
+					
+					Since the client didn't have any content or graphics, we had to crate everything ourselves in teams of three people.
+					
+					My colleagues took care of the layout, the graphic and textual content, while I took care of the coding of the website.
+				`
+			]
+		}
+	},
+	{
+		title: {
+			fr: "Artifact Rush",
+			en: "Artifact Rush",
+		},
+		techno: "HTML, SASS, JavaScript",
+		id: "artifact",
+		url: {
+			git: "https://github.com/Fred-Vaniss/artifact-rush-website",
+			preview: "https://fred-vaniss.github.io/artifact-rush-website/"
+		},
+		galleries: [
+			[
+				{
+					img: "artifact-1",
+					format: "jpg",
+					alt: {
+						fr: "Section d'accueil",
+						en: "Home section"
+					}
+				},
+				{
+					img: "artifact-2",
+					format: "jpg",
+					alt: {
+						fr: "Section portfolio",
+						en: "Portfolio section"
+					}
+				},
+				{
+					img: "artifact-3",
+					format: "jpg",
+					alt: {
+						fr: "Détail d'un article dans un modal",
+						en: "Article detail in a modal"
+					}
+				}
+			]
+		],
+		article: {
+			fr: [
+				`
+					### Artifact Rush
+					#### Projet de fin d'étude de bachelier
+				
+					* Première création: 2017
+					* Refonte du site: 2019
+					* Technos: HTML, SASS, JavaScript
+					* Durée du projet: 2 mois
+				`,
+					{galIndex: 0},
+				`
+					C'est une refonte complète de mon site de projet de fin d'études (créé en 2017).
+
+					À cet époque, je n'avais quasi aucune conaissance sur la création d'un site web et des bonnes pratiques, du coup je m'étais contenté juste de prendre un thème Bootstrap et le me modifier, le résultat au format mobile était catastrophique.
+					
+					Je me suis donc lancé sur ce re-créer mon site à partir de zéro afin de mettre en application ce que j'avais appris en UX Webdesign chez Technocité.
+					
+					Cette refonte ne dépends pas de Bootstrap et toutes les fonctionnalités du site sont faites en JavaScript brut. 
+					J'ai également fait des améliorations sur la mise en page et elle est désormais parfaitement responsive.
+				`
+			],
+			en: [
+				`
+					### Artifact Rush
+					#### Bachelor End-of-study work
+				
+					* First creation: 2017
+					* Re-creation: 2019
+					* Techs: HTML, SASS, JavaScript
+					* Project duration: 2 months
+				`,
+					{galIndex: 0},
+				`
+					This is a complete recreation of my end-of-study project website (created in 2017).
+
+					At that time, I had almost no knowledge about creating a website and best practices, so I had just taken a Bootstrap theme and changed it, the result in mobile format was quite catastrophic.
+					
+					So I embarked on this project to recreate my website from scratch in order to apply what I've learned in UX Webdesign course at Technocité.
+					
+					This recreation doesn't depend on Bootstrap and all the features of the website are made in vanilla JavaScript. I also made some improvements on the layout and it is now perfectly responsive.
+				`
+			]
+		}
 	}
 ]
