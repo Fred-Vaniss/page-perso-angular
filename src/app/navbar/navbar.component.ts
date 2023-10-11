@@ -17,6 +17,8 @@ export class NavbarComponent implements OnInit {
   isSticky: boolean = false;
   isMenuOpen: boolean = false;
 
+  cvLink: string = `assets/cv-${this.lang}.pdf`
+
   constructor(public langService: LangService){}
 
   @HostListener('window:scroll', ['$event'])
@@ -24,6 +26,7 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void{
     this.getLang();
     this.onScroll();
+    this.cvLink = `assets/cv-${this.lang}.pdf`;
   }
 
   onScroll(){
@@ -49,6 +52,7 @@ export class NavbarComponent implements OnInit {
   switchLang(): void{
     this.langService.switchLang();
     this.getLang();
+    this.cvLink = `assets/cv-${this.lang}.pdf`;
   }
 
 

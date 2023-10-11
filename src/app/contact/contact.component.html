@@ -1,0 +1,20 @@
+<div class="wrapper">
+	<h2>{{loc.title[lang]}}</h2>
+	<div class="contact-note" data-aos="fade-up">
+		<markdown [data]="loc.text[lang]"></markdown>
+	</div>
+	<div class="contact-details" data-aos="fade-up">
+		<div class="contact-item">
+			<a href="mailto:fred.vaniss@gmail.com" class="contact-cat" title="E-mail" target="_blank" rel="noopener noreferrer"><fa-icon [icon]="faEnvelope"></fa-icon></a>
+			<p>fred.vaniss@gmail.com</p>
+		</div>
+		<div class="contact-item">
+			<a href="tel:+32488941849" class="contact-cat" title="Telephone" target="_blank" rel="noopener noreferrer"><fa-icon [icon]="faMobileAlt"></fa-icon></a>
+			<p>0488/94.18.49</p>
+		</div>
+		<div class="contact-item">
+			<a href="https://goo.gl/maps/UEND4weCUz3Fskbs8" class="contact-cat" title="Google Maps" target="_blank" rel="noopener noreferrer"><fa-icon [icon]="faHome"></fa-icon></a>
+			<p>6180 Courcelles</p>
+		</div>
+	</div>
+</div>

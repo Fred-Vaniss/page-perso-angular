@@ -95,3 +95,31 @@ export const LOCBUTTONS: LocButtons = {
 		en: "Github repository"
 	}
 }
+
+interface LocContact {
+	title: Translation;
+	text: Translation;
+}
+
+export const LOCCONTACT: LocContact = {
+	title: {
+		fr: "Contactez-moi",
+		en: "Get in touch"
+	},
+	text: {
+		fr: `
+			Je suis actuellement disponible pour tout recrutement.
+
+			Si vous êtes intéressé par mon profil et que vous souhaitez me recruter ou si vous avez des questions à me poser, vous pouvez me contacter par e-mail ou par téléphone.
+			
+			Je vous répondrai dès que possible.
+		`,
+		en: `
+			I am currently available for recruiting.
+
+			If you are interested about my profile and you wish to recruit me, or if you have questions to ask, you can contact me by e-mail or by phone.
+			
+			I will get back to you as soon as possible.
+		`
+	}
+}
