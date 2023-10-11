@@ -23,9 +23,19 @@ export const PARCOURS: Parcours[] = [
 		desc: {
 			fr:`
 				Formation en cours...
+
+				* C#
+				* .Net
+				* Base de donnée
+				* SQL
 			`,
 			en:`
 				Ongoing training course...
+
+				* C#
+				* .Net
+				* Database
+				* SQL
 			`
 		}
 	},

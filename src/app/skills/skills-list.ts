@@ -24,8 +24,8 @@ export const SKILLS: Skills[] = [
 		icon: "js",
 		subSkills: [
 			{
-				title: "Node",
-				icon: "node"
+				title: "Angular",
+				icon: "angular"
 			},
 			{
 				title: "React",

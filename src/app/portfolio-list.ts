@@ -37,6 +37,89 @@ export interface PortfolioEntry {
 export const PORTFOLIOLIST: PortfolioEntry[] =  [
 	{
 		title: {
+			fr: "Ce site web (Angular)",
+			en: "This website (Angular)"
+		},
+		techno: "Angular",
+		id: "fred-angular",
+		url: {},
+		galleries: [
+			[
+				{
+					img: "f-angular-1",
+					format: "jpg",
+					alt: {
+						fr: "Différences d'itération des compétences entre React et Angular.",
+						en: "Skills iteration difference between React and Angular"
+					}
+				},
+				{
+					img: "f-angular-2",
+					format: "jpg",
+					alt: {
+						fr: "Différences d'itération du parcours entre React et Angular.",
+						en: "Career iteration difference between React and Angular"
+					}
+				},
+				{
+					img: "f-angular-3",
+					format: "jpg",
+					alt: {
+						fr: "React: utilisation du JSX ; Angular: utilisation du Markdown",
+						en: "React: using JSX ; Angular: using Markdown"
+					}
+				},
+			]
+		],
+		article: {
+			fr: [
+				`
+					### Mon site personnel refaite en Angular
+
+					* 2023
+					* Technologie utilisé: Angular
+					* Projet réalisé en deux semaines
+
+					Mon application web date de 2019 et présente maintenant plusieurs problèmes: plusieurs versions de React et de ses dépendances sont sorties au fil des ans et mon application web est désormais obsolète et ne peux plus être compilé à moins de mettre à jour React et les dépendances, ce qui prendrait beaucoup de temps pour trouver et réadapter tout les codes qui ne fonctionnerait plus avec la nouvelle version.
+
+					Ca fait un petit moment que je me suis intéressé à Angular et j'ai donc appliqué mes conaissances acquise pour re-créer mon site dessus. 
+					J'ai eu juste à reprendre toute mes feuilles SCSS et adapter mon code et ma logique pour Angular.
+				`,
+					{galIndex: 0},
+				`
+					Le résultat est beaucoup plus prore grâce a la capacité d'itérer directement dans le template HTML (avec **ngFor*).
+
+					La grosse différence est pour l'affichage les textes dans *parcours* et les articles du *portfolio*:
+					* Dans **React** j'ai exploité le JSX qui était propre à lui et que je ne pouvait pas l'utiliser dans Angular.
+					* Pour contourner de problème dans **Angular** j'ai utilisé un module pour pouvoir écrire mes texte en **Markdown** qui est un format plus propre plutôt que de mettre des balises HTML dans chaque paragraphes.
+				`
+			],
+			en: [
+				`
+					### My personal website redone in Angular
+
+					* 2023
+					* Used technology: Angular
+					* Project done in two weeks
+
+					My web application is from 2019 and now has several problems: several versions of React and its dependencies have been released over the years and my web application is now outdated and can no longer be compiled unless I update React and its dependencies, which would take a lot of time to find and readapt all the codes that would no longer work with the new version.
+
+					I've been interested in Angular for a while now and so I applied my acquired knowledge to re-create this web app on it.
+					I just had to take all my SCSS sheets and adapt my code and my logic for Angular.
+				`,
+					{galIndex: 0},
+				`
+					The result is much more cleaner thanks to the ability to iterate directly in the HTML template.
+
+					The big difference is for displaying the texts in *career* and the articles in the *portfolio*:
+					* In **React** I exploited the JSX which was specific to it and which I could not use it in Angular.
+					* To work around the problem in **Angular** I used a module to be able to write my text in **Markdown** which is a cleaner format rather than putting HTML tags in each paragraph.
+				`
+			],
+		}
+	},
+	{
+		title: {
 			fr: "Project Zomboid",
 			en: "Project Zomboid",
 		},
@@ -72,7 +155,8 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 			],
 		],
 		article:{
-			fr: [`
+			fr: [
+				`
 					### Addons pour Project Zomboid
 					#### Project personnels
 					
@@ -81,7 +165,6 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					
 					Project Zomboid est un jeu de survie dans un monde affecté par une apocalypse zombie. On crée un personnage et le but est simplement de survivre et de subvenir à ses besoins dans un monde ouvert gigantesque.
 
-					
 					Le jeu est extrêmement modulable et permets d'ajouter de nouvelles fonctionalités au jeu et même de modifier le monde. <br/> Il à un Steam Workshop où tout le monde peuvent publier leurs créations pour que les autres puissent modifier leurs propres expérience de jeu.
 
 					---
@@ -96,9 +179,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 
 				{galIndex : 0},
 
-				`
-					<div id="gal1"></div>
-					
+				`				
 					J'ai créé un panneau de santé minimaliste. La silhouette est invisible par défaut et apparait à l'écran dès qu'il y a une blessure à traiter.
 					
 					Cet addon à pour but de pouvoir se passer de l'interface de santé de base qui prends beaucoup d'espace à l'écran et qu'il s'affiche seulement dans le besoin au lieu de le garder en permanence à l'écran ou de devoir cliquer sur l'icone de santé dès qu'il faut traiter son personnage.
@@ -106,7 +187,8 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					Beaucoup de personnes ont appréciés mon travail est à atteint le premier mod du worshop des plus populaires de la semaine et des trois derniers mois.
 				`
 			],
-			en: [`
+			en: [
+				`
 					### Addons for Project Zomboid
 					#### Personal projects
 
@@ -130,9 +212,6 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 				{galIndex: 0},
 
 				`
-					
-					<div id="gal1"></div>
-
 					I created a minimalistic health panel. The silhouette is invisible by default and appear on the screen whenever there is a wound to treat.
 					
 					This addon's purpose is to be able to do without the health interface of the base's game which take a lot of screen space and displays only when needed instead of always keeping it on sreen or having to click on the health icon as soon you need to treat your character.
@@ -207,8 +286,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 			]
 		],
 		article:{
-			fr: 
-			[
+			fr: [
 				`
 					### Addons pour Garry's mod
 					#### Projets personnels
@@ -269,8 +347,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					</div>
 				`
 			],
-			en: 
-			[
+			en: [
 				`
 					### Addons for Garry's Mod
 					#### Personal projects
