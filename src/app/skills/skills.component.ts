@@ -21,6 +21,6 @@ export class SkillsComponent implements OnInit{
   }
 
   getImg(img: string): string{
-    return `/assets/img/skills/${img}.svg`
+    return `assets/img/skills/${img}.svg`
   }
 }

@@ -37,6 +37,182 @@ export interface PortfolioEntry {
 export const PORTFOLIOLIST: PortfolioEntry[] =  [
 	{
 		title: {
+			fr: "Hematolysis",
+			en: "Hematolysis",
+		},
+		techno: "LUA",
+		id: "hema",
+		url: {},
+		galleries:[
+			[
+				{
+					img: "overview",
+					format: "jpg",
+					alt: {
+						fr: "Une vue d'ensemble de l'ATH et de l'inventaire.",
+						en: "An overview of the HUD and the inventory."
+					}
+				}
+			],
+			[
+				{
+					img: "hud-1",
+					format: "jpg",
+					alt: {
+						fr: "Conception de l'interface",
+						en: "Interface concept"
+					},
+				},
+				{
+					img: "hud-2",
+					format: "gif",
+					alt: {
+						fr: "Animation de l'electrocardiogramme",
+						en: "Electrocardiogram animations"
+					},
+				},
+				{
+					img: "hud-3",
+					format: "gif",
+					alt: {
+						fr: "Animation du chargeur",
+						en: "Clip animation"
+					},
+				}
+			],
+			[
+				{
+					img: "inv-1",
+					format: "jpg",
+					alt: {
+						fr: "Exemple de quelques données d'objets d'inventaire.",
+						en: "Example of some inventory items data."
+					}
+				},
+				{
+					img: "inv-2",
+					format: "jpg",
+					alt: {
+						fr: "Exemple de quelques données de combinaison d'objets et le résultat en jeu.",
+						en: "Example of some items combination data and the result in game."
+					}
+				},
+				{
+					img: "inv-3",
+					format: "jpg",
+					alt: {
+						fr: "Affichage des inventaires des joueurs à proximités",
+						en: "Display of players inventories in proximity."
+					}
+				},
+				
+			]
+		],
+		article: {
+			fr:[
+				`
+					### Hematolysis
+					#### Addon de systèmes de survival horror pour Garry's mod
+
+					* 2021 - 2023
+					* Technologie utilisé: LUA
+
+					Hematolysis est un addon pour Garry's Mod qui a pour but de donner un aspect *survival-horror*.
+
+					Mon projet est divisé en trois parties distinctes: l'affichage tête haute (ATH), un système d'infection et un système d'inventaire avec plusieurs interactions possibles avec chaque objet.
+
+				`,
+					{galIndex: 0},
+				`
+
+					---
+
+					### L'ATH et le système d'infection
+				`,
+					{galIndex: 1},
+				`
+					Tous les éléments graphiques sont créés de mes propres mains sur Photoshop. J'ai d'abord commencé sur la conception, puis la découpe de chaque image séparée pour finir sur l'implémentation sur le jeu. L'électrocardiogramme est animé sur After Effect.
+
+					Puis il vient s'ajouter aussi un système d'infection plutôt simpliste. Si le joueur se fait toucher par un zombie, le pourcentage d'infection monte et si ce pourcentage atteint 100% le joueur se transforme en zombie.
+
+					Il existe aussi des objets qui permettent de réduire temporairement l'infection.
+
+					---
+
+					### Le système d'inventaire
+
+				`,
+					{galIndex: 2},
+				`
+					C'est sans doute la partie la plus complexe de ce projet.
+
+					Chaque joueur ne peut porter qu'un nombre limité d'armes, de munitions et d'objets, tout confondu. Chaque objet est listé dans une fenêtre affichés à l'aide d'une touche et chaque objet peut être équipé, utilisé, combiné ou lâché.
+
+					Puis vient aussi un système de combinaison d'objet où deux objets sont consommés pour en créer une nouvelle. (voir deuxième illustration)
+
+					Et il y a aussi l'affichage des inventaires des joueurs à proximité. Un joueur peut voir les objets qu'un autre porte s'il est visible et qu'il se situe à une distance suffisante. (voir troisième illustration)
+
+					Cette partie du projet m'a fait beaucoup apprendre l'interaction entre client-serveur. Par exemple pour afficher le contenu de l'inventaire d'un joueur ou les combinaisons possibles, j'ai mis en place une fonction au client qui va demander au serveur de fournir les informations demandées.
+					
+					Il en va de même pour l'utilisation d'objet, la combinaison d'objets, bref, tout ce que le client n'a aucun privilège et requiert l'intervention du serveur pour relayer les actions ou informations.
+
+					C'est sans nul doute le plus gros projet que j'ai eu à développer et qui m'a aussi permis d'apprendre des méthodologies et d'autres principes.
+				`
+			],
+			en:[
+				`
+					### Hematolysis
+					#### Survival-horror system addon for Garry's Mod
+
+					* 2021 - 2023
+					* Used technology: LUA
+
+					Hematolysis is an addon for Garry's mod which aims to give a *survival-horror* aspect.
+
+					My project is divided into three distinct parts: the heads-up displat (HUD), an infection system and an inventory system with several possible interactions with each items.
+
+				`,
+					{galIndex: 0},
+				`
+
+					---
+
+					### The HUD and the infection system
+				`,
+					{galIndex: 1},
+				`
+					All graphic elements are created by my own hands on Photoshop. I first started with the design, then the cutting of each separate image to finish with the implementation in the game. The electrocardiogram is animated on After Effect.
+
+					Then there is also a rather simplistic infection system. If the player is hit by a zombie, the infection percentage increases and if this percentage reaches 100% the player turns into a zombie.
+
+					There are also items that can temporarily reduce infection.
+
+					---
+
+					### The inventory system
+
+				`,
+					{galIndex: 2},
+				`
+					This is undoubtedly the most complex part of this project..
+
+					Each player can only carry a limited number of weapons, ammo, and items combined. Each item is listed in a window displayed using a button and each item can be equipped, used, combined or dropped.
+
+					Then also comes an item combination system where two items are consumed to create a new one. (see second illustration)
+
+					And there is also the display of nearby player inventories. A player can see items that another player is carrying if they are visible and at a sufficient distance. (see third illustration)
+
+					This part of the project made me learn a lot about client-server interaction. For example, to display the contents of a player's inventory or possibles combinations, I set up a function in the client which will ask the server to provide the requested information.
+					
+					The same goes for the use of items, the combination of items, in short, everything that the client has no privileges and requires the intervention of the server to relay actions or information.
+
+					It's undoubtedly the biggest project I've ever had to develop, and has also enabled me to learn methodologies and other principles.
+				`
+			]
+		}
+	},
+	{
+		title: {
 			fr: "Ce site web (Angular)",
 			en: "This website (Angular)"
 		},
@@ -90,7 +266,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					Le résultat est beaucoup plus prore grâce a la capacité d'itérer directement dans le template HTML (avec **ngFor*).
 
 					La grosse différence est pour l'affichage les textes dans *parcours* et les articles du *portfolio*:
-					* Dans **React** j'ai exploité le JSX qui était propre à lui et que je ne pouvait pas l'utiliser dans Angular.
+					* Dans **React** j'ai exploité le *JSX* qui était propre à lui et que je ne pouvait pas l'utiliser dans Angular.
 					* Pour contourner de problème dans **Angular** j'ai utilisé un module pour pouvoir écrire mes texte en **Markdown** qui est un format plus propre plutôt que de mettre des balises HTML dans chaque paragraphes.
 				`
 			],
@@ -112,7 +288,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					The result is much more cleaner thanks to the ability to iterate directly in the HTML template.
 
 					The big difference is for displaying the texts in *career* and the articles in the *portfolio*:
-					* In **React** I exploited the JSX which was specific to it and which I could not use it in Angular.
+					* In **React** I exploited the *JSX* which was specific to it and which I could not use it in Angular.
 					* To work around the problem in **Angular** I used a module to be able to write my text in **Markdown** which is a cleaner format rather than putting HTML tags in each paragraph.
 				`
 			],
@@ -179,7 +355,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 
 				{galIndex : 0},
 
-				`				
+				`
 					J'ai créé un panneau de santé minimaliste. La silhouette est invisible par défaut et apparait à l'écran dès qu'il y a une blessure à traiter.
 					
 					Cet addon à pour but de pouvoir se passer de l'interface de santé de base qui prends beaucoup d'espace à l'écran et qu'il s'affiche seulement dans le besoin au lieu de le garder en permanence à l'écran ou de devoir cliquer sur l'icone de santé dès qu'il faut traiter son personnage.
