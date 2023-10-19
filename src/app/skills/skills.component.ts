@@ -18,10 +18,10 @@ export class SkillsComponent implements OnInit{
 
   ngOnInit(): void{
     this.lang = this.langService.getLang();
-    this.langService.languageChange.subscribe(lang => this.lang = lang)
+    this.langService.languageChange.subscribe(lang => this.lang = lang);
   }
 
   getImg(img: string): string{
-    return `assets/img/skills/${img}.svg`
+    return `assets/img/skills/${img}.svg`;
   }
 }

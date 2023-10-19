@@ -13,7 +13,7 @@ import { Article, Gallery, GalleryCall, PortfolioEntry } from '../portfolio-list
 
 export class ModalContainerComponent implements OnInit {
 
-  lang: string = ""
+  lang: string = "";
   locBtns = LOCBUTTONS;
   isShown: boolean = false;
   currentArticle? : PortfolioEntry = null;
@@ -26,7 +26,7 @@ export class ModalContainerComponent implements OnInit {
 
   ngOnInit(): void {
     this.lang = this.langService.getLang();
-    this.langService.languageChange.subscribe(lang => this.lang = lang)
+    this.langService.languageChange.subscribe(lang => this.lang = lang);
 
     this.modalService.modalChange.subscribe(article => {
       this.currentArticle = article;
@@ -43,8 +43,8 @@ export class ModalContainerComponent implements OnInit {
   }
 
   bgCloseModal(e: Event): void{
-    const target = e.target as HTMLDivElement
-    const className = target.className
+    const target = e.target as HTMLDivElement;
+    const className = target.className;
 
     if (className === "portfolio-modal transition shown") {
       this.closeModal();

@@ -8,7 +8,7 @@ import { faGithub, faLinkedin, IconDefinition } from '@fortawesome/free-brands-s
 })
 
 export class FooterComponent {
-  footerLogo: string = "assets/img/logo-footer.svg"
+  footerLogo: string = "assets/img/logo-footer.svg";
   faGithub: IconDefinition = faGithub;
   faLinkedIn: IconDefinition = faLinkedin;
 }

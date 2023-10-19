@@ -11,13 +11,13 @@ export class ModalService implements OnInit {
   articles = PORTFOLIOLIST;
   lang = "";
   isModalShown = false;
-  modalChange: Subject<PortfolioEntry> = new Subject<PortfolioEntry>()
+  modalChange: Subject<PortfolioEntry> = new Subject<PortfolioEntry>();
 
   ngOnInit(): void {}
 
   openArticle(id: string) {
     const article = PORTFOLIOLIST.find(h => h.id === id);
-    this.modalChange.next(article)
+    this.modalChange.next(article);
   }
 
   getArticle(id: string): PortfolioEntry {

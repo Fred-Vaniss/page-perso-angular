@@ -20,15 +20,15 @@ export class ModalGalleryComponent implements OnInit {
 
   ngOnInit(): void {
     this.lang = this.langService.getLang();
-    this.langService.languageChange.subscribe(lang => this.lang = lang)
+    this.langService.languageChange.subscribe(lang => this.lang = lang);
   }
 
   getThumb(img: string): string {
-    return `assets/img/portfolio/gallery/${this.artId}/${img}-thumb.jpg`
+    return `assets/img/portfolio/gallery/${this.artId}/${img}-thumb.jpg`;
   }
 
   getHref(img: string, format: string): string {
-    return `assets/img/portfolio/gallery/${this.artId}/${img}.${format}`
+    return `assets/img/portfolio/gallery/${this.artId}/${img}.${format}`;
   }
 
 }

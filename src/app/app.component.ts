@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
       easing: 'ease-out'
     });
 
-    this.urlService.init()
+    this.urlService.init();
 
   }
 }

@@ -16,16 +16,16 @@ export class TimelineComponent implements OnInit{
   locTitle = LOCTIMELINE;
   parcours = PARCOURS;
   faMapMarkerAlt = faMapMarkerAlt;
-  lang: string = ""
+  lang: string = "";
 
   constructor(public langService: LangService){}
 
   ngOnInit(): void{
     this.lang = this.langService.getLang();
-    this.langService.languageChange.subscribe(lang => this.lang = lang)
+    this.langService.languageChange.subscribe(lang => this.lang = lang);
   }
   
-  getIcon(type: String): IconDefinition{
+  getIcon(type: string): IconDefinition{
 
     switch (type) {
       case "entreprise":

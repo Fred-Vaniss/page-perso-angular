@@ -31,12 +31,12 @@ export class PortfolioComponent {
   ){}
 
   ngOnInit(): void {
-    this.langService.languageChange.subscribe(lang => this.lang = lang)
-    this.lang = this.langService.getLang()
+    this.langService.languageChange.subscribe(lang => this.lang = lang);
+    this.lang = this.langService.getLang();
   }
 
   getImg(img: string): string {
-    return(`assets/img/portfolio/${img}.jpg`)
+    return(`assets/img/portfolio/${img}.jpg`);
   }
 
   openArticle(id: string): void {

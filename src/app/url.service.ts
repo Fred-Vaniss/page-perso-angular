@@ -17,25 +17,25 @@ export class UrlService{
 
   init(): void {
 
-    const urlParams: URLSearchParams = new URLSearchParams(window.location.search)
+    const urlParams: URLSearchParams = new URLSearchParams(window.location.search);
     
-    const lang: string = urlParams.get("lang")
+    const lang: string = urlParams.get("lang");
+
+    this.hash = window.location.hash;
 
     if (lang === "fr" || lang === "en"){
 
-      this.langService.setLang(lang)
-      this.queryLang = `?lang=${lang}`
+      this.langService.setLang(lang);
+      this.queryLang = `?lang=${lang}`;
 
     } else {
       
-      this.queryLang = `?lang=fr`
-      this.updateUrl()
+      this.queryLang = `?lang=fr`;
+      this.updateUrl();
 
     }
 
-    this.hash = window.location.hash
-
-    this.langService.languageChange.subscribe(lang => this.setQueryLang(lang))
+    this.langService.languageChange.subscribe(lang => this.setQueryLang(lang));
 
   }
 
@@ -43,19 +43,19 @@ export class UrlService{
 
     this.hash = `#${hash}`;
 
-    this.updateUrl()
+    this.updateUrl();
 
   }
 
   setQueryLang(lang: string): void {
 
-    this.queryLang = `?lang=${lang}`
-    this.updateUrl()
+    this.queryLang = `?lang=${lang}`;
+    this.updateUrl();
 
   }
 
   updateUrl(): void {
-    this.location.replaceState(`/${this.queryLang}${this.hash}`)
+    this.location.replaceState(`/${this.queryLang}${this.hash}`);
 
     console.log(this.hash);
     

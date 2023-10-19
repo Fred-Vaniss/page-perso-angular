@@ -17,6 +17,6 @@ export class AboutComponent implements OnInit {
 
   ngOnInit(): void {
     this.lang = this.langService.getLang();
-    this.langService.languageChange.subscribe(lang => this.lang = lang)
+    this.langService.languageChange.subscribe(lang => this.lang = lang);
   }
 }

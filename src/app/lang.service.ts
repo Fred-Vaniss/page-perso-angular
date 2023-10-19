@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable, Subject, of } from 'rxjs';
-import { UrlService } from './url.service';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -20,7 +19,7 @@ export class LangService {
       this.language = "fr";
     }
 
-    this.languageChange.next(this.language)
+    this.languageChange.next(this.language);
   }
 
   getLang(): string {
@@ -28,8 +27,8 @@ export class LangService {
   }
 
   setLang(lang: string): void {
-    this.language = lang
-    this.languageChange.next(this.language)
+    this.language = lang;
+    this.languageChange.next(this.language);
   }
 
 }

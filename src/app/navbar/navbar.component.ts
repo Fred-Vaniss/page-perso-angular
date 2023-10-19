@@ -18,7 +18,7 @@ export class NavbarComponent implements OnInit {
   isSticky: boolean = false;
   isMenuOpen: boolean = false;
 
-  cvLink: string = `assets/cv-${this.lang}.pdf`
+  cvLink: string = `assets/cv-${this.lang}.pdf`;
 
   constructor(
     public langService: LangService,
@@ -29,9 +29,11 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void{
     this.lang = this.langService.getLang();
-    this.langService.languageChange.subscribe(lang => this.lang = lang)
+    this.langService.languageChange.subscribe(lang => {
+      this.lang = lang
+      this.cvLink = `assets/cv-${this.lang}.pdf`;
+    });
     this.onScroll();
-    this.cvLink = `assets/cv-${this.lang}.pdf`;
   }
 
   onScroll(){
@@ -43,7 +45,7 @@ export class NavbarComponent implements OnInit {
   }
 
   toggleMenu(): void {
-    this.isMenuOpen = !this.isMenuOpen
+    this.isMenuOpen = !this.isMenuOpen;
   }
 
   closeMenu(): void {
@@ -55,8 +57,8 @@ export class NavbarComponent implements OnInit {
   }
 
   navTo(anchor: string): void{
-    document.getElementById(anchor).scrollIntoView({behavior: 'smooth'})
-    this.urlService.setHash(anchor)
+    document.getElementById(anchor).scrollIntoView({behavior: 'smooth'});
+    this.urlService.setHash(anchor);
   }
 
 }
