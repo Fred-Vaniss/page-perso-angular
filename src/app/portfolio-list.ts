@@ -1161,7 +1161,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 		id: "hangman",
 		url: {
 			git: "https://github.com/Fred-Vaniss/creative-gh-grav",
-			preview: "https://fred-vaniss.be/showcase/grav-site/"
+			preview: "https://fred-vaniss.github.io/jeu-pendu/"
 		},
 		galleries: [
 			[
