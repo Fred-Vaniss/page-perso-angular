@@ -218,7 +218,9 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 		},
 		techno: "Angular",
 		id: "fred-angular",
-		url: {},
+		url: {
+			git: "https://github.com/Fred-Vaniss/page-perso-angular"
+		},
 		galleries: [
 			[
 				{
@@ -596,7 +598,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 		id: "bt-tracker",
 		url:{
 			git: "https://github.com/Fred-Vaniss/battlepass-tracker",
-			preview: "https://fred-vaniss.be/timed-progress-tracker"
+			preview: "https://fred-vaniss.be/showcase/timed-progress-tracker"
 		},
 		galleries: [
 			[
@@ -684,7 +686,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 		id: "grav",
 		url: {
 			git: "https://github.com/Fred-Vaniss/creative-gh-grav",
-			preview: "https://fred-vaniss.be/grav-site/"
+			preview: "https://fred-vaniss.be/showcase/grav-site/"
 		},
 		galleries: [
 			[
@@ -783,7 +785,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 		techno: "ReactJS, SASS",
 		id: "dnd",
 		url: {
-			preview: "https://fred-vaniss.be/dnd-sheet/"
+			preview: "https://fred-vaniss.be/showcase/dnd-sheet/"
 		},
 		galleries: [
 			[
@@ -1159,7 +1161,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 		id: "hangman",
 		url: {
 			git: "https://github.com/Fred-Vaniss/creative-gh-grav",
-			preview: "https://fred-vaniss.be/grav-site/"
+			preview: "https://fred-vaniss.be/showcase/grav-site/"
 		},
 		galleries: [
 			[
