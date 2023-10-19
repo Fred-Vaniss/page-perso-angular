@@ -2,6 +2,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
 
 import { LangService } from '../lang.service';
 import { LOCNAVBAR } from '../localization';
+import { UrlService } from '../url.service';
 
 @Component({
   selector: 'app-navbar',
@@ -19,12 +20,16 @@ export class NavbarComponent implements OnInit {
 
   cvLink: string = `assets/cv-${this.lang}.pdf`
 
-  constructor(public langService: LangService){}
+  constructor(
+    public langService: LangService,
+    private urlService: UrlService
+  ){}
 
   @HostListener('window:scroll', ['$event'])
 
   ngOnInit(): void{
-    this.getLang();
+    this.lang = this.langService.getLang();
+    this.langService.languageChange.subscribe(lang => this.lang = lang)
     this.onScroll();
     this.cvLink = `assets/cv-${this.lang}.pdf`;
   }
@@ -45,15 +50,13 @@ export class NavbarComponent implements OnInit {
     this.isMenuOpen = false;
   }
 
-  getLang(): void{
-    this.lang = this.langService.getLang();
-  }
-
   switchLang(): void{
     this.langService.switchLang();
-    this.getLang();
-    this.cvLink = `assets/cv-${this.lang}.pdf`;
   }
 
+  navTo(anchor: string): void{
+    document.getElementById(anchor).scrollIntoView({behavior: 'smooth'})
+    this.urlService.setHash(anchor)
+  }
 
 }

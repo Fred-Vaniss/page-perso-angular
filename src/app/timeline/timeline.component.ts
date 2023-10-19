@@ -4,6 +4,7 @@ import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import { PARCOURS } from './timeline-list';
 import { faQuestion, faBook, faBuilding, faGraduationCap, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { LangService } from '../lang.service';
+import { LOCTIMELINE } from '../localization';
 
 @Component({
   selector: '[app-timeline]',
@@ -12,6 +13,7 @@ import { LangService } from '../lang.service';
 })
 export class TimelineComponent implements OnInit{
 
+  locTitle = LOCTIMELINE;
   parcours = PARCOURS;
   faMapMarkerAlt = faMapMarkerAlt;
   lang: string = ""

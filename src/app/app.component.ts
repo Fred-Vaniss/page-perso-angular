@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import AOS from 'aos';
+import { UrlService } from './url.service';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +10,8 @@ import AOS from 'aos';
 export class AppComponent implements OnInit {
   title = 'Frédérick Van Isschot';
 
+  constructor(private urlService: UrlService){}
+
   ngOnInit():void {
 
     AOS.init({
@@ -16,6 +19,8 @@ export class AppComponent implements OnInit {
       once: false,
       easing: 'ease-out'
     });
-    
+
+    this.urlService.init()
+
   }
 }

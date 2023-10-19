@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, Subject, of } from 'rxjs';
+import { UrlService } from './url.service';
 
 @Injectable({
   providedIn: 'root'
@@ -20,11 +21,15 @@ export class LangService {
     }
 
     this.languageChange.next(this.language)
-    console.log(`Switched to ${this.language}`)
   }
 
   getLang(): string {
     return this.language;
+  }
+
+  setLang(lang: string): void {
+    this.language = lang
+    this.languageChange.next(this.language)
   }
 
 }

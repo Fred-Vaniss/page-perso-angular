@@ -1277,12 +1277,12 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 		article: {
 			fr: [
 				`
-					Mél'égumes
-					Projet de groupe chez Technocité
+					### Mél'égumes
+					#### Projet de groupe chez Technocité
 				
-					2019
-					Technologies utilisés: HTML, SASS, JavaScript
-					Projet terminé en trois mois
+					* 2019
+					* Technologies utilisés: HTML, SASS, JavaScript
+					* Projet terminé en trois mois
 				`,
 					{galIndex: 0},
 				`
@@ -1297,12 +1297,12 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 			],
 			en: [
 				`
-					Mél'égumes
-					Group project at Technocité
+					### Mél'égumes
+					#### Group project at Technocité
 				
-					2019
-					Used technologies: HTML, SASS, JavaScript
-					Project finished in three months
+					* 2019
+					* Used technologies: HTML, SASS, JavaScript
+					* Project finished in three months
 				`,
 				{galIndex: 0},
 				`
