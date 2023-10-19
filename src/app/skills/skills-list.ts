@@ -1,3 +1,5 @@
+import { Translation } from "../localization";
+
 interface Skills {
 	title: string;
 	icon: string;
@@ -58,5 +60,24 @@ export const SKILLS: Skills[] = [
 	{
 		title: "InDesign",
 		icon: "indesign",
+	}
+]
+
+export const SOFTSKILLS: Translation[] = [
+	{
+		fr: "Analyser les besoins du client",
+		en: "Analyse the client's needs"
+	},
+	{
+		fr: "Planifier et mettre en oeuvre le développement",
+		en: "Plan and implement development"
+	},
+	{
+		fr: "Analyser et résoudre des problèmes techniques",
+		en: "Analyse and solve technical problems"
+	},
+	{
+		fr: "Méthode agile",
+		en: "Agile software development"
 	}
 ]

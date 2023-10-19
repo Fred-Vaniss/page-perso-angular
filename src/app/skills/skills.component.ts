@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LangService } from '../lang.service';
-import { SKILLS } from './skills-list';
+import { SKILLS, SOFTSKILLS } from './skills-list';
 import { LOCSKILLS } from '../localization';
 
 @Component({
@@ -10,6 +10,7 @@ import { LOCSKILLS } from '../localization';
 })
 export class SkillsComponent implements OnInit{
   skills = SKILLS;
+  softSkills = SOFTSKILLS;
   loc = LOCSKILLS;
   lang: string = "";
 
