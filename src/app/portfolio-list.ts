@@ -347,7 +347,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					* 2022
 					* Technologies utilisés: LUA
 					
-					Project Zomboid est un jeu de survie dans un monde affecté par une apocalypse zombie. On crée un personnage et le but est simplement de survivre et de subvenir à ses besoins dans un monde ouvert gigantesque.
+					[Project Zomboid](https://projectzomboid.com/blog/the-game/) est un jeu de survie dans un monde affecté par une apocalypse zombie. On crée un personnage et le but est simplement de survivre et de subvenir à ses besoins dans un monde ouvert gigantesque.
 
 					Le jeu est extrêmement modulable et permets d'ajouter de nouvelles fonctionalités au jeu et même de modifier le monde. <br/> Il à un Steam Workshop où tout le monde peuvent publier leurs créations pour que les autres puissent modifier leurs propres expérience de jeu.
 
@@ -379,7 +379,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					* 2022
 					* Used technologies: LUA
 
-					Project Zomboid is a survival game in a world under a zombie apocalypse. We create a character and the goal is simply to survive and fulfill our needs on a huge world.
+					[Project Zomboid](https://projectzomboid.com/blog/the-game/) is a survival game in a world under a zombie apocalypse. We create a character and the goal is simply to survive and fulfill our needs on a huge world.
 					
 					The game is extremely modulable and allows to add new features to the game and even modify the world. <br/> It has a Steam Workshop where everyone can publish their creations so others can modify their own game experience.
 
