@@ -41,9 +41,12 @@ export class UrlService{
     const article: string = urlParams.get("article")
 
     if (article) {
-
+      
       setTimeout(() => {
+
         this.modalService.openArticle(article)
+        document.getElementById("portfolio").scrollIntoView();
+
       }, 100);
 
     }
