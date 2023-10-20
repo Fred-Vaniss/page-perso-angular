@@ -4,6 +4,7 @@ import { LangService } from '../lang.service';
 import { LOCBUTTONS } from '../localization';
 import { ModalService } from '../modal.service';
 import { Article, Gallery, GalleryCall, PortfolioEntry } from '../portfolio-list';
+import { UrlService } from '../url.service';
 
 @Component({
   selector: 'app-modal-container',
@@ -21,21 +22,23 @@ export class ModalContainerComponent implements OnInit {
 
   constructor(
     public langService: LangService,
-    public modalService: ModalService
+    public modalService: ModalService,
+    public urlService: UrlService
   ){}
 
   ngOnInit(): void {
     this.lang = this.langService.getLang();
     this.langService.languageChange.subscribe(lang => this.lang = lang);
 
-    this.modalService.modalChange.subscribe(article => {
-      this.currentArticle = article;
+    this.modalService.modalChange.subscribe(modalChange => {
+      this.currentArticle = modalChange.article;
       this.isShown = true;
     })
   }
 
   closeModal(): void {
     this.isShown = false;
+    this.urlService.cleanQueryArticle()
 
     setTimeout(() => {
       this.currentArticle = null;

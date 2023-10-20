@@ -1,27 +1,34 @@
 import { Injectable, OnInit } from '@angular/core';
 import { Subject } from 'rxjs';
-import { PORTFOLIOLIST, PortfolioEntry } from './portfolio-list';
+import { ModalChange, PORTFOLIOLIST } from './portfolio-list';
 
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class ModalService implements OnInit {
 
   articles = PORTFOLIOLIST;
-  lang = "";
-  isModalShown = false;
-  modalChange: Subject<PortfolioEntry> = new Subject<PortfolioEntry>();
+  modalChange: Subject<ModalChange> = new Subject<ModalChange>();
 
   ngOnInit(): void {}
 
   openArticle(id: string) {
-    const article = PORTFOLIOLIST.find(h => h.id === id);
-    this.modalChange.next(article);
-  }
+    let article = PORTFOLIOLIST.find(h => h.id === id);
+    let doUpdateUrl = true
+    
+    if (!article) {
 
-  getArticle(id: string): PortfolioEntry {
-    const article = PORTFOLIOLIST.find(h => h.id === id);
-    return article;
+      article = PORTFOLIOLIST.find(h => h.id === "error")
+      doUpdateUrl = false
+
+    }
+
+    this.modalChange.next({
+      article: article,
+      doUpdateUrl: doUpdateUrl
+    })
+
   }
 }

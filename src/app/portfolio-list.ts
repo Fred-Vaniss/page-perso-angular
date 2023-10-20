@@ -31,6 +31,12 @@ export interface PortfolioEntry {
 	url: Links;
 	article: ArticleTranslation;
 	galleries?: Gallery[];
+	exclude?: boolean;
+}
+
+export interface ModalChange {
+    article: PortfolioEntry;
+    doUpdateUrl: boolean;
 }
 
 
@@ -1400,6 +1406,28 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					This recreation doesn't depend on Bootstrap and all the features of the website are made in vanilla JavaScript. I also made some improvements on the layout and it is now perfectly responsive.
 				`
 			]
+		}
+	},
+	{
+		exclude: true,
+		title: {
+			fr: "",
+			en: ""
+		},
+		techno: "",
+		id: "error",
+		url: {},
+		article: {
+			fr: [`
+				# Erreur
+
+				L'article spécifié n'existe pas.
+			`],
+			en: [`
+				# Error
+
+				The specified article doesn't exist.
+			`]
 		}
 	}
 ]
