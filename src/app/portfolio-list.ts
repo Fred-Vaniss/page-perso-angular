@@ -126,7 +126,6 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					Hematolysis est un addon pour Garry's Mod qui a pour but de donner un aspect *survival-horror*.
 
 					Mon projet est divisé en trois parties distinctes: l'affichage tête haute (ATH), un système d'infection et un système d'inventaire avec plusieurs interactions possibles avec chaque objet.
-
 				`,
 					{galIndex: 0},
 				`
@@ -143,10 +142,11 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 
 					Il existe aussi des objets qui permettent de réduire temporairement l'infection.
 
+					Le compteur de balles dans le chargeur comporte aussi une animation à chaque balle tiré qui est simplement animé grâce aux maths.
+
 					---
 
 					### Le système d'inventaire
-
 				`,
 					{galIndex: 2},
 				`
@@ -175,8 +175,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 
 					Hematolysis is an addon for Garry's mod which aims to give a *survival-horror* aspect.
 
-					My project is divided into three distinct parts: the heads-up displat (HUD), an infection system and an inventory system with several possible interactions with each items.
-
+					My project is divided into three distinct parts: the heads-up display (HUD), an infection system and an inventory system with several possible interactions with each item.
 				`,
 					{galIndex: 0},
 				`
@@ -193,6 +192,8 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 
 					There are also items that can temporarily reduce infection.
 
+					The bullets counter in the magazine also features an animation for each bullet fired which is simply animated by using math.
+
 					---
 
 					### The inventory system
@@ -200,7 +201,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 				`,
 					{galIndex: 2},
 				`
-					This is undoubtedly the most complex part of this project..
+					This is undoubtedly the most complex part of this project.
 
 					Each player can only carry a limited number of weapons, ammo, and items combined. Each item is listed in a window displayed using a button and each item can be equipped, used, combined or dropped.
 
@@ -208,7 +209,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 
 					And there is also the display of nearby player inventories. A player can see items that another player is carrying if they are visible and at a sufficient distance. (see third illustration)
 
-					This part of the project made me learn a lot about client-server interaction. For example, to display the contents of a player's inventory or possibles combinations, I set up a function in the client which will ask the server to provide the requested information.
+					This part of the project made me learn a lot about client-server interaction. For example, to display the contents of a player's inventory or possible combinations, I set up a function in the client who will ask the server to provide the requested information.
 					
 					The same goes for the use of items, the combination of items, in short, everything that the client has no privileges and requires the intervention of the server to relay actions or information.
 
@@ -495,6 +496,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					
 					Il comporte un électrocardiogramme en guise d'indicateur de santé comme Resident Evil (animé avec AfterEffect). Le compteur de munitions dans le chargeur affiche des balles individuel dans un conteneur et s'anime quand les balles sont tirés.
 					
+					[Plus de détails sur ce projet](/?lang=fr&article=hema)					
 				`,
 					{galIndex: 0},
 				`
@@ -550,12 +552,13 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					---
 
 					### HEMA HUD						
-					#### Animated heads up display
+					#### Animated heads-up display
 					
-					This addon were commissioned by someone which I got renumerated for this task. It is a heads up display for an addons pack about a zombie apocalypse survival called Hematolysis. This HUD were completely designed by myself.
+					This addon were commissioned by someone which I got renumerated for this task. It is a heads-up display for an addons pack about a zombie apocalypse survival called Hematolysis. This HUD were completely designed by myself.
 					
 					It features an electrocardigogram as a health indicator like Resident Evil (animated with AfterEffect). The ammo clip counter display individual bullets in a container and animate as bullets are shots.
-					
+
+					[More details about this project](/?lang=en&article=hema)
 				`,
 					{galIndex: 0},
 				`
@@ -563,7 +566,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					---
 
 					### SYNTHETIK HUD
-					#### Animated heads up display
+					#### Animated heads-up display
 					
 					My project that got a huge success on the Steam Workshop is an animated HUD that is based on a video game called SYNTHETIK
 					
@@ -741,7 +744,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 				`					
 					Avec Why Agency, on a eu un client qui a eu la particularité de nous demander un site web basé sur un CMS léger et écologique. Nous qui travaillons sur WordPress, on sait qu'il nous faudrait trouver un autre CMS.
 					
-					On a approché l'option de Grav, c'est un CMS open source basé sur Symfony, qui est Flat-File et il utilise le Markdown pour les articles et le contenu
+					On a approché l'option de [Grav](https://getgrav.org/), c'est un CMS open source basé sur Symfony, qui est *Flat-File* (qui utilise des fichiers bruts au lieu d'une base de donnée) et utilise le *Markdown* pour les articles et le contenu.
 					
 					Grav étant un CMS beaucoup moins connu que WordPress, on a du coup beaucoup moins d'options pour des thèmes déjà construits. 
 					J'ai donc proposé à l'équipe de tenter l'approche de construire soi-même un thème Grav à partir d'un bête thème HTML statique.
@@ -771,7 +774,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 				`					
 					With Why Agency, we had a client who had the particularity of asking a website based on a lightweight and environmentally friendly CMS. We work on WordPress and we knew that we have to find another CMS.
 					
-					We approached the Grav option, it's an open source CMS based on Symfony, which is Flat-File and uses Markdown for articles and content.
+					We approached the [Grav](https://getgrav.org/) option, it's an open source CMS based on Symfony, which is *Flat-File* (using raw files instead of a database) and uses Markdown for articles and content.
 					
 					Grav being CMS less known than WordPress, we have fewer options for themes already built. So I suggested to the team to try the approach of building a Grav theme ourselves from a static HTML theme.
 					
