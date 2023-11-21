@@ -46,16 +46,18 @@ export const LOCABOUT: LocAbout = {
 	},
 	text: {
 		fr: `
-			<p>J’ai fait mes débuts en tant qu’infographiste où j’ai appris plusieurs outils: retouche photo, web, animation, sonorisation, 3D, etc. </p>
-			<p>N'ayant que la base de tout, il m'a fallu choisir où me spécialiser. J'ai donc décidé de suivre la voie du développement web où j'ai suivi des cours en ligne en autodidacte avant de suivre des formations dans le web.</p>
-			<p>J'ai d'abord suivi une formation dans l'UX Webdesign où j'ai appris à concevoir des sites accessibles et de les développer en sites statiques. J'ai constaté que j'ai pris beaucoup plus de plaisir à les coder plutôt que de les concevoir, alors j'ai décidé de me spécialiser encore plus dans la programmation où j'ai appris beaucoup plus de choses et à me lancer dans des projets plus concrets.</p>
-			<p>Depuis, j'ai développé une vraie passion pour la programmation, j'adore fouiller un peu partout pour découvrir de nouvelles choses, de trouver des solutions et résoudre des problèmes.</p>
+			A la suite de mon bachelier en Infographie, j'ai décidé de devenir développeur.
+
+			J'ai commencé par l'UX Webdesign où j'ai appris la structure, la conception et l'accessibilité des sites web, pour me rendre compte ensuite que je prends plus de plaisir à coder qu'à conceoir des sites web. 
+			
+			J'ai donc décidé de m'investir dans le développement front-end et back-end et d'en faire mon métier.
 		`,
 		en: `
-			<p>I've begun as graphic designer where I learned multiple tools: photo editing, web, animation, sound systems, 3D, etc.</p>
-			<p>Having only the basics of everything, I had to specialize somewhere. So I decided to follow the path of web development where I took self-taught online courses before following web training courses.</p>
-			<p>I first followed UX Webdesign training course, where I learned to design accessible websites and develop static websites. I realized that I took more pleasure to code instead of designing, so I decided to specialize even more in programming where I learnt even more thing and get started to more concrete projects.</p>
-			<p>Since then, I developed a real passion on programming, I love to poke around and discover new things, finding solutions and solve problems.</p>
+			After my bachelor in Computer Graphics, I decided to become a developer.
+
+			I started with UX Webdesign where I learned about the structure, designing and the accessibility of websites, only to realize that I enjoy coding more than designing websites.
+			
+			So I decided to invest myself in front-end and back-end development and make it my job.		
 		`
 	}
 }
