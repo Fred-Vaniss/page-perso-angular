@@ -28,11 +28,14 @@ export class NavbarComponent implements OnInit {
   @HostListener('window:scroll', ['$event'])
 
   ngOnInit(): void{
-    this.lang = this.langService.getLang();
     this.langService.languageChange.subscribe(lang => {
       this.lang = lang
-      this.cvLink = `assets/cv-${this.lang}.pdf`;
+      this.cvLink = `assets/cv-${lang}.pdf`;
     });
+
+    this.lang = this.langService.getLang();
+    this.cvLink = `assets/cv-${this.lang}.pdf`;
+    
     this.onScroll();
   }
 
