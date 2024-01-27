@@ -1,7 +1,13 @@
 import { Translation } from "../localization";
 
+export enum ParType {
+	Entr,
+	Forma,
+	Gradu
+}
+
 interface Parcours {
-	type: string;
+	type: ParType;
 	entreprise: string;
 	place?: string;
 	list?: string[];
@@ -12,35 +18,57 @@ interface Parcours {
 
 export const PARCOURS: Parcours[] = [
 	{
-		type: "formation",
+		type: ParType.Forma,
 		entreprise: "Technofutur",
 		time: "2023-2024",
 		place: "Gosselies",
 		title: {
-			fr: "Développeur .NET orienté Cloud Azure",
-			en: ".NET developer oriented Cloud Azure"
+			fr: "Formation développeur .NET",
+			en: ".NET developer course"
 		},
 		desc: {
 			fr:`
-				Formation en cours...
+				Cette formation m'a introduit au langage C# et une partie des frameworks de *.NET*.
+
+				Cela m'a appris à convevoir un schéma relationnel d'une base de donnée (*entité-association*) et d'en créer une sur base ce celui-ci sur SQL Server avec des requêtes et Entity Framework.
+				
+				J'ai également appris comment programmer en orienté objet, le principe de *Design Patterns* avec certains patrons, comment mettre en place un serveur API avec ASP.NET et comment l'utiliser du côté client avec ASP MVC et Blazor.
 
 				* C#
+					* Programmation Orienté Objet
 				* .Net
+					* Entity Framework
+					* ASP.NET
+					* ASP MVC
+					* Blazor
 				* Base de donnée
-				* SQL
+					* Conception schéma relationnel
+					* SQL Server
+				* Angular
 			`,
 			en:`
-				Ongoing training course...
+				This course introduced me to C# language and a bunch of .NET frameworks.
+
+				This taught me how to design a relational schema of a database (*entity-association*) and create one based on it on SQL Server with queries and Entity Framework.
+
+				I also learned how to program in object oriented, the principle of *Design Patterns* with certain patterns, how to set up an API server with ASP.NET and how to use it on the client side with ASP MVC and Blazor.
 
 				* C#
+					* Object Oriented Programming
 				* .Net
+					* Entity Framework
+					* ASP.NET
+					* ASP MVC
+					* Blazor
 				* Database
-				* SQL
+					* Conception schéma relationnel
+					* SQL Server
+				* Angular
 			`
 		}
 	},
 	{
-		type: "entreprise",
+		type: ParType.Entr,
 		entreprise: "Why Agency",
 		time: "2020-2022",
 		list: ["HTML & CSS", "Javascript", "PHP, Wordpress, Grav"],
@@ -54,7 +82,7 @@ export const PARCOURS: Parcours[] = [
 		}
 	},
 	{
-		type: "entreprise",
+		type: ParType.Entr,
 		entreprise: "Adevo Solution",
 		time: "2019-2020",
 		place: "Gilly",
@@ -81,7 +109,7 @@ export const PARCOURS: Parcours[] = [
 		}
 	},
 	{
-		type: "formation",
+		type: ParType.Forma,
 		entreprise:"BeCode",
 		place:"Charleroi",
 		time:"2019",
@@ -108,7 +136,7 @@ export const PARCOURS: Parcours[] = [
 		}
 	},
 	{
-		type:"formation",
+		type: ParType.Forma,
 		entreprise:"Technocité",
 		place:"Hornu",
 		time:"2018 - 2019",
@@ -146,7 +174,7 @@ export const PARCOURS: Parcours[] = [
 		}
 	},
 	{
-		type:"entreprise",
+		type: ParType.Entr,
 		entreprise:"Artistic Studio",
 		place:"Marchienne-au-pont",
 		time:"2016",
@@ -176,7 +204,7 @@ export const PARCOURS: Parcours[] = [
 		}
 	},
 	{
-		type:"graduation",
+		type: ParType.Gradu,
 		entreprise:"ISIPS",
 		place:"Charleroi",
 		time:"2012 - 2017",

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 
-import { PARCOURS } from './timeline-list';
+import { PARCOURS, ParType } from './timeline-list';
 import { faQuestion, faBook, faBuilding, faGraduationCap, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { LangService } from '../lang.service';
 import { LOCTIMELINE } from '../localization';
@@ -25,16 +25,16 @@ export class TimelineComponent implements OnInit{
     this.langService.languageChange.subscribe(lang => this.lang = lang);
   }
   
-  getIcon(type: string): IconDefinition{
+  getIcon(type: ParType): IconDefinition{
 
     switch (type) {
-      case "entreprise":
+      case ParType.Entr:
         return faBuilding;
     
-      case "formation":
+      case ParType.Forma:
         return faBook;
 
-      case "graduation":
+      case ParType.Gradu:
         return faGraduationCap;
 
       default:
