@@ -36,16 +36,12 @@ export const SKILLS: Skills[] = [
 		]
 	},
 	{
-		title: "PHP",
-		icon: "php",
+		title: "C#",
+		icon: "csharp",
 		subSkills: [
 			{
-				title: "WordPress",
-				icon: "wordpress"
-			},
-			{
-				title: "PrestaShop",
-				icon: "prestashop"
+				title: "Microsoft .NET",
+				icon: "dotnet"
 			}
 		]
 	},
