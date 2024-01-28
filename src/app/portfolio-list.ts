@@ -265,20 +265,17 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					* Technologie utilisé: Angular
 					* Projet réalisé en trois semaines
 
-					[Mon application web React](/?lang=fr&article=fred-react#portfolio) date de 2019 et présente maintenant plusieurs problèmes: plusieurs versions de React et de ses dépendances sont sorties au fil des ans et mon application web est désormais obsolète et ne peux plus être compilé à moins de mettre à jour React et les dépendances, ce qui prendrait beaucoup de temps pour trouver et réadapter tout les codes qui ne fonctionnerait plus avec la nouvelle version.
-
-					Ca fait un petit moment que je me suis intéressé à Angular et j'ai donc appliqué mes conaissances acquise pour re-créer mon site dessus. 
-					J'ai eu juste à reprendre toute mes feuilles SCSS et adapter mon code et ma logique pour Angular.
+					Je me suis intéressé à Angular pendant mon temps libre, j'ai donc re-crée [mon site web React](/?lang=fr&article=fred-react#portfolio) vers Angular.
 				`,
 					{galIndex: 0},
 				`
-					Le résultat est beaucoup plus prore grâce a la capacité d'itérer directement dans le template HTML (avec **ngFor*).
+					Le résultat est beaucoup plus prore grâce a la capacité d'itérer directement dans le template HTML avec **ngFor*.
 
 					La grosse différence est pour l'affichage les textes dans *parcours* et les articles du *portfolio*:
 					* Dans **React** j'ai exploité le *JSX* qui était propre à lui et que je ne pouvait pas l'utiliser dans Angular.
 					* Pour contourner de problème dans **Angular** j'ai utilisé un module pour pouvoir écrire mes texte en **Markdown** qui est un format plus propre plutôt que de mettre des balises HTML dans chaque paragraphes.
 
-					Une nouvelle fonctionnalité que j'ai aussi apporté à mon site est le fait de pouvoir afficher un article de mon portfolio directement depuis une chaîne de requête dans la barre d'adresse (et l'adresse s'actualise aussi dès l'affichage d'un article).
+					Une nouvelle fonctionnalité que j'ai aussi apporté à mon site est le fait de pouvoir afficher un article de mon portfolio directement depuis une chaîne de requête dans la barre d'adresse (l'adresse s'actualise aussi dès l'affichage d'un article).
 				`
 			],
 			en: [
@@ -289,20 +286,18 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					* Used technology: Angular
 					* Project done in three weeks
 
-					[My React web application](/?lang=en&article=fred-react#portfolio) is from 2019 and now has several problems: several versions of React and its dependencies have been released over the years and my web application is now outdated and can no longer be compiled unless I update React and its dependencies, which would take a lot of time to find and readapt all the codes that would no longer work with the new version.
-
-					I've been interested in Angular for a while now and so I applied my acquired knowledge to re-create this web app on it.
-					I just had to take all my SCSS sheets and adapt my code and my logic for Angular.
+					I got interested in Angular in my free time, so I re-built [my React website](/?lang=fr&article=fred-react#portfolio) to Angular.
+					
 				`,
 					{galIndex: 0},
 				`
-					The result is much more cleaner thanks to the ability to iterate directly in the HTML template.
+					The result is much more cleaner thanks to the ability to iterate directly in the HTML template with **ngFor*.
 
 					The big difference is for displaying the texts in *career* and the articles in the *portfolio*:
 					* In **React** I exploited the *JSX* which was specific to it and which I could not use it in Angular.
 					* To work around the problem in **Angular** I used a module to be able to write my text in **Markdown** which is a cleaner format rather than putting HTML tags in each paragraph.
 
-					A new feature  that I also brought to my website is the ability to display an article from my portfolio directly from a query string in the address bar (and the address is also updated as soon an article is displayed).
+					A new feature  that I also brought to my website is the ability to display an article from my portfolio directly from a query string in the address bar (the address is also updated when an article is displayed).
 				`
 			],
 		}
@@ -1173,7 +1168,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 		techno: "JavaScript",
 		id: "hangman",
 		url: {
-			git: "https://github.com/Fred-Vaniss/creative-gh-grav",
+			git: "https://github.com/Fred-Vaniss/jeu-pendu",
 			preview: "https://fred-vaniss.github.io/jeu-pendu/"
 		},
 		galleries: [
@@ -1270,7 +1265,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					}
 				},
 				{
-					img: "mel-1",
+					img: "mel-2",
 					format: "jpg",
 					alt: {
 						fr: "Un site responsive",
@@ -1278,7 +1273,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					}
 				},
 				{
-					img: "mel-1",
+					img: "mel-3",
 					format: "jpg",
 					alt: {
 						fr: '"Raconte moi des salades"',

@@ -30,9 +30,9 @@ export const PARCOURS: Parcours[] = [
 			fr:`
 				Cette formation m'a introduit au langage C# et une partie des frameworks de *.NET*.
 
-				Cela m'a appris à convevoir un schéma relationnel d'une base de donnée (*entité-association*) et d'en créer une sur base ce celui-ci sur SQL Server avec des requêtes et Entity Framework.
+				Cela m'a appris à convevoir un schéma relationnel d'une base de donnée (*entité-association*) que j'ai pu mettre en application via SQL Server et Entity Framework.
 				
-				J'ai également appris comment programmer en orienté objet, le principe de *Design Patterns* avec certains patrons, comment mettre en place un serveur API avec ASP.NET et comment l'utiliser du côté client avec ASP MVC et Blazor.
+				J'y ai également appris le concept de la *Programmation Orienté Objet*, le principe de *Design Patterns*, comment mettre en place un serveur API avec ASP.NET et utiliser celui-ci côté client avec ASP MVC/Blazor.
 
 				* C#
 					* Programmation Orienté Objet
@@ -49,9 +49,9 @@ export const PARCOURS: Parcours[] = [
 			en:`
 				This course introduced me to C# language and a bunch of .NET frameworks.
 
-				This taught me how to design a relational schema of a database (*entity-association*) and create one based on it on SQL Server with queries and Entity Framework.
+				This taught me how to design a relational schema of a database (*entity-association*) that I was able to implement via SQL Server and Entity Framework.
 
-				I also learned how to program in object oriented, the principle of *Design Patterns* with certain patterns, how to set up an API server with ASP.NET and how to use it on the client side with ASP MVC and Blazor.
+				I also learned the concept of *Object Oriented Programming*, the principle of *Design Patterns*, how to set up an API server with ASP.NET and use it on the client side with ASP MVC/Blazor.
 
 				* C#
 					* Object Oriented Programming
@@ -71,14 +71,14 @@ export const PARCOURS: Parcours[] = [
 		type: ParType.Entr,
 		entreprise: "Why Agency",
 		time: "2020-2022",
-		list: ["HTML & CSS", "Javascript", "PHP, Wordpress, Grav"],
+		list: ["HTML & CSS", "Javascript, PHP", "Wordpress, Grav"],
 		title: {
 			fr: "Développeur web",
 			en: "Web developer"
 		},
 		desc: {
-			fr: "Travail en freelance dans le développment de sites Wordpress et Grav",
-			en: "Freelance work in the development of WordPress websites"
+			fr: "Freelance",
+			en: "Freelance"
 		}
 	},
 	{
@@ -86,25 +86,19 @@ export const PARCOURS: Parcours[] = [
 		entreprise: "Adevo Solution",
 		time: "2019-2020",
 		place: "Gilly",
-		list: ["HTML & CSS", "JavaScript", "PHP, WordPress, PrestaShop", "Photoshop", "Illustrator"],
+		list: ["HTML & CSS", "JavaScript, PHP", "WordPress, PrestaShop", "Photoshop, Illustrator"],
 		title: {
 			fr: "Stage développeur web",
 			en: "Web development internship"
 		},
 		desc: {
 			fr: `
-				Stage de fin de formation de BeCode dans une agence créative et marketing. J'ai réalisé et participé au développement de plusieurs autres projets WordpPress et PrestaShop.
-				
-				L'entreprise étant très petite, j'ai été très polyvalent durant ce stage. J'ai du aussi utiliser mes compétences de graphiste pour créer des images, des pictogrammes, des logos, concevoir la disposition d'un site et veiller à ce que les images soient bien optimisés.
-				
-				Ce stage m'a permis d'en découvrir beaucoup plus sur Wordpress et Prestashop et à apprendre beaucoup de choses sur le développement web.
+				Stage de fin de formation de BeCode dans une agence créative et de marketing. 
+
+				J'ai participé au développement de plusieurs projets aussi bien sur WordpPress que sur PrestaShop. Mes compétences de graphiste m'ont permis d'affimer une polyvalence sur ces projets en participant à l'élaboration de pictogrammes/logos.
 			`,
 			en: `
-				The internship to end my training course at BeCode in a creative and marketing agency. I realized and participated on multiple WordPress and PrestaShop development projects.
-				
-				The company being very small, I was very versatile during this internship. I also had to use my graphic designer skills to create images, pictograms, logos and designing a website layout and ensure that the images are well optimized.
-				
-				This internship allowed me to discover more about Wordpress and Prestashop and learning more about web development.
+				I've taken part in the development of several projects on both WordpPress and PrestaShop. My skills as a graphic designer allowed me to demonstrate my versatility on these projects by participating in the creation of pictograms/logos.
 			`
 		}
 	},
@@ -113,25 +107,25 @@ export const PARCOURS: Parcours[] = [
 		entreprise:"BeCode",
 		place:"Charleroi",
 		time:"2019",
-		list:["Git", "HTML & CSS & SASS", "JavaScript, NodeJS, ReactJS", "PHP & MySQL & Wordpress"],
+		list:["Git", "HTML & CSS (SASS)", "JavaScript, NodeJS, React", "PHP", "Wordpress", "MySQL"],
 		title: {
 			fr: "Formation développeur web",
 			en: "Web dev training course"
 		},
 		desc: {
 			fr: `
-				Formation intensive dans le développement front-end et back-end. Contrairement à ma précédente formation chez Technocité, cette formation est entièrement focalisé sur la programmation.
-				
-				J'ai appris à apprendre différents langages de programmation ainsi que les différents frameworks. La particularité de cette formation est qu'on a peu de cours et qu'on est majoritairement livré à nous-même pour suivre les parcours supervisés par des coachs. 
-				
-				J'ai également réalisé plusieurs travaux de groupe, participés à divers evénements tels que les Hackathons, Coder Dojos et autres...
+				Formation dans le développement web Full Stack.
+
+				Cette formation est ma première expérience dans le monde du développement, elle m'a permis de découvrir plusieurs langages de programmation et leurs frameworks.
+
+				Durant cette formation, j'ai pu participer à la réalisation de projets en groupe, me permettant de découvrir le versioning via *Git*. J'ai aussi été amené à appliquer les compétences nouvellement acquises lors d'événements tels que des *Hackathons* et *Coder Dojos*.
 			`,
 			en: `
-				An intensive training course on front-end and back-end web development. Unlike my previous training course at Technocité, this one is entirely focused on programming.
+				Training in Full Stack web development.
 				
-				I learned to learn different programming languages and frameworks as well. The particularity on this training course is we have very few courses and we are on our own to follow the courses supervised by coaches.
+				This training is my first experience in the world of development, it allowed me to discover several programming languages and their frameworks.
 				
-				I also carried out several group work, participated at diverse events like Hackathons, Coder Dojos and more...
+				During this training, I was able to participate in the realization of group projects, allowing me to discover versioning via *Git*. I was also able to apply newly acquired skills during events such as *Hackathons* and *Coder Dojos*.
 			`
 		}
 	},
@@ -146,26 +140,22 @@ export const PARCOURS: Parcours[] = [
 		},
 		desc: {
 			fr: `
-				Cette formation m'a appris à concevoir des sites web ergonomique qui sensibilise beaucoup sur l'accessibilité et l'expérience utilisateur.
-				
-				J'ai appris sur des méthodes pour améliorer ma créativité, différents méthodes de travail en équipe tel que la méthode agile ainsi que l'utilisation de "personnas".
-				
-				J'ai également travaillé un projet client pour une entreprise de permaculture du nom de *Mel'égumes* qui à été réalisé tout au long de la formation par équipes de trois personnes.
+				Cette formation m'a appris à concevoir des sites web ergonomique et accessible.
 
-				* HTML & CSS & SASS
+				Tout au long de la formation, j'ai participé à la réalisation du site web d'une entreprise de permaculture [Mel'égumes](/?lang=fr&article=mel#portfolio).
+
+				* HTML & CSS (SASS)
 				* JavaScript
 				* Conception et intégration de sites web
 				* Méthode agile
 				* Responsive webdesign
 			`,
 			en: `
-				This training has taught me how to design ergonomic websites that raise awareness about accessibility and user experience
+				This training taught me how to design ergonomic and accessible websites.
 				
-				I learned about methods to improve my creativity, different teamwork methods such as the agile software development and the use of "personas"
-				
-				I also worked on a client project for a permaculture company named *Mel'égumes* which was carried throughout the training by teams of three persons.
+				Throughout the training, I participated in the creation of the website of a permaculture company [Mel'égumes](/?lang=en&article=mel#portfolio)
 
-				* HTML & CSS & SASS
+				* HTML & CSS (SASS)
 				* JavaScript
 				* Website designing and integration
 				* Agile software development
@@ -215,14 +205,10 @@ export const PARCOURS: Parcours[] = [
 		},
 		desc: {
 			fr: `
-				Cet étude m'a fait découvrir tous les horizons de l'infographie.
-				
-				À la fin de ces trois ans, j'ai réalisé mon projet de fin d'étude sur **Artifact Rush** et j'ai décroché mon Bachelier avec une grande distinction.
+				Mon projet de fin d'étude [Artifact Rush](/?lang=fr&article=artifact#portfolio), m'a permis de décrocher mon bachelier avec grande distinction.
 			`,
 			en: `
-				This study made me discover all the horizons of graphic design.
-				
-				At the end of these three years, I completed my graduation project on **Artifact Rush** and earned my bachelor’s degree with great distinction.
+				My end-of-study project [Artifact Rush](/?lang=en&article=artifact#portfolio), allowed me to obtain my bachelor's degree with great distinction.
 			`
 		}
 	}

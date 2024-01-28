@@ -46,11 +46,11 @@ export const LOCABOUT: LocAbout = {
 	},
 	text: {
 		fr: `
-			A la suite de mon bachelier en Infographie, j'ai décidé de devenir développeur.
+			Détenteur d'un bachelier en infographie, j'ai participé à la conception de plusieurs sites web. Étant de nature très curieuse, je me suis intéressé à leurs créations, me permettant de découvrir le milieu du code. C'est pourquoi en 2019,  j'ai décidé d'intégrer la formation de développeur web chez BeCode, me permettant de découvrir des Frameworks tel que *React* et *Angular*.
 
-			J'ai commencé par l'UX Webdesign où j'ai appris la structure, la conception et l'accessibilité des sites web, pour me rendre compte ensuite que je prends plus de plaisir à coder qu'à conceoir des sites web. 
+			Ayant de plus en plus envie de faire du développement mon métier, j'ai décidé en 2023 de suivre la formation de développeur .NET chez Technofutur TIC. Il me tarde de pouvoir mettre mes compétences au service d'une entreprise.
 			
-			J'ai donc décidé de m'investir dans le développement front-end et back-end et d'en faire mon métier.
+			L'expérience acquise dans le développement durant mes formations m'a permis de créer de nombreux *"mods"*, me permettant de découvrir de nouveaux langages tel que le *LUA*, dans des jeux vidéos qui se trouvent très souvent appréciés par les communautés de ces jeux.		
 		`,
 		en: `
 			After my bachelor in Computer Graphics, I decided to become a developer.
