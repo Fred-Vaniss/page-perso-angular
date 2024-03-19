@@ -19,7 +19,7 @@ interface Parcours {
 export const PARCOURS: Parcours[] = [
   {
     type: ParType.Gradu,
-    entreprise: "Citizen Of Wallonia",
+    entreprise: "Citizens Of Wallonia",
     time: "Mars 2024",
     place: "Charleroi",
     list: ["Angular", "ASP.NET"],
@@ -31,11 +31,11 @@ export const PARCOURS: Parcours[] = [
       fr: `
         Réalisation d'une application prototype durant un week-end appelé **P**imp **M**y **R**ide.
 
-        Nous avons pris part au challenge proposé par Infrabel en réalisant un conept d'extention d'applications pour mettre en avant les infrastructures pour personnes à mobilité réduite dans les gares en se basant des Open Data fournis par la Wallonie.
+        Nous avons pris part au challenge proposé par Infrabel en réalisant un conept d'extention d'applications afin mettre en avant les infrastructures pour personnes à mobilité réduite dans les gares en se basant des Open Data fournis par la Wallonie.
 
-        Notre équipe à remporté le prix des territoires intelligent.
+        Notre équipe à remporté le prix des Territoires Intelligents.
 
-        ![Citizen Of Wallonia: prix des territoires intelligent](assets/img/hackathon-price.png)
+        ![Citizens Of Wallonia: prix des Territoires Intelligent](assets/img/hackathon-price.png)
       `,
       en: `
         Creation of a prototype application over a week-end called **P**imp **M**y **R**ide.
@@ -44,13 +44,13 @@ export const PARCOURS: Parcours[] = [
 
         Our team has earned the *Smart Territory* price.
 
-        ![Citizen Of Wallonia: intelligent territory price](assets/img/hackathon-price.png)
+        ![Citizens Of Wallonia: Smart Territory price](assets/img/hackathon-price.png)
       `
     }
   },
 	{
 		type: ParType.Forma,
-		entreprise: "Technofutur",
+		entreprise: "Technofutur TIC",
 		time: "2023-2024",
 		place: "Gosselies",
 		title: {
