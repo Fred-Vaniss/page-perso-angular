@@ -17,6 +17,37 @@ interface Parcours {
 }
 
 export const PARCOURS: Parcours[] = [
+  {
+    type: ParType.Gradu,
+    entreprise: "Citizen Of Wallonia",
+    time: "Mars 2024",
+    place: "Charleroi",
+    list: ["Angular", "ASP.NET"],
+    title: {
+      fr: "Hackathon",
+      en: "Hackathon"
+    },
+    desc: {
+      fr: `
+        Réalisation d'une application prototype durant un week-end appelé **P**imp **M**y **R**ide.
+
+        Nous avons pris part au challenge proposé par Infrabel en réalisant un conept d'extention d'applications pour mettre en avant les infrastructures pour personnes à mobilité réduite dans les gares en se basant des Open Data fournis par la Wallonie.
+
+        Notre équipe à remporté le prix des territoires intelligent.
+
+        ![Citizen Of Wallonia: prix des territoires intelligent](assets/img/hackathon-price.png)
+      `,
+      en: `
+        Creation of a prototype application over a week-end called **P**imp **M**y **R**ide.
+
+        We took part in the challenge proposed by Infrabel by creating an application extension concept to highlight infrastructure for people with reduced mobility in stations based on Open Data provided by the Wallonia.
+
+        Our team has earned the *Smart Territory* price.
+
+        ![Citizen Of Wallonia: intelligent territory price](assets/img/hackathon-price.png)
+      `
+    }
+  },
 	{
 		type: ParType.Forma,
 		entreprise: "Technofutur",
@@ -31,7 +62,7 @@ export const PARCOURS: Parcours[] = [
 				Cette formation m'a introduit au langage C# et une partie des frameworks de *.NET*.
 
 				Cela m'a appris à convevoir un schéma relationnel d'une base de donnée (*entité-association*) que j'ai pu mettre en application via SQL Server et Entity Framework.
-				
+
 				J'y ai également appris le concept de la *Programmation Orienté Objet*, le principe de *Design Patterns*, comment mettre en place un serveur API avec ASP.NET et utiliser celui-ci côté client avec ASP MVC/Blazor.
 
 				* C#
@@ -93,7 +124,7 @@ export const PARCOURS: Parcours[] = [
 		},
 		desc: {
 			fr: `
-				Stage de fin de formation de BeCode dans une agence créative et de marketing. 
+				Stage de fin de formation de BeCode dans une agence créative et de marketing.
 
 				J'ai participé au développement de plusieurs projets aussi bien sur WordpPress que sur PrestaShop. Mes compétences de graphiste m'ont permis d'affimer une polyvalence sur ces projets en participant à l'élaboration de pictogrammes/logos.
 			`,
@@ -122,9 +153,9 @@ export const PARCOURS: Parcours[] = [
 			`,
 			en: `
 				Training in Full Stack web development.
-				
+
 				This training is my first experience in the world of development, it allowed me to discover several programming languages and their frameworks.
-				
+
 				During this training, I was able to participate in the realization of group projects, allowing me to discover versioning via *Git*. I was also able to apply newly acquired skills during events such as *Hackathons* and *Coder Dojos*.
 			`
 		}
@@ -142,7 +173,7 @@ export const PARCOURS: Parcours[] = [
 			fr: `
 				Cette formation m'a appris à concevoir des sites web ergonomique et accessible.
 
-				Tout au long de la formation, j'ai participé à la réalisation du site web d'une entreprise de permaculture [Mel'égumes](/?lang=fr&article=mel#portfolio).
+				Tout au long de la formation, j'ai participé à la réalisation du site web d'une entreprise de permaculture [Mel'égumes](modal:mel).
 
 				* HTML & CSS (SASS)
 				* JavaScript
@@ -152,8 +183,8 @@ export const PARCOURS: Parcours[] = [
 			`,
 			en: `
 				This training taught me how to design ergonomic and accessible websites.
-				
-				Throughout the training, I participated in the creation of the website of a permaculture company [Mel'égumes](/?lang=en&article=mel#portfolio)
+
+				Throughout the training, I participated in the creation of the website of a permaculture company [Mel'égumes](modal:mel)
 
 				* HTML & CSS (SASS)
 				* JavaScript
@@ -205,10 +236,10 @@ export const PARCOURS: Parcours[] = [
 		},
 		desc: {
 			fr: `
-				Mon projet de fin d'étude [Artifact Rush](/?lang=fr&article=artifact#portfolio), m'a permis de décrocher mon bachelier avec grande distinction.
+				Mon projet de fin d'étude [Artifact Rush](modal:artifact), m'a permis de décrocher mon bachelier avec grande distinction.
 			`,
 			en: `
-				My end-of-study project [Artifact Rush](/?lang=en&article=artifact#portfolio), allowed me to obtain my bachelor's degree with great distinction.
+				My end-of-study project [Artifact Rush](modal:artifact), allowed me to obtain my bachelor's degree with great distinction.
 			`
 		}
 	}

@@ -15,6 +15,7 @@ import { ModalContainerComponent } from './modal-container/modal-container.compo
 import { ModalGalleryComponent } from './modal-gallery/modal-gallery.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { MarkdownModalLinkDirective } from './directives/markdown-modal-link.directive';
 
 
 export function markdownOptionsFactory(): MarkedOptions {
@@ -45,7 +46,8 @@ export function markdownOptionsFactory(): MarkedOptions {
     ModalContainerComponent,
     ModalGalleryComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    MarkdownModalLinkDirective
   ],
   imports: [
     BrowserModule,
