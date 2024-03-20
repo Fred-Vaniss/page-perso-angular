@@ -4,17 +4,17 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MarkdownModule, MarkedOptions, MarkedRenderer } from 'ngx-markdown';
 
 import { AppComponent } from './app.component';
-import { IntroComponent } from './intro/intro.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { SkillsComponent } from './skills/skills.component';
-import { AboutComponent } from './about/about.component';
-import { TimelineComponent } from './timeline/timeline.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
+import { IntroComponent } from './components/intro/intro.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { AboutComponent } from './components/about/about.component';
+import { TimelineComponent } from './components/timeline/timeline.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ModalRoutingModule } from './modal-routing.module';
-import { ModalContainerComponent } from './modal-container/modal-container.component';
-import { ModalGalleryComponent } from './modal-gallery/modal-gallery.component';
-import { ContactComponent } from './contact/contact.component';
-import { FooterComponent } from './footer/footer.component';
+import { ModalContainerComponent } from './components/modal-container/modal-container.component';
+import { ModalGalleryComponent } from './components/modal-gallery/modal-gallery.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { MarkdownModalLinkDirective } from './directives/markdown-modal-link.directive';
 
 

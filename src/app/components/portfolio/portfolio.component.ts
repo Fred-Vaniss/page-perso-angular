@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { LangService } from '../lang.service';
-import { LOCBUTTONS, LOCPORTFO } from '../localization';
-import { PORTFOLIOLIST } from '../portfolio-list';
+import { LangService } from '../../services/lang.service';
+import { LOCBUTTONS, LOCPORTFO } from '../../localization';
+import { PORTFOLIOLIST } from '../../portfolio-list';
 
 import { faStickyNote, faGlobe,  } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { ModalService } from '../modal.service';
+import { ModalService } from '../../services/modal.service';
 
 @Component({
   selector: '[app-portfolio]',

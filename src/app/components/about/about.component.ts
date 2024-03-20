@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { LOCABOUT } from '../localization';
-import { LangService } from '../lang.service';
+import { LOCABOUT } from '../../localization';
+import { LangService } from '../../services/lang.service';
 
 @Component({
   selector: '[app-about]',

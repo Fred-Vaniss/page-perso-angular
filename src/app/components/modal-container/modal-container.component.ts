@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
-import { LangService } from '../lang.service';
-import { LOCBUTTONS } from '../localization';
-import { ModalService } from '../modal.service';
-import { Article, Gallery, GalleryCall, PortfolioEntry } from '../portfolio-list';
-import { UrlService } from '../url.service';
+import { LangService } from '../../services/lang.service';
+import { LOCBUTTONS } from '../../localization';
+import { ModalService } from '../../services/modal.service';
+import { Article, Gallery, GalleryCall, PortfolioEntry } from '../../portfolio-list';
+import { UrlService } from '../../services/url.service';
 
 @Component({
   selector: 'app-modal-container',

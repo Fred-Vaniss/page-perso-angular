@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { LangService } from '../lang.service';
+import { LangService } from '../../services/lang.service';
 import { SKILLS, SOFTSKILLS } from './skills-list';
-import { LOCSKILLS } from '../localization';
+import { LOCSKILLS } from '../../localization';
 
 @Component({
   selector: '[app-skills]',

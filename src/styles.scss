@@ -20,7 +20,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
   }
-  
+
 code {
 font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
 	monospace;
@@ -65,7 +65,7 @@ span.italic{
 
 	font-family: 'Roboto', sans-serif;
 	color: white;
-	
+
 	.fullscreen{
 		height: 100%;
 	}
@@ -147,7 +147,7 @@ span.italic{
 	font-variant: small-caps;
 	border-radius: .3em;
 	padding: .2em .6em;
-	
+
 	position: relative;
 	top: -.4em;
 	left: .4em;
@@ -218,7 +218,7 @@ span.italic{
 		}
 	}
 
-	
+
 }
 
 .lang-switcher{
@@ -298,7 +298,7 @@ a.download-cv{
 
 .skill-entry{
 	position: relative;
-	margin: 10px 30px; 
+	margin: 10px 30px;
 	.skill-icon, .skill-icon-sub{
 		transition: transform 0.3s ease-out;
 		&:hover{
@@ -307,7 +307,7 @@ a.download-cv{
 				visibility: visible;
 				opacity: 1;
 			}
-		} 
+		}
 	}
 }
 
@@ -391,7 +391,7 @@ a.download-cv{
 	background-color: $blue;
 	border-radius: 50%;
 
-	position: absolute; 
+	position: absolute;
 		left: -60px;
 		top: -14px;
 
@@ -473,7 +473,7 @@ a.download-cv{
 
 	width: 100%;
 	height: 100%;
-	
+
 	background-color: rgba(0, 0, 0, 0.603);
 	box-shadow: inset 0 0 50px black;
 	color: white;
@@ -554,8 +554,8 @@ a.portfolio-link, .portfolio-link span{
 	background-color: rgba(0, 0, 0, 0.603);
 
 	z-index: 1000;
-	overflow-y: scroll;
-	
+	overflow-y: auto;
+
 	&.transition{
 		transition: opacity .3s, visibility .3s;
 	}
@@ -574,11 +574,11 @@ a.portfolio-link, .portfolio-link span{
 
 		margin: 20px auto;
 		padding: 50px 20px 20px;
-		
+
 		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
 		h3{
-			
+
 			font-size: 2em;
 			text-align: center;
 			margin-bottom: 5px;
@@ -597,10 +597,10 @@ a.portfolio-link, .portfolio-link span{
 			.modal-close{
 				border: none;
 				background-color: transparent;
-	
+
 				font-size: 3em;
 				cursor: pointer;
-	
+
 				&:hover{
 					color: #ff8900;
 				}
@@ -715,7 +715,7 @@ a.portfolio-link, .portfolio-link span{
 	}
 }
 
-//? 
+//?
 //? Footer
 //?////////////////////////////
 

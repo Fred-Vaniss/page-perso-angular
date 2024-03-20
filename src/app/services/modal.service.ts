@@ -1,6 +1,6 @@
 import { Injectable, OnInit } from '@angular/core';
 import { Subject } from 'rxjs';
-import { ModalChange, PORTFOLIOLIST } from './portfolio-list';
+import { ModalChange, PORTFOLIOLIST } from '../portfolio-list';
 
 
 @Injectable({
@@ -17,7 +17,7 @@ export class ModalService implements OnInit {
   openArticle(id: string) {
     let article = PORTFOLIOLIST.find(h => h.id === id);
     let doUpdateUrl = true
-    
+
     if (!article) {
 
       article = PORTFOLIOLIST.find(h => h.id === "error")

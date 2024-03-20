@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import AOS from 'aos';
-import { UrlService } from './url.service';
+import { UrlService } from './services/url.service';
 
 @Component({
   selector: 'app-root',

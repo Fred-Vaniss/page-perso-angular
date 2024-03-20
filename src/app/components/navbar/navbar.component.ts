@@ -1,8 +1,8 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 
-import { LangService } from '../lang.service';
-import { LOCNAVBAR } from '../localization';
-import { UrlService } from '../url.service';
+import { LangService } from '../../services/lang.service';
+import { LOCNAVBAR } from '../../localization';
+import { UrlService } from '../../services/url.service';
 
 @Component({
   selector: 'app-navbar',
@@ -35,7 +35,7 @@ export class NavbarComponent implements OnInit {
 
     this.lang = this.langService.getLang();
     this.cvLink = `assets/cv-${this.lang}.pdf`;
-    
+
     this.onScroll();
   }
 
