@@ -29,7 +29,7 @@ export const PARCOURS: Parcours[] = [
     },
     desc: {
       fr: `
-        Réalisation d'une application prototype durant un week-end appelé [**P**imp **M**y **R**ide](modal:pmr).
+        Réalisation d'une application prototype durant un week-end appelé [Pimp My Ride](modal:pmr).
 
         Nous avons pris part au challenge proposé par Infrabel en réalisant un concept d'extension d'applications afin mettre en avant les infrastructures pour personnes à mobilité réduite dans les gares en se basant des Open Data fournis par la Wallonie.
 
@@ -38,7 +38,7 @@ export const PARCOURS: Parcours[] = [
         ![Citizens Of Wallonia: prix des Territoires Intelligent](assets/img/hackathon-price.png)
       `,
       en: `
-        Creation of a prototype application over a week end called [**P**imp **M**y **R**ide](modal:pmr).
+        Creation of a prototype application over a week end called [Pimp My Ride](modal:pmr).
 
         We took part in the challenge proposed by Infrabel by creating an application extension concept to highlight infrastructure for people with reduced mobility in stations based on Open Data provided by the Wallonia.
 
