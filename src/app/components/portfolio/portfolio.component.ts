@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { LangService } from '../../services/lang.service';
-import { LOCBUTTONS, LOCPORTFO } from '../../localization';
-import { PORTFOLIOLIST } from '../../portfolio-list';
+import { LOCBUTTONS, LOCPORTFO } from '../../data/localization';
+import { PORTFOLIOLIST } from '../../data/portfolio-list';
 
 import { faStickyNote, faGlobe,  } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';

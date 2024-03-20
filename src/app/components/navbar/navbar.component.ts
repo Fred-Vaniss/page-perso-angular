@@ -1,7 +1,7 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 
 import { LangService } from '../../services/lang.service';
-import { LOCNAVBAR } from '../../localization';
+import { LOCNAVBAR } from '../../data/localization';
 import { UrlService } from '../../services/url.service';
 
 @Component({

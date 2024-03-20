@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { LangService } from '../../services/lang.service';
-import { LOCINTRO } from '../../localization';
+import { LOCINTRO } from '../../data/localization';
 
 @Component({
   selector: '[app-intro]',

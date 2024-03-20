@@ -1,4 +1,4 @@
-import { Translation } from "../../localization";
+import { Translation } from "./localization";
 
 export enum ParType {
 	Entr,
@@ -29,16 +29,16 @@ export const PARCOURS: Parcours[] = [
     },
     desc: {
       fr: `
-        Réalisation d'une application prototype durant un week-end appelé **P**imp **M**y **R**ide.
+        Réalisation d'une application prototype durant un week-end appelé [**P**imp **M**y **R**ide](modal:pmr).
 
-        Nous avons pris part au challenge proposé par Infrabel en réalisant un conept d'extention d'applications afin mettre en avant les infrastructures pour personnes à mobilité réduite dans les gares en se basant des Open Data fournis par la Wallonie.
+        Nous avons pris part au challenge proposé par Infrabel en réalisant un concept d'extension d'applications afin mettre en avant les infrastructures pour personnes à mobilité réduite dans les gares en se basant des Open Data fournis par la Wallonie.
 
-        Notre équipe à remporté le prix des Territoires Intelligents.
+        Notre équipe a remporté le prix des Territoires Intelligents.
 
         ![Citizens Of Wallonia: prix des Territoires Intelligent](assets/img/hackathon-price.png)
       `,
       en: `
-        Creation of a prototype application over a week-end called **P**imp **M**y **R**ide.
+        Creation of a prototype application over a week end called [**P**imp **M**y **R**ide](modal:pmr).
 
         We took part in the challenge proposed by Infrabel by creating an application extension concept to highlight infrastructure for people with reduced mobility in stations based on Open Data provided by the Wallonia.
 
@@ -61,9 +61,9 @@ export const PARCOURS: Parcours[] = [
 			fr:`
 				Cette formation m'a introduit au langage C# et une partie des frameworks de *.NET*.
 
-				Cela m'a appris à convevoir un schéma relationnel d'une base de donnée (*entité-association*) que j'ai pu mettre en application via SQL Server et Entity Framework.
+				Cela m'a appris à concevoir un schéma relationnel d'une base de données (*entité-association*) que j'ai pu mettre en application via SQL Server et Entity Framework.
 
-				J'y ai également appris le concept de la *Programmation Orienté Objet*, le principe de *Design Patterns*, comment mettre en place un serveur API avec ASP.NET et utiliser celui-ci côté client avec ASP MVC/Blazor.
+				J'y ai également appris le concept de la *Programmation Orientée Objet*, le principe de *Design Patterns*, comment mettre en place un serveur API avec ASP.NET et utiliser celui-ci côté client avec ASP MVC/Blazor.
 
 				* C#
 					* Programmation Orienté Objet
@@ -126,7 +126,7 @@ export const PARCOURS: Parcours[] = [
 			fr: `
 				Stage de fin de formation de BeCode dans une agence créative et de marketing.
 
-				J'ai participé au développement de plusieurs projets aussi bien sur WordpPress que sur PrestaShop. Mes compétences de graphiste m'ont permis d'affimer une polyvalence sur ces projets en participant à l'élaboration de pictogrammes/logos.
+				J'ai participé au développement de plusieurs projets aussi bien sur WordpPress que sur PrestaShop. Mes compétences de graphiste m'ont permis d'affirmer une polyvalence sur ces projets en participant à l'élaboration de pictogrammes/logos.
 			`,
 			en: `
 				I've taken part in the development of several projects on both WordpPress and PrestaShop. My skills as a graphic designer allowed me to demonstrate my versatility on these projects by participating in the creation of pictograms/logos.
@@ -150,6 +150,8 @@ export const PARCOURS: Parcours[] = [
 				Cette formation est ma première expérience dans le monde du développement, elle m'a permis de découvrir plusieurs langages de programmation et leurs frameworks.
 
 				Durant cette formation, j'ai pu participer à la réalisation de projets en groupe, me permettant de découvrir le versioning via *Git*. J'ai aussi été amené à appliquer les compétences nouvellement acquises lors d'événements tels que des *Hackathons* et *Coder Dojos*.
+
+				C'est à la fin de cette formation que j'ai créé [ce site web](modal:fred-react).
 			`,
 			en: `
 				Training in Full Stack web development.
@@ -157,6 +159,8 @@ export const PARCOURS: Parcours[] = [
 				This training is my first experience in the world of development, it allowed me to discover several programming languages and their frameworks.
 
 				During this training, I was able to participate in the realization of group projects, allowing me to discover versioning via *Git*. I was also able to apply newly acquired skills during events such as *Hackathons* and *Coder Dojos*.
+
+				It was at the end of this training that I create [this website](modal:fred-react).
 			`
 		}
 	},

@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { LangService } from '../../services/lang.service';
-import { LOCBUTTONS } from '../../localization';
+import { LOCBUTTONS } from '../../data/localization';
 import { ModalService } from '../../services/modal.service';
-import { Article, Gallery, GalleryCall, PortfolioEntry } from '../../portfolio-list';
+import { Article, Gallery, GalleryCall, PortfolioEntry } from '../../data/portfolio-list';
 import { UrlService } from '../../services/url.service';
 
 @Component({

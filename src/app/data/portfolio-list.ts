@@ -49,16 +49,80 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
     techno: "Angular",
     id: "pmr",
     url: {},
+    galleries: [
+      [
+        {
+          img: "pmr-1",
+          format: "png",
+          alt: {
+            fr: "Carte interactive intégré avec Leaflet",
+            en: "Interactive map integrated with Leaflet"
+          }
+        },
+        {
+          img: "pmr-2",
+          format: "png",
+          alt: {
+            fr: "Détails d'une gare",
+            en: "Station details"
+          }
+        }
+      ],
+      [
+        {
+          img: "pmr-award",
+          format: "png",
+          alt: {
+            fr: "Prix des Territoires Intelligents",
+            en: "Smart Territory award"
+          }
+        },
+        {
+          img: "pmr-ceremony",
+          format: "jpg",
+          alt: {
+            fr: "Remise des prix du Hackathon",
+            en: "Hackathon award ceremony"
+          }
+        }
+      ]
+    ],
     article: {
       fr: [
         `
-          ### Article fr
+          ### Pimp My Ride
+          #### Prototype de Hackathon
+
+          * Mars 2024
+          * Technologie utilisé : Angular
+
+          **P**imp **M**y **R**ide est un concept d'extension pour les applications mobiles visant à aider les personnes PMR (**P**ersonnes à **M**obilité **R**éduite) à avoir une meilleure visibilité sur les aides possibles des différentes gares.
+        `,
+        {galIndex: 0},
         `
+          Le visuel est créé avec Angular, la carte est intégrée grâce à Leaflet avec la carte de Open Street Map.
+
+          Notre projet a remporté le prix des Territoires Intelligents.
+        `,
+        {galIndex: 1}
       ],
       en: [
         `
-          ### Article en
+          ### Pimp My Ride
+          #### Hackathon prototype
+
+          * March 2024
+          * Used Technology
+
+          **P**imp **M**y **R**ide is an add-on concept for mobile apps aimed at helping people with reduced mobility to have better visibility on the possible aids from the different stations.
+        `,
+        {galIndex: 0},
         `
+          The visual is created with Angular, the map is integrated using Leaflet with Open Street Map.
+
+          Our project won the Intelligent Territories award.
+        `,
+        {galIndex: 1}
       ]
     }
   },
@@ -163,7 +227,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 
 					Il existe aussi des objets qui permettent de réduire temporairement l'infection.
 
-					Le compteur de balles dans le chargeur comporte aussi une animation à chaque balle tiré qui est simplement animé grâce aux maths.
+					Le compteur de balles dans le chargeur comporte aussi une animation à chaque balle tirée qui est animé procéduralement.
 
 					---
 
@@ -173,7 +237,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 				`
 					C'est sans doute la partie la plus complexe de ce projet.
 
-					Chaque joueur ne peut porter qu'un nombre limité d'armes, de munitions et d'objets, tout confondu. Chaque objet est listé dans une fenêtre affichés à l'aide d'une touche et chaque objet peut être équipé, utilisé, combiné ou lâché.
+					Chaque joueur ne peut porter qu'un nombre limité d'armes, de munitions et d'objets, tout confondu. Chaque objet est listé dans une fenêtre affichée à l'aide d'une touche et chaque objet peut être équipé, utilisé, combiné ou lâché.
 
 					Puis vient aussi un système de combinaison d'objet où deux objets sont consommés pour en créer une nouvelle. (voir deuxième illustration)
 
@@ -213,7 +277,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 
 					There are also items that can temporarily reduce infection.
 
-					The bullets counter in the magazine also features an animation for each bullet fired which is simply animated by using math.
+					The bullets counter in the magazine also features an animation for each bullet fired which is animated procedurally.
 
 					---
 
@@ -286,17 +350,17 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					* Technologie utilisé: Angular
 					* Projet réalisé en trois semaines
 
-					Je me suis intéressé à Angular pendant mon temps libre, j'ai donc re-crée [mon site web React](/?lang=fr&article=fred-react#portfolio) vers Angular.
+					Je me suis intéressé à Angular pendant mon temps libre, j'ai donc recrée [mon site web React](modal:fred-react) vers Angular.
 				`,
 					{galIndex: 0},
 				`
-					Le résultat est beaucoup plus prore grâce a la capacité d'itérer directement dans le template HTML avec **ngFor*.
+					Le résultat est beaucoup plus propre grâce a la capacité d'itérer directement dans le template HTML avec **ngFor*.
 
 					La grosse différence est pour l'affichage les textes dans *parcours* et les articles du *portfolio*:
-					* Dans **React** j'ai exploité le *JSX* qui était propre à lui et que je ne pouvait pas l'utiliser dans Angular.
-					* Pour contourner de problème dans **Angular** j'ai utilisé un module pour pouvoir écrire mes texte en **Markdown** qui est un format plus propre plutôt que de mettre des balises HTML dans chaque paragraphes.
+					* Dans **React** j'ai exploité le *JSX* qui était propre à lui et que je ne pouvais pas l'utiliser dans Angular.
+					* Pour contourner de problème dans **Angular** j'ai utilisé un module pour pouvoir écrire mes textes en **Markdown** qui est un format plus propre plutôt que de mettre des balises HTML dans chaque paragraphe.
 
-					Une nouvelle fonctionnalité que j'ai aussi apporté à mon site est le fait de pouvoir afficher un article de mon portfolio directement depuis une chaîne de requête dans la barre d'adresse (l'adresse s'actualise aussi dès l'affichage d'un article).
+					Une nouvelle fonctionnalité que j'ai aussi apportée à mon site est le fait de pouvoir afficher un article de mon portfolio directement depuis une chaîne de requête dans la barre d'adresse (l'adresse s'actualise aussi dès l'affichage d'un article).
 				`
 			],
 			en: [
@@ -307,7 +371,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					* Used technology: Angular
 					* Project done in three weeks
 
-					I got interested in Angular in my free time, so I re-built [my React website](/?lang=fr&article=fred-react#portfolio) to Angular.
+					I got interested in Angular in my free time, so I rebuilt [my React website](modal:fred-react) to Angular.
 
 				`,
 					{galIndex: 0},
@@ -366,20 +430,20 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					#### Project personnels
 
 					* 2022
-					* Technologies utilisés: LUA
+					* Technologies utilisées: LUA
 
 					[Project Zomboid](https://projectzomboid.com/blog/the-game/) est un jeu de survie dans un monde affecté par une apocalypse zombie. On crée un personnage et le but est simplement de survivre et de subvenir à ses besoins dans un monde ouvert gigantesque.
 
-					Le jeu est extrêmement modulable et permets d'ajouter de nouvelles fonctionalités au jeu et même de modifier le monde. <br/> Il à un Steam Workshop où tout le monde peuvent publier leurs créations pour que les autres puissent modifier leurs propres expérience de jeu.
+					Le jeu est très modulable et permet d'ajouter de nouvelles fonctionnalités au jeu et même de modifier le monde. <br/> Il a un *Steam Workshop* où tout le monde peut publier leurs créations pour que les autres puissent modifier leurs propres expériences de jeu.
 
 					---
 
 					### Mini Health Panel
 					#### Interface utilisateur
 
-					Développer un addon pour Project Zomboid s'est révélé être un gros challenge. Contrairement à Garry's Mod, il n'y a aucune documentation pour développer un addon. Il a donc fallu devoir lire "déchiffrer" moi même les fichiers LUA déjà établi par les développeurs ainsi que les autres addons par la communauté afin de comprendre comment fonctionnent les fonctions du jeu.
+					Développer un addon pour Project Zomboid s'est révélé être un gros challenge. Contrairement à Garry's Mod, il n'y a aucune documentation pour développer un addon. Il a donc fallu devoir lire "déchiffrer" moi-même les fichiers LUA déjà établis par les développeurs ainsi que les autres addons par la communauté afin de comprendre comment fonctionnent les fonctions du jeu.
 
-					Ça m'a pris du temps pour comprendre mais j'ai réussi à développer un addon qui a fait son petit succès sur le Workshop du jeu.
+					Ça m'a pris du temps pour comprendre, mais j'ai réussi à développer un addon qui a fait son petit succès sur le Workshop du jeu.
 				`,
 
 				{galIndex : 0},
@@ -387,9 +451,9 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 				`
 					J'ai créé un panneau de santé minimaliste. La silhouette est invisible par défaut et apparait à l'écran dès qu'il y a une blessure à traiter.
 
-					Cet addon à pour but de pouvoir se passer de l'interface de santé de base qui prends beaucoup d'espace à l'écran et qu'il s'affiche seulement dans le besoin au lieu de le garder en permanence à l'écran ou de devoir cliquer sur l'icone de santé dès qu'il faut traiter son personnage.
+					Cet addon à pour but de pouvoir se passer de l'interface de santé de base qui prend beaucoup d'espace à l'écran et qu'il s'affiche seulement dans le besoin au lieu de le garder en permanence à l'écran ou de devoir cliquer sur l'icône de santé dès qu'il faut traiter son personnage.
 
-					Beaucoup de personnes ont appréciés mon travail est à atteint le premier mod du worshop des plus populaires de la semaine et des trois derniers mois.
+					Beaucoup de personnes ont apprécié mon travail est à atteint le premier mod du workshop des plus populaires de la semaine et des trois derniers mois.
 				`
 			],
 			en: [
@@ -402,14 +466,14 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 
 					[Project Zomboid](https://projectzomboid.com/blog/the-game/) is a survival game in a world under a zombie apocalypse. We create a character and the goal is simply to survive and fulfill our needs on a huge world.
 
-					The game is extremely modulable and allows to add new features to the game and even modify the world. <br/> It has a Steam Workshop where everyone can publish their creations so others can modify their own game experience.
+					The game is very modular and allows to add new features to the game and even modify the world. <br/> It has a *Steam Workshop* where everyone can publish their creations so others can modify their own game experience.
 
 					---
 
 					### Mini Health Panel
 					#### User interface
 
-					Developing an addon for Project Zomboid was a big challenge. Unlike Garry's Mod, there si no documentation for addon development. So I had to read and "decipher" myself the LUA files already established by the developers and other addons by the community in order to figure out how the game's functions works.
+					Developing an addon for Project Zomboid was a big challenge. Unlike Garry's Mod, there is no documentation for addon development. So I had to read and "decipher" myself the LUA files already established by the developers and other addons by the community in order to figure out how the game's functions works.
 
 					It took some time to understand but I managed to develop an addon which made its small success on the workshop of the game.
 				`,
@@ -417,9 +481,9 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 				{galIndex: 0},
 
 				`
-					I created a minimalistic health panel. The silhouette is invisible by default and appear on the screen whenever there is a wound to treat.
+					I created a minimalistic health panel. The silhouette is invisible by default and appears on the screen whenever there is a wound to treat.
 
-					This addon's purpose is to be able to do without the health interface of the base's game which take a lot of screen space and displays only when needed instead of always keeping it on sreen or having to click on the health icon as soon you need to treat your character.
+					This addon's purpose is to be able to do without the health interface of the base's game which take a lot of screen space and displays only when needed instead of always keeping it on screen or having to click on the health icon as soon you need to treat your character.
 
 					Many people appreciated my work and was the most popular of the week and the last three months.
 				`
@@ -450,7 +514,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					img: "hema-2",
 					format: "gif",
 					alt: {
-						fr: "Animation de l'electrocardiogramme",
+						fr: "Animation de l'électrocardiogramme",
 						en: "Electrocardiogram animations"
 					},
 				},
@@ -497,7 +561,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					#### Projets personnels
 
 					* 2020 - 2021
-					* Technologies utilisés: LUA
+					* Technologies utilisées: LUA
 
 					Durant mon temps libre, je développe des addons pour Garry's Mod. C'est à la fois un jeu vidéo et un outil artistique qui est hautement modulable grâce à la possibilité d'implémenter des scripts codés en LUA dans le jeu.
 
@@ -512,7 +576,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 
 					Il comporte un électrocardiogramme en guise d'indicateur de santé comme Resident Evil (animé avec AfterEffect). Le compteur de munitions dans le chargeur affiche des balles individuel dans un conteneur et s'anime quand les balles sont tirés.
 
-					[Plus de détails sur ce projet](/?lang=fr&article=hema)
+					[Plus de détails sur ce projet](modal:hema)
 				`,
 					{galIndex: 0},
 				`
@@ -574,7 +638,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 
 					It features an electrocardigogram as a health indicator like Resident Evil (animated with AfterEffect). The ammo clip counter display individual bullets in a container and animate as bullets are shots.
 
-					[More details about this project](/?lang=en&article=hema)
+					[More details about this project](modal:hema)
 				`,
 					{galIndex: 0},
 				`
@@ -664,7 +728,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					#### Projet personnel
 
 					* Février 2021
-					* Technologies utilisés: React, SASS
+					* Technologies utilisées: React, SASS
 					* Projet terminé en cinq jours
 
 				`,
@@ -752,7 +816,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					#### Projet de test pour Why Agency
 
 					* Février 2021
-					* Technologies utilisés: PHP, Twig
+					* Technologies utilisées: PHP, Twig
 					* Projet terminé en une journée.
 
 				`,
@@ -760,7 +824,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 				`
 					Avec Why Agency, on a eu un client qui a eu la particularité de nous demander un site web basé sur un CMS léger et écologique. Nous qui travaillons sur WordPress, on sait qu'il nous faudrait trouver un autre CMS.
 
-					On a approché l'option de [Grav](https://getgrav.org/), c'est un CMS open source basé sur Symfony, qui est *Flat-File* (qui utilise des fichiers bruts au lieu d'une base de donnée) et utilise le *Markdown* pour les articles et le contenu.
+					On a approché l'option de [Grav](https://getgrav.org/), c'est un CMS open source basé sur Symfony, qui est *Flat-File* (qui utilise des fichiers bruts au lieu d'une base de données) et utilise le *Markdown* pour les articles et le contenu.
 
 					Grav étant un CMS beaucoup moins connu que WordPress, on a du coup beaucoup moins d'options pour des thèmes déjà construits.
 					J'ai donc proposé à l'équipe de tenter l'approche de construire soi-même un thème Grav à partir d'un bête thème HTML statique.
@@ -811,7 +875,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 			fr: "Fiche personnage",
 			en: "Character sheet"
 		},
-		techno: "ReactJS, SASS",
+		techno: "React, SASS",
 		id: "dnd",
 		url: {
 			preview: "https://fred-vaniss.be/showcase/dnd-sheet/"
@@ -847,36 +911,36 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 		article: {
 			fr: [
 				`
-					### Fiche de personnage Donjons & Dragons</h3>
-					#### Projet personnel</h4>
+					### Fiche de personnage Donjons & Dragons
+					#### Projet personnel
 
 					* Mars 2020
-					* Technologies utilisés: ReactJS, SASS
+					* Technologies utilisées: React, SASS
 					* Projet interrompu
 
 				`,
 					{galIndex: 0},
 				`
-					Je participait avec un groupe d'amis à un jeu de rôle sur table Donjon & Dragons. Dans ce jeu, chacun à une fiche de son personnage sous format papier où est indiqué tous les informations sur son personnage.
+					Je participais avec un groupe d'amis à un jeu de rôle sur table Donjon & Dragons. Dans ce jeu, chacun à une fiche de son personnage sous format papier où est indiqué toutes les informations sur son personnage.
 
-					Je me suis donc lancé l'idée de faire cette fiche de personnage sous format page web. Non seulement elle sera au format numérique mais en plus il fera les calculs automatiquement avec les différents statistiques associés.
+					Je me suis donc lancé l'idée de faire cette fiche de personnage sous format page web. Non seulement elle sera au format numérique, mais en plus il fera les calculs automatiquement avec les différentes statistiques associées.
 
-					Pour simplifier le partage de nos fiches de personnage, toutes les modifications apportés sont enregistrés dans l'URL en tant que paramètre.
+					Pour simplifier le partage de nos fiches de personnage, toutes les modifications apportées sont enregistrées dans l'URL en tant que paramètre.
 				`
 			],
 			en: [
 				`
-					### Dungeon & Dragons character sheet</h3>
-					#### Personal project</h4>
+					### Dungeon & Dragons character sheet
+					#### Personal project
 
 					* March 2020
-					* Used technologies: ReactJS, SASS
+					* Used technologies: React, SASS
 					* Interrupted project
 
 				`,
 					{galIndex: 0},
 				`
-					I partipated with a group of friends in a Dungeons & Dragons tabletop role-playing game. In this game, each person has its own character sheet in paper where all the information about their characters is indicated.
+					I participated with a group of friends in a Dungeons & Dragons tabletop role-playing game. In this game, each person has its own character sheet in paper where all the information about their characters is indicated.
 
 					So I came up with the idea of making this character sheet in web format. Not only will it be in digital format, but it will also do the calculations automatically with the different associated statistics.
 
@@ -930,7 +994,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					#### Réalisé chez ADEVO Solutions
 
 					* Janvier 2020
-					* Technologies utilisés: Wordpress, PHP, JavaScript
+					* Technologies utilisées: Wordpress, PHP, JavaScript
 					* Projet auquel j'ai participé au développement
 
 				`,
@@ -1013,7 +1077,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					#### Réalisé chez ADEVO Solutions
 
 					* Novembre 2019
-					* Technologies utilisés: Wordpress, PHP, JavaScript
+					* Technologies utilisées: Wordpress, PHP, JavaScript
 					* Durée du projet: 2 mois
 				`,
 					{galIndex: 0},
@@ -1057,7 +1121,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 			fr: "Ce site web (React)",
 			en: "This website (React)"
 		},
-		techno: "ReactJS, SASS",
+		techno: "React, SASS",
 		id: "fred-react",
 		url:{
 			git: "https://github.com/Fred-Vaniss/page_perso"
@@ -1068,16 +1132,18 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					### Mon site personnel (React)
 
 					* 2019-2022
-					* Technologies utilisés: ReactJS, Sass
+					* Technologies utilisées: React, Sass
 					* Projet réalisé en un mois
 
-					Je me suis lancé dans ce projet de création de mon propre site web afin de m'exposer en ligne et pour pouvoir montrer mes projets réalisés. Cela m'a permis de mettre un plus en pratique le ReactJS et de découvrir les procédés d'hébergement de site internet.
+					Je me suis lancé dans ce projet de création de mon propre site web afin de m'exposer en ligne et pour pouvoir montrer mes projets réalisés. Cela m'a permis de mettre un plus en pratique le React et de découvrir les procédés d'hébergement de site internet.
 
 					Je suis donc passé de la création de la maquette vers le développement jusqu'à l'hébergement en ligne de mon site.
 
 					Ce qui m'a motivé à le développer en React c'est sa rapidité et la possibilité d'utiliser des components réutilisable pour afficher plusieurs éléments avec la même disposition, ce qui est extrêmement utile pour afficher plusieurs éléments de mon parcous et de mon portfolio.
 
 					Cela m'a également permis de découvrir le processus d'hébergement en ligne. J'ai pris un VPS et un nom de domaine chez OVH, j'ai donc dû manuellement installer les prérequis via le terminal Ubuntu de mon VPS et d'envoyer mon site par FTP.
+
+					[Ce site a été refait en Angular.](modal:fred-angular)
 				`
 			],
 			en: [
@@ -1085,16 +1151,18 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					### My personal website (React)
 
 					* 2019-2021
-					* Used technologies: ReactJS, Sass
+					* Used technologies: React, Sass
 					* Project finished in one month
 
-					I launched this project of creating my own website in order to exhibit myself online and to showcase my project. This allowed me to put more ReactJS into practice and to discover the process of hosting websites.
+					I launched this project of creating my own website in order to exhibit myself online and to showcase my project. This allowed me to put more React into practice and to discover the process of hosting websites.
 
 					So I went from creating the mock-up to the development and the online hosting of my website.
 
 					What motivated me to develop it in React is its speed and the ability to use reusable components to display multiple items with the same layout, which is extremely useful for displaying my career and portfolio items.
 
 					It also allowed me to discover the online hosting process. I took a VPS and a domain name from OVH, so I had to manually install the prerequisite through the Ubuntu terminal of my VPS and send my website through FTP.
+
+					[This website was remade in Angular.](modal:fred-angular)
 				`
 			]
 		}
@@ -1145,7 +1213,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					#### Exercice de groupe chez BeCode
 
 					* 2019
-					* Technologies utilisés: HTML, JavaScript
+					* Technologies utilisées: HTML, JavaScript
 					* Exercice terminé en 3 semaines
 				`,
 					{galIndex: 0},
@@ -1227,7 +1295,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					#### Projet individuel chez BeCode
 
 					* 2019
-					* Technologies utilisés: HTML, SASS, JavaScript
+					* Technologies utilisées: HTML, SASS, JavaScript
 					* Projet terminé en un mois
 				`,
 					{galIndex: 0},
@@ -1310,7 +1378,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 					#### Projet de groupe chez Technocité
 
 					* 2019
-					* Technologies utilisés: HTML, SASS, JavaScript
+					* Technologies utilisées: HTML, SASS, JavaScript
 					* Projet terminé en trois mois
 				`,
 					{galIndex: 0},

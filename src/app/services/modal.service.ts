@@ -1,6 +1,6 @@
 import { Injectable, OnInit } from '@angular/core';
 import { Subject } from 'rxjs';
-import { ModalChange, PORTFOLIOLIST } from '../portfolio-list';
+import { ModalChange, PORTFOLIOLIST } from '../data/portfolio-list';
 
 
 @Injectable({

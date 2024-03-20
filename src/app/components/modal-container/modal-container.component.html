@@ -8,12 +8,12 @@
 
 			<ng-container *ngFor="let article of currentArticle.article[lang]">
 
-				<markdown *ngIf="checkType(article) === 'string'" [disableSanitizer]="true">{{article}}</markdown>
+				<markdown appMarkdownModalLink *ngIf="checkType(article) === 'string'" [disableSanitizer]="true">{{article}}</markdown>
 				<app-modal-gallery *ngIf="checkType(article) === 'object'" [gallery]="getGallery(article)" [artId]="currentArticle.id"></app-modal-gallery>
 
 			</ng-container>
 
-		</ng-container> 
+		</ng-container>
 
 
 		<div *ngIf="currentArticle" class="modal-bottom">

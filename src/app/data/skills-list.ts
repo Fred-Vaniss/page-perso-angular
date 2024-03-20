@@ -1,4 +1,4 @@
-import { Translation } from "../../localization";
+import { Translation } from "./localization";
 
 interface Skills {
 	title: string;

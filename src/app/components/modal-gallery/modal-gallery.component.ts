@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { LangService } from '../../services/lang.service';
-import { Gallery } from '../../portfolio-list';
+import { Gallery } from '../../data/portfolio-list';
 
 @Component({
   selector: 'app-modal-gallery',

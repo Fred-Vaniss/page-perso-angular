@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { LOCABOUT } from '../../localization';
+import { LOCABOUT } from '../../data/localization';
 import { LangService } from '../../services/lang.service';
 
 @Component({

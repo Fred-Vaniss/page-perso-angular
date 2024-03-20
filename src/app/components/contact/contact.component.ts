@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LangService } from '../../services/lang.service';
-import { LOCCONTACT } from '../../localization';
+import { LOCCONTACT } from '../../data/localization';
 import { faEnvelope, faMobileAlt, faHome, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
