@@ -3,7 +3,8 @@ import { Translation } from "./localization";
 export enum ParType {
 	Entr,
 	Forma,
-	Gradu
+	Gradu,
+  Crown
 }
 
 interface Parcours {
@@ -19,6 +20,28 @@ interface Parcours {
 export const PARCOURS: Parcours[] = [
   {
     type: ParType.Gradu,
+    entreprise: "Aumôniers du Travail",
+    time: "2024-2027",
+    place: "Charleroi",
+    title: {
+      fr: "BAC Informatique de gestion",
+      en: "BAC Business Informatics"
+    },
+    desc: {
+      fr: `
+        Je suis actuellement une formation en Informatique de Gestion, axée sur le développement logiciel, la gestion des bases de données et l’analyse des systèmes d’information.
+
+        Ce programme combine des compétences techniques en programmation, réseaux et systèmes, avec des notions de gestion de projet et d’entreprise. Il inclut également des projets pratiques et un stage en entreprise pour appliquer les connaissances acquises dans un contexte professionnel.
+      `,
+      en: `
+        I am currently pursuing a degree in Business Informatics, focusing on software development, database management, and information systems analysis.
+
+        This program combines technical skills in programming, networks, and systems with project management and business concepts. It also includes practical projects and an internship to apply the acquired knowledge in a professional setting.
+      `
+    }
+  },
+  {
+    type: ParType.Crown,
     entreprise: "Citizens Of Wallonia",
     time: "Mars 2024",
     place: "Charleroi",
