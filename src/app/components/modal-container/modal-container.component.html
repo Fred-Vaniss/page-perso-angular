@@ -1,25 +1,31 @@
 <div class="portfolio-modal transition" [class.shown]="isShown" (click)="bgCloseModal($event)">
-	<div class="modal-box">
-		<div class="modal-close-container">
-			<button (click)="closeModal()" class="modal-close"><fa-icon [icon]="faTimes"></fa-icon></button>
-		</div>
+  <div class="modal-box">
+    <div class="modal-close-container">
+      <button (click)="closeModal()" class="modal-close"><fa-icon [icon]="faTimes"></fa-icon></button>
+    </div>
 
-		<ng-container *ngIf="currentArticle">
+    @if (currentArticle) {
+      @for (article of currentArticle.article[lang]; track article) {
+        @if (checkType(article) === 'string') {
+          <markdown appMarkdownModalLink [disableSanitizer]="true">{{article}}</markdown>
+        }
+        @if (checkType(article) === 'object') {
+          <app-modal-gallery [gallery]="getGallery(article)" [artId]="currentArticle.id"></app-modal-gallery>
+        }
+      }
+    }
 
-			<ng-container *ngFor="let article of currentArticle.article[lang]">
 
-				<markdown appMarkdownModalLink *ngIf="checkType(article) === 'string'" [disableSanitizer]="true">{{article}}</markdown>
-				<app-modal-gallery *ngIf="checkType(article) === 'object'" [gallery]="getGallery(article)" [artId]="currentArticle.id"></app-modal-gallery>
-
-			</ng-container>
-
-		</ng-container>
-
-
-		<div *ngIf="currentArticle" class="modal-bottom">
-			<button (click)="closeModal()" class="form-submit modal-close-bottom">{{ locBtns.close[lang] }}</button>
-			<a *ngIf="currentArticle.url.preview" href="{{currentArticle.url.preview}}" class="form-submit modal-preview-bottom" target="_blank" rel="noopener noreferrer" title="{{ locBtns.preview[lang] }}">{{ locBtns.preview[lang] }}</a>
-			<a *ngIf="currentArticle.url.git" href="{{currentArticle.url.git}}" class="form-submit modal-preview-bottom" target="_blank" rel="noopener noreferrer" title="{{ locBtns.git[lang] }}">{{ locBtns.git[lang] }}</a>
-		</div>
-	</div>
+    @if (currentArticle) {
+      <div class="modal-bottom">
+        <button (click)="closeModal()" class="form-submit modal-close-bottom">{{ locBtns.close[lang] }}</button>
+        @if (currentArticle.url.preview) {
+          <a href="{{currentArticle.url.preview}}" class="form-submit modal-preview-bottom" target="_blank" rel="noopener noreferrer" title="{{ locBtns.preview[lang] }}">{{ locBtns.preview[lang] }}</a>
+        }
+        @if (currentArticle.url.git) {
+          <a href="{{currentArticle.url.git}}" class="form-submit modal-preview-bottom" target="_blank" rel="noopener noreferrer" title="{{ locBtns.git[lang] }}">{{ locBtns.git[lang] }}</a>
+        }
+      </div>
+    }
+  </div>
 </div>

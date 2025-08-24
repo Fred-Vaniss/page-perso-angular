@@ -1,26 +1,32 @@
 <div class="wrapper" id="portfolio-animate-trigger">
-	<h2>{{locTitle[lang]}}</h2>
-	<div class="portfolio-list">
-		<ng-container *ngFor="let entry of portfolioList; index as i">
-			<div *ngIf="!entry.exclude"
-				class="portfolio-entry"
-				data-aos="flip-left"
-				data-aos-anchor="#portfolio-animate-trigger"
-				[attr.data-aos-delay]="i * 100"
-			>
-				<div class="portfolio-info">
-					<div class="portfolio-info-container">
-						<h4>{{entry.title[lang]}}</h4>
-						<p>{{entry.techno}}</p>
-						<div class="portfolio-links">
-							<button (click)="openArticle(entry.id)" class="portfolio-link" title="{{locBtns.open[lang]}}"><span><fa-icon [icon]="faStickyNote"></fa-icon></span></button>
-							<a *ngIf="entry.url.git" class="portfolio-link" href="{{entry.url.git}}" target="_blank" rel="noopener noreferrer" title="{{locBtns.git[lang]}}"><span><fa-icon [icon]="faGithub"></fa-icon></span></a>
-							<a *ngIf="entry.url.preview" class="portfolio-link" href="{{entry.url.preview}}" target="_blank" rel="noopener noreferrer" title="{{locBtns.preview[lang]}}"><span><fa-icon [icon]="faGlobe"></fa-icon></span></a>
-						</div>
-					</div>
-				</div>
-				<img src="{{getImg(entry.id)}}" alt="{{entry.title[lang]}}">
-			</div>
-		</ng-container>
-	</div>
+  <h2>{{locTitle[lang]}}</h2>
+  <div class="portfolio-list">
+    @for (entry of portfolioList; track entry; let i = $index) {
+      @if (!entry.exclude) {
+        <div
+          class="portfolio-entry"
+          data-aos="flip-left"
+          data-aos-anchor="#portfolio-animate-trigger"
+          [attr.data-aos-delay]="i * 100"
+          >
+          <div class="portfolio-info">
+            <div class="portfolio-info-container">
+              <h4>{{entry.title[lang]}}</h4>
+              <p>{{entry.techno}}</p>
+              <div class="portfolio-links">
+                <button (click)="openArticle(entry.id)" class="portfolio-link" title="{{locBtns.open[lang]}}"><span><fa-icon [icon]="faStickyNote"></fa-icon></span></button>
+                @if (entry.url.git) {
+                  <a class="portfolio-link" href="{{entry.url.git}}" target="_blank" rel="noopener noreferrer" title="{{locBtns.git[lang]}}"><span><fa-icon [icon]="faGithub"></fa-icon></span></a>
+                }
+                @if (entry.url.preview) {
+                  <a class="portfolio-link" href="{{entry.url.preview}}" target="_blank" rel="noopener noreferrer" title="{{locBtns.preview[lang]}}"><span><fa-icon [icon]="faGlobe"></fa-icon></span></a>
+                }
+              </div>
+            </div>
+          </div>
+          <img src="{{getImg(entry.id)}}" alt="{{entry.title[lang]}}">
+        </div>
+      }
+    }
+  </div>
 </div>
