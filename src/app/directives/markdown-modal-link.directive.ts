@@ -2,7 +2,8 @@ import {Directive, HostListener} from '@angular/core';
 import {ModalService} from "../services/modal.service";
 
 @Directive({
-  selector: '[appMarkdownModalLink]'
+    selector: '[appMarkdownModalLink]',
+    standalone: false
 })
 export class MarkdownModalLinkDirective {
 

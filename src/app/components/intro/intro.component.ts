@@ -4,9 +4,10 @@ import { LangService } from '../../services/lang.service';
 import { LOCINTRO } from '../../data/localization';
 
 @Component({
-  selector: '[app-intro]',
-  templateUrl: './intro.component.html',
-  styleUrls: ['./intro.component.scss']
+    selector: '[app-intro]',
+    templateUrl: './intro.component.html',
+    styleUrls: ['./intro.component.scss'],
+    standalone: false
 })
 
 export class IntroComponent implements OnInit {

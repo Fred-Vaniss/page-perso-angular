@@ -4,9 +4,10 @@ import { SKILLS, SOFTSKILLS } from '../../data/skills-list';
 import { LOCSKILLS } from '../../data/localization';
 
 @Component({
-  selector: '[app-skills]',
-  templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.scss']
+    selector: '[app-skills]',
+    templateUrl: './skills.component.html',
+    styleUrls: ['./skills.component.scss'],
+    standalone: false
 })
 export class SkillsComponent implements OnInit{
   skills = SKILLS;

@@ -3,9 +3,10 @@ import { LangService } from '../../services/lang.service';
 import { Gallery } from '../../data/portfolio-list';
 
 @Component({
-  selector: 'app-modal-gallery',
-  templateUrl: './modal-gallery.component.html',
-  styleUrls: ['./modal-gallery.component.scss']
+    selector: 'app-modal-gallery',
+    templateUrl: './modal-gallery.component.html',
+    styleUrls: ['./modal-gallery.component.scss'],
+    standalone: false
 })
 
 export class ModalGalleryComponent implements OnInit {

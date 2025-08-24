@@ -7,9 +7,10 @@ import { LangService } from '../../services/lang.service';
 import { LOCTIMELINE } from '../../data/localization';
 
 @Component({
-  selector: '[app-timeline]',
-  templateUrl: './timeline.component.html',
-  styleUrls: ['./timeline.component.scss']
+    selector: '[app-timeline]',
+    templateUrl: './timeline.component.html',
+    styleUrls: ['./timeline.component.scss'],
+    standalone: false
 })
 export class TimelineComponent implements OnInit{
 

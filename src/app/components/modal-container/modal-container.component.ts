@@ -7,9 +7,10 @@ import { Article, Gallery, GalleryCall, PortfolioEntry } from '../../data/portfo
 import { UrlService } from '../../services/url.service';
 
 @Component({
-  selector: 'app-modal-container',
-  templateUrl: './modal-container.component.html',
-  styleUrls: ['./modal-container.component.scss']
+    selector: 'app-modal-container',
+    templateUrl: './modal-container.component.html',
+    styleUrls: ['./modal-container.component.scss'],
+    standalone: false
 })
 
 export class ModalContainerComponent implements OnInit {
