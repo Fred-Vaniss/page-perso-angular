@@ -1,4 +1,6 @@
-@import 'variables';
+@use 'variables' as *;
+@use 'sass:meta';
+@use 'sass:color';
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap');
 
@@ -673,7 +675,7 @@ a.portfolio-link, .portfolio-link span{
 	font-size: 1.5em;
 	cursor: pointer;
 	&:hover{
-		background-color: lighten($color: $blue, $amount: 10);
+		background-color: color.adjust($color: $blue, $lightness: 10%);
 	}
 }
 
@@ -762,5 +764,5 @@ footer{
 	}
 }
 
-@import '520';
-@import '760';
+@include meta.load-css('520');
+@include meta.load-css('760');

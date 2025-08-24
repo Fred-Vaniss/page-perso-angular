@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 
 import {BrowserModule, REMOVE_STYLES_ON_COMPONENT_DESTROY} from '@angular/platform-browser';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { MarkdownModule, MarkedOptions, MarkedRenderer } from 'ngx-markdown';
+import {MarkdownModule, MARKED_OPTIONS, MarkedOptions, MarkedRenderer} from 'ngx-markdown';
 
 import { AppComponent } from './app.component';
 import { IntroComponent } from './components/intro/intro.component';
@@ -17,22 +17,21 @@ import { ModalGalleryComponent } from './components/modal-gallery/modal-gallery.
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MarkdownModalLinkDirective } from './directives/markdown-modal-link.directive';
+import {Tokens} from "marked";
 
 
 export function markdownOptionsFactory(): MarkedOptions {
-
   const renderer = new MarkedRenderer();
-  const linkRenderer = renderer.link;
 
-  renderer.link = (href,title,text) => {
-    const html = linkRenderer.call(renderer, href, title, text);
-    return html.replace(/^<a /, '<a role="link" tabindex="0" target="_blank" rel="nofollow noopener noreferrer" ');
-  }
+  renderer.link = (token: Tokens.Link) => {
+    const href = token.href || '';
+    const title = token.title ? ` title="${token.title}"` : '';
+    const text = token.text || '';
 
-  return {
-    renderer
-  }
+    return `<a role="link" tabindex="0" target="_blank" rel="nofollow noopener noreferrer" href="${href}"${title}>${text}</a>`;
+  };
 
+  return { renderer };
 }
 
 @NgModule({
@@ -55,14 +54,14 @@ export function markdownOptionsFactory(): MarkedOptions {
     FontAwesomeModule,
     MarkdownModule.forRoot({
       markedOptions: {
-        provide: MarkedOptions,
+        provide: MARKED_OPTIONS,
         useFactory: markdownOptionsFactory
       }
     }),
     ModalRoutingModule,
   ],
   providers: [
-    {provide: REMOVE_STYLES_ON_COMPONENT_DESTROY, useValue: {false}}
+    { provide: REMOVE_STYLES_ON_COMPONENT_DESTROY, useValue: false }
   ],
   bootstrap: [AppComponent]
 })
