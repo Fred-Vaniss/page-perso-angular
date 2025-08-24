@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+
+import {BrowserModule, REMOVE_STYLES_ON_COMPONENT_DESTROY} from '@angular/platform-browser';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MarkdownModule, MarkedOptions, MarkedRenderer } from 'ngx-markdown';
 
@@ -60,7 +61,9 @@ export function markdownOptionsFactory(): MarkedOptions {
     }),
     ModalRoutingModule,
   ],
-  providers: [],
+  providers: [
+    {provide: REMOVE_STYLES_ON_COMPONENT_DESTROY, useValue: {false}}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
