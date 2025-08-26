@@ -5,12 +5,17 @@
     </div>
 
     @if (currentArticle) {
-      @for (article of currentArticle.article[lang]; track article) {
-        @if (checkType(article) === 'string') {
-          <markdown appMarkdownModalLink [disableSanitizer]="true">{{article}}</markdown>
+      @for (block of articleBlocks; track i; let i = $index) {
+        @if (typeof block === 'string') {
+          <markdown appMarkdownModalLink [disableSanitizer]="true">{{block}}</markdown>
         }
-        @if (checkType(article) === 'object') {
-          <app-modal-gallery [gallery]="getGallery(article)" [artId]="currentArticle.id"></app-modal-gallery>
+        @if (typeof block === 'object' && block !== null && 'gallery' in block) {
+          <app-modal-gallery [gallery]="currentArticle.galleries[block.gallery]" [artId]="currentArticle.id"></app-modal-gallery>
+        }
+        @if (typeof block === 'object' && block !== null && 'video' in block) {
+          <div class="modal-video-container">
+            <iframe [src]="block.video | safeUrl" frameborder="0" allowfullscreen></iframe>
+          </div>
         }
       }
     }

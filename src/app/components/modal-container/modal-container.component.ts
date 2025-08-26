@@ -5,6 +5,7 @@ import { LOCBUTTONS } from '../../data/localization';
 import { ModalService } from '../../services/modal.service';
 import { Article, Gallery, GalleryCall, PortfolioEntry } from '../../data/portfolio-list';
 import { UrlService } from '../../services/url.service';
+import {PortfolioArticleService} from "../../services/portfolio-article.service";
 
 @Component({
     selector: 'app-modal-container',
@@ -20,11 +21,13 @@ export class ModalContainerComponent implements OnInit {
   isShown: boolean = false;
   currentArticle? : PortfolioEntry = null;
   faTimes = faTimes;
+  articleBlocks: (string | { gallery: number } | { video: string }) [] = [];
 
   constructor(
     public langService: LangService,
     public modalService: ModalService,
-    public urlService: UrlService
+    public urlService: UrlService,
+    private articleService: PortfolioArticleService,
   ){}
 
   ngOnInit(): void {
@@ -33,7 +36,12 @@ export class ModalContainerComponent implements OnInit {
 
     this.modalService.modalChange.subscribe(modalChange => {
       this.currentArticle = modalChange.article;
-      this.isShown = true;
+      if (this.currentArticle) {
+        this.articleService.loadArticle(this.lang, this.currentArticle.id).subscribe(blocks => {
+          this.articleBlocks = blocks;
+          this.isShown = true;
+        })
+      }
     })
   }
 
@@ -43,6 +51,7 @@ export class ModalContainerComponent implements OnInit {
 
     setTimeout(() => {
       this.currentArticle = null;
+      this.articleBlocks = [];
     }, 400);
   }
 

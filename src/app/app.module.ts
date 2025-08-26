@@ -18,6 +18,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MarkdownModalLinkDirective } from './directives/markdown-modal-link.directive';
 import {Tokens} from "marked";
+import {SafeUrlPipe} from "./components/modal-container/safe-url.pipe";
+import {provideHttpClient} from "@angular/common/http";
 
 
 export function markdownOptionsFactory(): MarkedOptions {
@@ -47,21 +49,23 @@ export function markdownOptionsFactory(): MarkedOptions {
     ModalGalleryComponent,
     ContactComponent,
     FooterComponent,
-    MarkdownModalLinkDirective
+    MarkdownModalLinkDirective,
   ],
   imports: [
     BrowserModule,
     FontAwesomeModule,
     MarkdownModule.forRoot({
       markedOptions: {
-        provide: MARKED_OPTIONS,
-        useFactory: markdownOptionsFactory
+          provide: MARKED_OPTIONS,
+          useFactory: markdownOptionsFactory
       }
     }),
     ModalRoutingModule,
+    SafeUrlPipe,
   ],
   providers: [
-    { provide: REMOVE_STYLES_ON_COMPONENT_DESTROY, useValue: false }
+    { provide: REMOVE_STYLES_ON_COMPONENT_DESTROY, useValue: false },
+    provideHttpClient()
   ],
   bootstrap: [AppComponent]
 })
