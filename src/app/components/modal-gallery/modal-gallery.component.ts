@@ -25,11 +25,11 @@ export class ModalGalleryComponent implements OnInit {
   }
 
   getThumb(img: string): string {
-    return `assets/img/portfolio/gallery/${this.artId}/${img}-thumb.jpg`;
+    return `assets/portfolio/${this.artId}/gallery/${img}-thumb.jpg`;
   }
 
   getHref(img: string, format: string): string {
-    return `assets/img/portfolio/gallery/${this.artId}/${img}.${format}`;
+    return `assets/portfolio/${this.artId}/gallery/${img}.${format}`;
   }
 
 }

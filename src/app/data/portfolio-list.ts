@@ -6,10 +6,6 @@ export interface GalleryCall {
 
 export type Article = string | GalleryCall
 
-interface ArticleTranslation {
-	[key: string]: Article[];
-}
-
 interface Links {
 	git?: string;
 	preview?: string;
@@ -29,7 +25,6 @@ export interface PortfolioEntry {
 	techno: string;
 	id: string;
 	url?: Links;
-	article?: ArticleTranslation;
 	galleries?: Gallery[];
 	exclude?: boolean;
 }
@@ -696,17 +691,6 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 		techno: "",
 		id: "error",
 		url: {},
-		article: {
-			fr: [`
-				# Erreur
-
-				L'article spécifié n'existe pas.
-			`],
-			en: [`
-				# Error
-
-				The specified article doesn't exist.
-			`]
-		}
 	}
+
 ]

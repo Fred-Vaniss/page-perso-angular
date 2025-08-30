@@ -9,7 +9,7 @@ export class PortfolioArticleService {
   constructor(private http: HttpClient) { }
 
   loadArticle(lang: string, id: string): Observable<(string | { gallery: number } | { video: string })[]> {
-    const path = `assets/portfolio/${id}.${lang}.md`;
+    const path = `assets/portfolio/${id}/article.${lang}.md`;
 
     return this.http.get(path, { responseType: "text" }).pipe(
       map(content => {

@@ -36,8 +36,8 @@ export class PortfolioComponent {
     this.lang = this.langService.getLang();
   }
 
-  getImg(img: string): string {
-    return(`assets/img/portfolio/${img}.jpg`);
+  getImg(id: string): string {
+    return(`assets/portfolio/${id}/thumb.jpg`);
   }
 
   openArticle(id: string): void {
