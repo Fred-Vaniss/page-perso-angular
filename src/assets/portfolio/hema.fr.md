@@ -29,7 +29,7 @@ Le compteur de balles dans le chargeur comporte aussi une animation à chaque ba
 
 ### Le système d'inventaire
 
-{{galIndex:2}}
+{{gallery:2}}
 
 C'est sans doute la partie la plus complexe de ce projet.
 
@@ -47,6 +47,6 @@ C’est sans nul doute le plus gros projet que j’ai eu à développer, et il m
 
 ### Mises à jours
 
-{{galIndex:3}}
+{{gallery:3}}
 
 Les mises à jours se suivent et se ressemblent

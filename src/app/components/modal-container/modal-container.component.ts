@@ -35,6 +35,7 @@ export class ModalContainerComponent implements OnInit {
     this.langService.languageChange.subscribe(lang => this.lang = lang);
 
     this.modalService.modalChange.subscribe(modalChange => {
+      this.articleBlocks = [];
       this.currentArticle = modalChange.article;
       if (this.currentArticle) {
         this.articleService.loadArticle(this.lang, this.currentArticle.id).subscribe(blocks => {
