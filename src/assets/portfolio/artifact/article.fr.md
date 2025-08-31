@@ -1,18 +1,18 @@
 ### Artifact Rush
 #### Projet de fin d'étude de bachelier
 
-* Première création: 2017
-* Refonte du site: 2019
-* Technos: HTML, SASS, JavaScript
-* Durée du projet: 2 mois
+* **Première version**: 2017
+* **Refonte complète**: 2019
+* **Technologies**: HTML, SASS, JavaScript
+* **Durée**: 2 mois
 
 {{gallery:0}}
 
-C'est une refonte complète de mon site de projet de fin d'études (créé en 2017).
+Cette refonte complète de mon site de projet de fin d’études a été réalisée pour appliquer mes compétences acquises en UX Webdesign chez Technocité.  
 
-À cet époque, je n'avais quasi aucune conaissance sur la création d'un site web et des bonnes pratiques, du coup je m'étais contenté juste de prendre un thème Bootstrap et le me modifier, le résultat au format mobile était catastrophique.
+Contrairement à la première version de 2017, qui reposait sur un thème Bootstrap et présentait de nombreux problèmes d’affichage sur mobile, cette version a été créée de zéro :  
+* **Responsive design**: toutes les pages s’adaptent parfaitement aux différents écrans.  
+* **JavaScript pur**: toutes les fonctionnalités sont développées en vanilla JavaScript, sans dépendance à un framework.  
+* **Amélioration de l’UX et de la mise en page**: structure et navigation optimisées pour l’expérience utilisateur.  
 
-Je me suis donc lancé sur ce re-créer mon site à partir de zéro afin de mettre en application ce que j'avais appris en UX Webdesign chez Technocité.
-
-Cette refonte ne dépends pas de Bootstrap et toutes les fonctionnalités du site sont faites en JavaScript brut.
-J'ai également fait des améliorations sur la mise en page et elle est désormais parfaitement responsive.
+Ce projet m’a permis de consolider mes compétences en intégration front-end, UX et développement JavaScript.

@@ -1,17 +1,18 @@
 ### Artifact Rush
 #### Bachelor End-of-study work
 
-* First creation: 2017
-* Re-creation: 2019
-* Techs: HTML, SASS, JavaScript
-* Project duration: 2 months
+* **First version**: 2017
+* **Complete redesign**: 2019
+* **Technologies**: HTML, SASS, JavaScript
+* **Duration**: 2 months
 
 {{gallery:0}}
 
-This is a complete recreation of my end-of-study project website (created in 2017).
+This complete redesign of my end-of-study project website was carried out to apply the skills I acquired in the UX Webdesign course at Technocité.  
 
-At that time, I had almost no knowledge about creating a website and best practices, so I had just taken a Bootstrap theme and changed it, the result in mobile format was quite catastrophic.
+Unlike the first version from 2017, which relied on a Bootstrap theme and had many display issues on mobile, this version was built from scratch:  
+* **Responsive design**: all pages adapt perfectly to different screen sizes.  
+* **Vanilla JavaScript**: all features are developed in pure JavaScript without relying on a framework.  
+* **Improved UX and layout**: structure and navigation optimized for user experience.  
 
-So I embarked on this project to recreate my website from scratch in order to apply what I've learned in UX Webdesign course at Technocité.
-
-This recreation doesn't depend on Bootstrap and all the features of the website are made in vanilla JavaScript. I also made some improvements on the layout and it is now perfectly responsive.
+This project allowed me to strengthen my front-end integration, UX, and JavaScript development skills.

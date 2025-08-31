@@ -1,16 +1,18 @@
 ### AllezCiné
 #### Group exercise at BeCode
 
-* 2019
-* Used technologies: HTML, JavaScript
-* Exercise finished in 3 weeks
+* **Year:** 2019
+* **Technologies:** HTML, JavaScript
+* **Duration:** 3 weeks
 
 {{gallery:0}}
 
-The main purpose of this group exercise was to put into practice the allocation of tasks in a group work, the use of GIT with several people and the practical application of AJAX requests.
+As part of a group exercise, we had to reproduce a website mock-up and make it functional as a team. We used [The Movie Database](https://www.themoviedb.org/) API to fetch an up-to-date list of movies and their details.  
 
-The goal of this exercise was to reproduce a mock-up of a website and make it functional. For this, we used [The Movie Database](https://www.themoviedb.org/) API to provide an up-to-date list and details of the movies.
+My main role was to handle API requests and dynamically display the movies and their information. I also collaborated with other team members to integrate the different parts of the website and use Git effectively.  
 
-The different members of my group had the task of taking care of different parts of the website while I took care of the API queries and displaying the list of movies and information.
+**Challenges encountered:**
+* Initial coordination difficulties, quickly resolved by better task distribution.  
+* Managing API calls and dynamic display to ensure a smooth and responsive interface.  
 
-The only big problem we had was a miscoordination at the start of the project, but after that, everything went smoothly.
+This project allowed me to strengthen my skills in JavaScript, API handling, and collaborative work using Git.

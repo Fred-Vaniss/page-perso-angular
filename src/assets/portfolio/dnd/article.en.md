@@ -1,14 +1,13 @@
 ### Dungeon & Dragons character sheet
 #### Personal project
 
-* March 2020
-* Used technologies: React, SASS
-* Interrupted project
+* **Date**: March 2020
+* **Technologies**: React, SASS
 
 {{gallery:0}}
 
-I participated with a group of friends in a Dungeons & Dragons tabletop role-playing game. In this game, each person has its own character sheet in paper where all the information about their characters is indicated.
+I developed a digital version of the Dungeons & Dragons character sheet to make it easier to use during sessions.  
 
-So I came up with the idea of making this character sheet in web format. Not only will it be in digital format, but it will also do the calculations automatically with the different associated statistics.
+This web application not only centralizes all character information but also performs automatic calculations for the different statistics.  
 
-To simplify the sharing of our character sheets, all changes made are saved in the URL as parameters.
+To simplify sharing between players, all changes are stored in the URL as parameters, making it easy to exchange sheets without a database.  

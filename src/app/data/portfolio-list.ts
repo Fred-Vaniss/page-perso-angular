@@ -41,7 +41,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
       fr: "Hematolysis",
       en: "Hematolysis",
     },
-    techno: "LUA",
+    techno: "Lua",
     id: "hema",
     url: {},
     galleries:[
@@ -113,16 +113,16 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
           img: "updt-1",
           format: "jpg",
           alt: {
-            fr: "fr",
-            en: "en"
+            fr: "Bannière mise à jour 1",
+            en: "Update banner 1"
           }
         },
         {
           img: "updt-2",
           format: "jpg",
           alt: {
-            fr: "fr",
-            en: "en"
+            fr: "Bannière mise à jour 2",
+            en: "Update banner 2"
           }
         }
       ]
@@ -219,7 +219,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 			fr: "Project Zomboid",
 			en: "Project Zomboid",
 		},
-		techno: "LUA, Illustrator",
+		techno: "Lua, Illustrator",
 		id: "zomboid",
 		url: {},
 		galleries: [
@@ -256,7 +256,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 			fr: "Addons Gmod",
 			en: "Gmod addons"
 		},
-		techno: "LUA, Photoshop",
+		techno: "Lua, Photoshop",
 		id: "gmod",
 		url: {},
 		galleries: [

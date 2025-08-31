@@ -1,9 +1,9 @@
 ### Application de suivi d’objectifs temporels
 #### Projet personnel
 
-* Février 2021
-* Technologies utilisées: React, SASS
-* Projet terminé en cinq jours
+* **Date**: Février 2021
+* **Technologies**: React, SASS
+* **Durée**: Cinq jours
 
 {{gallery:0}}
 

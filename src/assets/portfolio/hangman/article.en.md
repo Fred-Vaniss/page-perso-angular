@@ -1,17 +1,16 @@
 ### Hangman's game
 #### Individual project at BeCode
 
-* 2019
-* Used technologies: HTML, SASS, JavaScript
-* Project finished in a month
+* **Year**: 2019
+* **Technologies**: HTML, SASS, JavaScript
+* **Duration**: 1 month
 
 {{gallery:0}}
 
-It was at first just a little exercise with a "prompt" that asks the person to choose a letter and display in the console the guessed letters and the number of trials remaining.
+This project started as a simple exercise using a prompt to guess letters, but I significantly enhanced it.  
 
-Except that I went much further than what was asked for in the exercise, I used the HTML page to interact with the game while we had not mentioned the DOM in the course yet.
-As I progressed, I even added random words, complex words with dashes, apostrophes and accents. Finally, I put a gigantic list in a JSON file.
+I implemented interaction via the DOM before learning it in class, added random and complex words (with dashes, apostrophes, and accents) stored in a JSON file, and created an animated stickman and a virtual keyboard that responds in real time to the user's input.  
 
-Then I went even further by displaying the famous stickman as we use the trials and a virtual keyboard that changes color whether the letter is in the word or not.
+This project allowed me to strengthen my skills in DOM manipulation, event handling, and JavaScript code structuring.  
 
-More details in the README of my Github repository.
+More details are available in the README of my GitHub repository.

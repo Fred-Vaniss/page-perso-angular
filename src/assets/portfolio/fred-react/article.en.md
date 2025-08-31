@@ -1,15 +1,13 @@
 ### My personal website (React)
 
-* 2019-2021
-* Used technologies: React, Sass
-* Project finished in one month
+* **Years**: 2019
+* **Technologies**: React, Sass
+* **Duration**: One month
 
-I launched this project of creating my own website in order to exhibit myself online and to showcase my project. This allowed me to put more React into practice and to discover the process of hosting websites.
+I created my personal website to showcase myself online and highlight my projects. This project allowed me to strengthen my React skills and understand the complete web deployment process.  
 
-So I went from creating the mock-up to the development and the online hosting of my website.
+From the mock-up design to online hosting, I built a reusable component structure to display my career and projects consistently.  
 
-What motivated me to develop it in React is its speed and the ability to use reusable components to display multiple items with the same layout, which is extremely useful for displaying my career and portfolio items.
+For hosting, I used a VPS and a domain from OVH, configured manually via the Ubuntu terminal, and transferred the site using FTP.  
 
-It also allowed me to discover the online hosting process. I took a VPS and a domain name from OVH, so I had to manually install the prerequisite through the Ubuntu terminal of my VPS and send my website through FTP.
-
-[This website was remade in Angular.](modal:fred-angular)
+[This website was later rewritten in Angular to experiment with the framework.](modal:fred-angular)

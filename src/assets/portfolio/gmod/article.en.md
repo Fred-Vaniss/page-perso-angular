@@ -1,10 +1,10 @@
 ### Addons for Garry's Mod
 #### Personal projects
 
-* 2020 - 2021
-* Used technologies: LUA
+* **Year**: 2020 - 2021
+* **Technologie**: Lua
 
-During my free time, I develop addons for Garry's Mod. It's both a video game and an artistic tool, it's highly modulable by the possibility to add LUA coded scripts within the game.
+During my free time, I develop addons for Garry's Mod. It's both a video game and an artistic tool, it's highly modulable by the possibility to add Lua coded scripts within the game.
 
 The creations can be published on the Steam Workshop where everyone can install created addons.
 
@@ -43,12 +43,4 @@ I developed this addon that reproduces approximately the piloting of a real FPV 
 
 This also was my very first programmed entity where I had to manage the client side and the server side of this addon.
 
-<div class="modal-gallery">
-  <div class="video-wrapper">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/5zpn2cg4Jq8"
-      frameBorder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen="allowfullscreen"
-      title="Demo video of my FPV drone"></iframe>
-  </div>
-</div>
+{{video:https://www.youtube.com/embed/5zpn2cg4Jq8}}

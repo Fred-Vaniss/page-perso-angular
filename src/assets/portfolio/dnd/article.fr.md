@@ -1,14 +1,13 @@
 ### Fiche de personnage Donjons & Dragons
 #### Projet personnel
 
-* Mars 2020
-* Technologies utilisées: React, SASS
-* Projet interrompu
+* **Date**: Mars 2020
+* **Technologies**: React, SASS
 
 {{gallery:0}}
 
-Je participais avec un groupe d'amis à un jeu de rôle sur table Donjon & Dragons. Dans ce jeu, chacun à une fiche de son personnage sous format papier où est indiqué toutes les informations sur son personnage.
+J’ai développé une version numérique de la fiche de personnage Donjons & Dragons afin de faciliter son utilisation lors des parties.  
 
-Je me suis donc lancé l'idée de faire cette fiche de personnage sous format page web. Non seulement elle sera au format numérique, mais en plus il fera les calculs automatiquement avec les différentes statistiques associées.
+Cette application web permet non seulement de centraliser les informations du personnage, mais aussi de réaliser automatiquement les calculs liés aux différentes statistiques.  
 
-Pour simplifier le partage de nos fiches de personnage, toutes les modifications apportées sont enregistrées dans l'URL en tant que paramètre.
+Pour simplifier le partage entre joueurs, toutes les modifications sont enregistrées dans l’URL sous forme de paramètres, permettant d’échanger facilement les fiches sans base de données.  

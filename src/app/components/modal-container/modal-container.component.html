@@ -13,15 +13,18 @@
           <app-modal-gallery [gallery]="currentArticle.galleries[block.gallery]" [artId]="currentArticle.id"></app-modal-gallery>
         }
         @if (typeof block === 'object' && block !== null && 'video' in block) {
-          <div class="modal-video-container">
-            <iframe [src]="block.video | safeUrl" frameborder="0" allowfullscreen></iframe>
+          <div class="modal-gallery">
+            <div class="video-wrapper">
+              <iframe width="560" height="315" [src]="block.video | safeUrl"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen="allowfullscreen">
+              </iframe>
+            </div>
           </div>
         }
       }
-    }
 
-
-    @if (currentArticle) {
       <div class="modal-bottom">
         <button (click)="closeModal()" class="form-submit modal-close-bottom">{{ locBtns.close[lang] }}</button>
         @if (currentArticle.url.preview) {

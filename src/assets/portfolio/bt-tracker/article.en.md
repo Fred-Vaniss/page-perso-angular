@@ -1,9 +1,9 @@
 ### Time-Based Goal Tracking Application
 #### Personal project
 
-* February 2021
-* Used technologies: React, SASS
-* Project finished in five days
+* **Date**: February 2021
+* **Technologies**: React, SASS
+* **Duration**: Five days
 
 {{gallery:0}}
 

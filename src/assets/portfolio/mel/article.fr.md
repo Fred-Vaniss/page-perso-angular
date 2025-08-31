@@ -1,16 +1,19 @@
 ### Mél'égumes
 #### Projet de groupe chez Technocité
 
-* 2019
-* Technologies utilisées: HTML, SASS, JavaScript
-* Projet terminé en trois mois
+* **Année :** 2019
+* **Technologies :** HTML, SASS, JavaScript
+* **Durée :** 3 mois
 
 {{gallery:0}}
 
-Ce site a été développé dans le cadre d'une formation en UX Webdesign chez Technocité en partenariat avec Design Innovation.
+Ce projet a été réalisé dans le cadre d'une formation UX Webdesign en partenariat avec Design Innovation. L'objectif était de concevoir et développer un site pour notre cliente Mélanie afin de promouvoir son entreprise de permaculture, Mél'égumes.  
 
-Le projet consiste à concevoir et de développer un site internet pour notre cliente Mélanie pour promouvoir son entreprise de permaculture Mél'égumes.
+Étant donné que la cliente ne disposait ni de contenu ni de charte graphique, notre équipe de trois personnes a créé l’ensemble du contenu visuel et textuel.  
 
-La cliente n'ayant ni contenu, ni charte graphique, on a dû tout créer de nous-mêmes par équipes de trois personnes.
+**Mon rôle principal :**  
+* **Intégration Front-End :** HTML/CSS et SASS pour une structure responsive.  
+* **Développement JavaScript :** animations et interactions dynamiques.  
+* **Collaboration :** coordination avec l’équipe pour intégrer le contenu graphique et textuel.  
 
-Mes collègues se sont occupés de la mise en page, du contenu graphique et textuels tandis que je me suis occupé de coder le site.
+Ce projet m’a permis de renforcer mes compétences en intégration front-end, en design web et en travail collaboratif sur un projet complet.

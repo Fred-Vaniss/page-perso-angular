@@ -1,10 +1,10 @@
 ### Addons pour Garry's mod
 #### Projets personnels
 
-* 2020 - 2021
-* Technologies utilisées: LUA
+* **Année**: 2020 - 2021
+* **Technologie**: Lua
 
-Durant mon temps libre, je développe des addons pour Garry's Mod. C'est à la fois un jeu vidéo et un outil artistique qui est hautement modulable grâce à la possibilité d'implémenter des scripts codés en LUA dans le jeu.
+Durant mon temps libre, je développe des addons pour Garry's Mod. C'est à la fois un jeu vidéo et un outil artistique qui est hautement modulable grâce à la possibilité d'implémenter des scripts codés en Lua dans le jeu.
 
 Les créations peuvent être publiées sur le Steam Workshop où tout le monde peuvent installer les addons créés.
 
@@ -43,12 +43,4 @@ J'ai développé cet addon qui reproduit à peu près le pilotage d'un vrai dron
 
 Ce fut aussi ma toute première entité programmée qui fallait à la fois gérer le côté client et le côté serveur de cet addon.
 
-<div class="modal-gallery">
-  <div class="video-wrapper">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/5zpn2cg4Jq8"
-      frameBorder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen="allowfullscreen"
-      title="Vidéo de démonstration du drone FPV"></iframe>
-  </div>
-</div>
+{{video:https://www.youtube.com/embed/5zpn2cg4Jq8}}

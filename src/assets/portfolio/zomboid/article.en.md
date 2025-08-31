@@ -1,26 +1,24 @@
 ### Addons for Project Zomboid
 #### Personal projects
 
-* 2022
-* Used technologies: LUA
+* **Year**: 2022
+* **Used technologies**: Lua
 
-[Project Zomboid](https://projectzomboid.com/blog/the-game/) is a survival game in a world under a zombie apocalypse. We create a character and the goal is simply to survive and fulfill our needs on a huge world.
+I developed several addons for [Project Zomboid](https://projectzomboid.com/blog/the-game/), an open-world survival game.
 
-The game is very modular and allows to add new features to the game and even modify the world. <br/> It has a *Steam Workshop* where everyone can publish their creations so others can modify their own game experience.
+The game engine is highly flexible, allowing the addition of new features or the modification of existing gameplay elements. Creations can then be shared on the *Steam Workshop*, the game’s community platform.
 
 ---
 
 ### Mini Health Panel
 #### User interface
 
-Developing an addon for Project Zomboid was a big challenge. Unlike Garry's Mod, there is no documentation for addon development. So I had to read and "decipher" myself the LUA files already established by the developers and other addons by the community in order to figure out how the game's functions works.
+Developing an addon for *Project Zomboid* was a real challenge, as there is no official documentation for creating content. I had to analyze the game’s Lua code and community addons to understand the internal mechanics.
 
-It took some time to understand but I managed to develop an addon which made its small success on the workshop of the game.
+After this learning phase, I developed an addon called **Mini Health Panel**.
 
 {{gallery:0}}
 
-I created a minimalistic health panel. The silhouette is invisible by default and appears on the screen whenever there is a wound to treat.
+It displays a silhouette that is invisible by default and only appears when the player is injured. The goal was to provide a cleaner interface than the default health panel, which is often cluttered, and to make it context-sensitive rather than permanent.
 
-This addon's purpose is to be able to do without the health interface of the base's game which take a lot of screen space and displays only when needed instead of always keeping it on screen or having to click on the health icon as soon you need to treat your character.
-
-Many people appreciated my work and was the most popular of the week and the last three months.
+This addon was very successful on the *Steam Workshop*, reaching the top spot among the most popular mods of the week and over the past three months.

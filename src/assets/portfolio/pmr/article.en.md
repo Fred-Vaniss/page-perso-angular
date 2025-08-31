@@ -1,8 +1,8 @@
 ### Pimp My Ride
 #### Hackathon prototype
 
-* March 2024
-* Used Technology
+* **Date**: March 2024
+* **Technology**: Angular
 
 **P**imp **M**y **R**ide is an add-on concept for mobile apps aimed at helping people with reduced mobility to have better visibility on the possible aids from the different stations.
 

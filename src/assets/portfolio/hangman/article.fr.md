@@ -1,16 +1,16 @@
 ### Jeu du pendu
 #### Projet individuel chez BeCode
 
-* 2019
-* Technologies utilisées: HTML, SASS, JavaScript
-* Projet terminé en un mois
+* **Année**: 2019
+* **Technologies**: HTML, SASS, JavaScript
+* **Durée**: 1 mois
 
 {{gallery:0}}
 
-C'était à la base juste un petit exercice à base de "prompt" pour demander à la personne de choisir une lettre et d'afficher dans la console les lettres devinées et le nombre d'essais restants.
+Ce projet a commencé comme un exercice simple utilisant un prompt pour deviner des lettres, mais je l’ai considérablement enrichi.  
 
-Sauf que je suis allé beaucoup plus loin que ce qui était demandé dans l'exercice, j'ai utilisé la page HTML pour interagir avec le jeu alors qu'on n'avait pas encore évoqué le DOM en cours. Au fur et à mesure que je progresse, j'ai même ajouté des mots aléatoires, des mots complexes avec des tirets, apostrophes et des accents. Pour finir, j'ai mis une liste gigantesque dans un fichier JSON.
+J’ai intégré l’interaction via le DOM avant d’en avoir étudié les bases, ajouté des mots aléatoires et complexes (avec tirets, apostrophes et accents) stockés dans un fichier JSON, et créé un stickman animé ainsi qu’un clavier virtuel qui réagit en temps réel aux choix de l’utilisateur.  
 
-Puis j'ai été encore plus loin en affichant le fameux bonhomme allumette au fur et à mesure qu'on épuise le nombre d'essais ainsi qu'un clavier virtuel qui change de couleur si la lettre figure dans le mot ou pas.
+Ce projet m’a permis de renforcer mes compétences en manipulation du DOM, en gestion des événements et en structuration de code JavaScript.  
 
 Plus de détails dans le README de mon dépôt Github.

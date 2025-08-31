@@ -2,8 +2,8 @@
 ### Pimp My Ride
 #### Prototype de Hackathon
 
-* Mars 2024
-* Technologie utilisé : Angular
+* **Date**: Mars 2024
+* **Technologie** : Angular
 
 **P**imp **M**y **R**ide est un concept d'extension pour les applications mobiles visant à aider les personnes PMR (**P**ersonnes à **M**obilité **R**éduite) à avoir une meilleure visibilité sur les aides possibles des différentes gares.
 
