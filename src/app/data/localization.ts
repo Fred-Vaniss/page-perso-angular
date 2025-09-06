@@ -46,18 +46,18 @@ export const LOCABOUT: LocAbout = {
 	},
 	text: {
 		fr: `
-			Détenteur d'un bachelier en infographie, j'ai participé à la conception de plusieurs sites web. Étant de nature très curieuse, je me suis intéressé à leurs créations, me permettant de découvrir le milieu du code. C'est pourquoi en 2019,  j'ai décidé d'intégrer la formation de développeur web chez BeCode, me permettant de découvrir des Frameworks tel que *React* et *Angular*.
+			Détenteur d'un bachelier en infographie, j'ai participé à la création de plusieurs sites, ce qui a éveillé ma curiosité pour le code et le web. Cette découverte m'a conduit à suivre en 2019 la formation de développeur web chez BeCode, où j'ai appris à utiliser des frameworks tels que React et Angular.
 
-			Ayant de plus en plus envie de faire du développement mon métier, j'ai décidé en 2023 de suivre la formation de développeur .NET chez Technofutur TIC. Il me tarde de pouvoir mettre mes compétences au service d'une entreprise.
+      En 2023, j'ai poursuivi avec la formation de développeur .NET chez Technofutur TIC, afin de transformer cet intérêt pour le développement en métier.
 
-			L'expérience acquise dans le développement durant mes formations m'a permis de créer de nombreux *"mods"*, me permettant de découvrir de nouveaux langages tel que le *Lua*, dans des jeux vidéos qui se trouvent très souvent appréciés par les communautés de ces jeux.
+      En parallèle, j'ai développé de nombreux mods pour jeux vidéo, explorant de nouveaux langages comme Lua et créant des expériences appréciées par les communautés.
 		`,
 		en: `
-			After my bachelor in Computer Graphics, I decided to become a developer.
+			Holder of a Bachelor’s degree in Graphic Design, I took part in the creation of several websites, which sparked my curiosity for coding and the web. This discovery led me to join the Web Developer training at BeCode in 2019, where I learned to work with frameworks such as React and Angular.
 
-			I started with UX Webdesign where I learned about the structure, designing and the accessibility of websites, only to realize that I enjoy coding more than designing websites.
+      In 2023, I continued with the .NET Developer training at Technofutur TIC, in order to turn this interest in development into a career.
 
-			So I decided to invest myself in front-end and back-end development and make it my job.
+      Alongside my studies, I have developed numerous mods for video games, exploring new languages such as Lua and creating experiences that are well appreciated by player communities.
 		`
 	}
 }
@@ -115,18 +115,14 @@ export const LOCCONTACT: LocContact = {
 	},
 	text: {
 		fr: `
-			Je suis actuellement disponible pour tout recrutement.
+			Je suis actuellement disponible pour de nouvelles opportunités.
 
-			Si vous êtes intéressé par mon profil et que vous souhaitez me recruter ou si vous avez des questions à me poser, vous pouvez me contacter par e-mail ou par téléphone.
-
-			Je vous répondrai dès que possible.
+      Si mon profil vous intéresse ou si vous avez des questions, n’hésitez pas à me contacter par e-mail ou par téléphone. Je vous répondrai rapidement.
 		`,
 		en: `
-			I am currently available for recruiting.
+			I am currently available for new opportunities.
 
-			If you are interested about my profile and you wish to recruit me, or if you have questions to ask, you can contact me by e-mail or by phone.
-
-			I will get back to you as soon as possible.
+      If you are interested in my profile or have any questions, feel free to contact me by email or phone. I will get back to you promptly.
 		`
 	}
 }

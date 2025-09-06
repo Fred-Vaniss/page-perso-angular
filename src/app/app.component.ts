@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {AfterViewInit, Component, OnInit} from '@angular/core';
 import AOS from 'aos';
 import { UrlService } from './services/url.service';
 
@@ -8,7 +8,7 @@ import { UrlService } from './services/url.service';
     styleUrls: ['./app.component.scss'],
     standalone: false
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, AfterViewInit {
   title = 'Frédérick Van Isschot';
 
   constructor(private urlService: UrlService){}
@@ -23,5 +23,22 @@ export class AppComponent implements OnInit {
 
     this.urlService.init();
 
+  }
+
+  ngAfterViewInit():void {
+    // Fix for Safari not scrolling to anchor when loading
+    if (window.location.hash) {
+      const target = document.querySelector(window.location.hash);
+      if (target) {
+        setTimeout(() => {
+          target.scrollIntoView({behavior: 'instant'});
+        }, 100)
+      }
+    }
+
+    // Fix for AOS hiding on Safari
+    setTimeout(() => {
+      AOS.refresh();
+    }, 300)
   }
 }
