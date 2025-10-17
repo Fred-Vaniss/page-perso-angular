@@ -214,6 +214,18 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 			]
 		]
 	},
+  {
+    title: {
+      fr: "Puissance Quatre",
+      en: "Connect Four"
+    },
+    techno: "Angular",
+    id: "connect-four",
+    url: {
+      git: "https://github.com/Fred-Vaniss/angular-match-four",
+      preview: "https://fred-vaniss.be/showcase/connect-four/"
+    }
+  },
 	{
 		title: {
 			fr: "Project Zomboid",
