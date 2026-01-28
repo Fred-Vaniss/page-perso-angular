@@ -26,7 +26,7 @@ export class NavbarComponent implements OnInit {
     private urlService: UrlService
   ){}
 
-  @HostListener('window:scroll', ['$event'])
+  @HostListener('window:scroll')
 
   ngOnInit(): void{
     this.langService.languageChange.subscribe(lang => {
