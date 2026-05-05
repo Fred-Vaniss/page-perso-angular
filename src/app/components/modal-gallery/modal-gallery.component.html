@@ -2,7 +2,7 @@
   <div class="modal-gallery">
     @for (image of gallery; track image) {
       <div class="modal-image-container">
-        <a href="{{getHref(image.img, image.format)}}" title="{{image.alt[lang]}}" [attr.data-lightbox]="'gallery-'+galId" data-title={{image.alt[lang]}}>
+        <a href="{{getHref(image.img, image.format)}}" title="{{image.alt[lang]}}" [attr.data-lightbox]="'gallery-'+galId" [attr.data-caption]="image.alt[lang]">
           <img src="{{getThumb(image.img)}}" alt="{{image.alt[lang]}}"/>
         </a>
         <p>{{image.alt[lang]}}</p>

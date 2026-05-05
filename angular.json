@@ -33,11 +33,10 @@
             "styles": [
               "src/styles.scss",
               "aos/dist/aos.css",
-              "lightbox2/dist/css/lightbox.min.css"
+              "node_modules/lightbox3/dist/lightbox3.css"
             ],
             "scripts": [
-              "node_modules/marked/lib/marked.umd.js",
-              "lightbox2/dist/js/lightbox-plus-jquery.min.js"
+              "node_modules/marked/lib/marked.umd.js"
             ],
             "allowedCommonJsDependencies": [
               "aos"

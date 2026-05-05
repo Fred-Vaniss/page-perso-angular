@@ -23,7 +23,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "aos": "^2.3.4",
-    "lightbox2": "^2.11.4",
+    "lightbox3": "^1.1.0",
     "marked": "^17.0.6",
     "ngx-markdown": "^21.3.0",
     "rxjs": "~7.8.0",

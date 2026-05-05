@@ -1,6 +1,7 @@
 import {AfterViewInit, Component, OnInit} from '@angular/core';
 import AOS from 'aos';
 import { UrlService } from './services/url.service';
+import {Lightbox} from "lightbox3";
 
 @Component({
     selector: 'app-root',
@@ -22,6 +23,8 @@ export class AppComponent implements OnInit, AfterViewInit {
     });
 
     this.urlService.init();
+
+    Lightbox.init();
 
   }
 
