@@ -36,7 +36,7 @@
               "lightbox2/dist/css/lightbox.min.css"
             ],
             "scripts": [
-              "node_modules/marked/marked.min.js",
+              "node_modules/marked/lib/marked.umd.js",
               "lightbox2/dist/js/lightbox-plus-jquery.min.js"
             ],
             "allowedCommonJsDependencies": [
