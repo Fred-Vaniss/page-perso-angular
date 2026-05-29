@@ -8,18 +8,18 @@ interface Skills {
 
 export const SKILLS: Skills[] = [
 	{
-		title: "HTML 5",
+		title: "HTML",
 		icon: "html",
-	},
-	{
-		title: "CSS 3",
-		icon: "css",
-		subSkills: [
-			{
-				title: "SASS",
-				icon: "sass"
-			}
-		]
+    subSkills: [
+      {
+        title: "CSS",
+        icon: "css"
+      },
+      {
+        title: "SASS",
+        icon: "sass"
+      }
+    ]
 	},
 	{
 		title: "JavaScript",
@@ -45,6 +45,20 @@ export const SKILLS: Skills[] = [
 			}
 		]
 	},
+  {
+    title: "PHP",
+    icon: "php",
+    subSkills: [
+      {
+        title: "Symfony",
+        icon: "symfony"
+      },
+      {
+        title: "Wordpress",
+        icon: "wordpress"
+      }
+    ]
+  },
 	{
 		title: "Photoshop",
 		icon: "photoshop",

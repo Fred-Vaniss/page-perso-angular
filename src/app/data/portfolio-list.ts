@@ -223,7 +223,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
     id: "connect-four",
     url: {
       git: "https://github.com/Fred-Vaniss/angular-match-four",
-      preview: "https://fred-vaniss.be/showcase/connect-four/"
+      preview: "https://connect-four.fred-vaniss.be/"
     }
   },
 	{
@@ -335,7 +335,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 		id: "bt-tracker",
 		url:{
 			git: "https://github.com/Fred-Vaniss/battlepass-tracker",
-			preview: "https://fred-vaniss.be/showcase/timed-progress-tracker"
+			preview: "https://progress-tracker.fred-vaniss.be/"
 		},
 		galleries: [
 			[
@@ -375,7 +375,8 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 		id: "grav",
 		url: {
 			git: "https://github.com/Fred-Vaniss/creative-gh-grav",
-			preview: "https://fred-vaniss.be/showcase/grav-site/"
+      // TODO: A remettre quand PHP sera intallé dans le serveur
+			// preview: "https://grav.fred-vaniss.be/"
 		},
 		galleries: [
 			[
@@ -414,7 +415,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 		techno: "React, SASS",
 		id: "dnd",
 		url: {
-			preview: "https://fred-vaniss.be/showcase/dnd-sheet/"
+			preview: "https://dnd.fred-vaniss.be/"
 		},
 		galleries: [
 			[
@@ -491,9 +492,7 @@ export const PORTFOLIOLIST: PortfolioEntry[] =  [
 		},
 		techno: "Wordpress, JavaScript",
 		id: "helio",
-		url: {
-			preview: "https://www.heliostart.com"
-		},
+		url: {},
 		galleries: [
 			[
 				{
