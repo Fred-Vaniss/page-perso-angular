@@ -38,6 +38,80 @@ export interface ModalChange {
 export const PORTFOLIOLIST: PortfolioEntry[] =  [
   {
     title: {
+      fr: "Projet vétérinaire",
+      en: "Veterinary project"
+    },
+    techno: "Java, Jakarta",
+    id: "veto",
+    url: {},
+    galleries: [
+      [
+        {
+          img: "veto-1",
+          format: "jpg",
+          alt: {
+            fr: "Liste des produits enregistrés.",
+            en: "List of registered products."
+          }
+        },
+        {
+          img: "veto-2",
+          format: "jpg",
+          alt: {
+            fr: "Formulaire des détails d'un produit.",
+            en: "Product details form."
+          }
+        },
+        {
+          img: "veto-3",
+          format: "jpg",
+          alt: {
+            fr: "Gestion du panier.",
+            en: "Cart management."
+          }
+        }
+      ]
+    ]
+  },
+  {
+    title: {
+      fr: "Projet vélo",
+      en: "Bike project"
+    },
+    techno: "PHP, Symfony",
+    id: "bike",
+    url: {},
+    galleries: [
+      [
+        {
+          img: "bike-1",
+          format: "jpg",
+          alt: {
+            fr: "Liste des vélos enregistrés.",
+            en: "List of registered bikes."
+          }
+        },
+        {
+          img: "bike-2",
+          format: "jpg",
+          alt: {
+            fr: "Page des détails d'un vélo sélectionné.",
+            en: "Detail page of a selected bike."
+          }
+        },
+        {
+          img: "bike-3",
+          format: "jpg",
+          alt: {
+            fr: "Formulaire des détails d'un vélo.",
+            en: "Bike details form."
+          }
+        }
+      ],
+    ]
+  },
+  {
+    title: {
       fr: "Hematolysis",
       en: "Hematolysis",
     },

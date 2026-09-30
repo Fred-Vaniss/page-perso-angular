@@ -24,12 +24,12 @@ export const PARCOURS: Parcours[] = [
     time: "2024-2027",
     place: "Charleroi",
     title: {
-      fr: "BAC Informatique de gestion",
-      en: "BAC Business Informatics"
+      fr: "Bachelier en informatique",
+      en: "Bachelor's degree in computer science"
     },
     desc: {
       fr: `
-        Je suis actuellement une formation en Informatique de Gestion, axée sur le développement logiciel, la gestion des bases de données et l’analyse des systèmes d’information.
+        Je suis actuellement une formation en Informatique, axée sur le développement logiciel, la gestion des bases de données et l’analyse des systèmes d’information.
 
         Ce programme combine des compétences techniques en programmation, réseaux et systèmes, avec des notions de gestion de projet et d’entreprise. Il inclut également des projets pratiques et un stage en entreprise pour appliquer les connaissances acquises dans un contexte professionnel.
 
@@ -46,7 +46,7 @@ export const PARCOURS: Parcours[] = [
           * Utilisation des ORM comme Doctrine
       `,
       en: `
-        I am currently pursuing a degree in Business Informatics, focusing on software development, database management, and information systems analysis.
+        I am currently pursuing a degree in computer science, focusing on software development, database management, and information systems analysis.
 
         This program combines technical skills in programming, networks, and systems with project management and business concepts. It also includes practical projects and an internship to apply the acquired knowledge in a professional setting.
 

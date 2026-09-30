@@ -7,20 +7,20 @@ interface Skills {
 }
 
 export const SKILLS: Skills[] = [
-	{
-		title: "HTML",
-		icon: "html",
-    subSkills: [
-      {
-        title: "CSS",
-        icon: "css"
-      },
-      {
-        title: "SASS",
-        icon: "sass"
-      }
-    ]
-	},
+	// {
+	// 	title: "HTML",
+	// 	icon: "html",
+  //   subSkills: [
+  //     {
+  //       title: "CSS",
+  //       icon: "css"
+  //     },
+  //     {
+  //       title: "SASS",
+  //       icon: "sass"
+  //     }
+  //   ]
+	// },
 	{
 		title: "JavaScript",
 		icon: "js",
@@ -58,6 +58,10 @@ export const SKILLS: Skills[] = [
         icon: "wordpress"
       }
     ]
+  },
+  {
+    title: "Java",
+    icon: "java"
   },
 	{
 		title: "Photoshop",
